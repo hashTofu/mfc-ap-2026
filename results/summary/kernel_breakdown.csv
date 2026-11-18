@@ -1,0 +1,91 @@
+profile_tag,kernel_group,kernel_name,pct_gpu_time,total_ms,instances,ms_per_rhs
+B0_1gpu,WENO5 (m_weno),m_weno_s_weno_1104_gpu__2,15.9,294.7800,30,9.8260
+B0_1gpu,WENO5 (m_weno),m_weno_s_weno_1104_gpu__1,15.6,289.6109,30,9.6537
+B0_1gpu,WENO5 (m_weno),m_weno_s_weno_1104_gpu,15.3,283.2179,30,9.4406
+B0_1gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu,13.4,248.6360,30,8.2879
+B0_1gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_1,12.2,226.7038,30,7.5568
+B0_1gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_2,12.2,225.9136,30,7.5305
+B0_1gpu,TVD-RK3 (m_time_steppers),m_time_steppers_s_tvd_rk_544_gpu,4.2,78.8842,30,2.6295
+B0_1gpu,Cons->Prim (m_vars_conv),m_variables_conversion_s_convert_conservative_to_primitive_variables_436_gpu,4.2,78.4517,30,2.6151
+B0_1gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1330_gpu,2.1,38.3546,30,1.2785
+B0_1gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1497_gpu,2.0,37.8317,30,1.2611
+B0_1gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1246_gpu,1.7,30.7701,30,1.0257
+B0_1gpu,Dead idwbuff Copy (m_rhs_646),m_rhs_s_compute_rhs_646_gpu,0.8,14.9853,30,0.4995
+B0_1gpu,Boundary Cond (m_boundary),m_boundary_common_s_populate_bc_direction_159_gpu,0.4,6.9979,180,0.2333
+B0_1gpu,Other GPU Kernels,m_start_up_s_save_data_803_gpu,0.1,1.5154,1,0.0505
+B0_1gpu,Other GPU Kernels,m_rhs_s_compute_rhs_994_gpu,0.0,0.0201,30,0.0007
+nsys_B0_8gpu,WENO5 (m_weno),m_weno_s_weno_1104_gpu__1,16.0,318.5956,240,10.6199
+nsys_B0_8gpu,WENO5 (m_weno),m_weno_s_weno_1104_gpu__2,15.7,313.1283,240,10.4376
+nsys_B0_8gpu,WENO5 (m_weno),m_weno_s_weno_1104_gpu,15.3,305.6901,240,10.1897
+nsys_B0_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu,13.2,263.5230,240,8.7841
+nsys_B0_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_2,11.9,236.8297,240,7.8943
+nsys_B0_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_1,11.9,236.5022,240,7.8834
+nsys_B0_8gpu,Cons->Prim (m_vars_conv),m_variables_conversion_s_convert_conservative_to_primitive_variables_436_gpu,4.2,84.1702,240,2.8057
+nsys_B0_8gpu,TVD-RK3 (m_time_steppers),m_time_steppers_s_tvd_rk_544_gpu,4.0,79.9390,240,2.6646
+nsys_B0_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1330_gpu,2.0,40.6309,240,1.3544
+nsys_B0_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1497_gpu,2.0,40.4551,240,1.3485
+nsys_B0_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1246_gpu,1.6,32.7514,240,1.0917
+nsys_B0_8gpu,Dead idwbuff Copy (m_rhs_646),m_rhs_s_compute_rhs_646_gpu,0.9,17.4535,240,0.5818
+nsys_B0_8gpu,Boundary Cond (m_boundary),m_boundary_common_s_populate_bc_direction_159_gpu,0.5,10.4917,720,0.3497
+nsys_B0_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_856_gpu,0.1,2.1817,240,0.0727
+nsys_B0_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_796_gpu,0.1,2.1470,240,0.0716
+nsys_B0_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_738_gpu,0.1,2.0409,240,0.0680
+nsys_B0_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_1100_gpu,0.1,1.7267,240,0.0576
+nsys_B0_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_958_gpu,0.1,1.7262,240,0.0575
+nsys_B0_8gpu,Other GPU Kernels,m_start_up_s_save_data_803_gpu,0.1,1.6837,8,0.0561
+nsys_B0_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_1028_gpu,0.1,1.6066,240,0.0536
+nsys_B0_8gpu,Other GPU Kernels,m_rhs_s_compute_rhs_994_gpu,0.0,0.1557,240,0.0052
+nsys_L1234_1gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu_2,13.7,80.2200,30,2.6740
+nsys_L1234_1gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu,13.7,80.0841,30,2.6695
+nsys_L1234_1gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu_1,13.6,79.8669,30,2.6622
+nsys_L1234_1gpu,TVD-RK3 (m_time_steppers),m_time_steppers_s_tvd_rk_544_gpu,11.8,69.3775,30,2.3126
+nsys_L1234_1gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__2,8.0,46.7855,30,1.5595
+nsys_L1234_1gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu,7.3,42.6399,30,1.4213
+nsys_L1234_1gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__1,6.8,40.0960,30,1.3365
+nsys_L1234_1gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1334_gpu,6.4,37.7263,30,1.2575
+nsys_L1234_1gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1501_gpu,6.4,37.5189,30,1.2506
+nsys_L1234_1gpu,Cons->Prim (m_vars_conv),m_variables_conversion_s_convert_conservative_to_primitive_variables_442_gpu,5.6,32.7234,30,1.0908
+nsys_L1234_1gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1250_gpu,5.2,30.6218,30,1.0207
+nsys_L1234_1gpu,Boundary Cond (m_boundary),m_boundary_common_s_populate_bc_direction_159_gpu,1.1,6.2934,180,0.2098
+nsys_L1234_1gpu,Other GPU Kernels,m_start_up_s_save_data_803_gpu,0.3,1.5214,1,0.0507
+nsys_L1234_1gpu,Other GPU Kernels,m_rhs_s_compute_rhs_998_gpu,0.0,0.0193,30,0.0006
+nsys_L1234_rdmaF_8gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu,13.3,83.2676,240,2.7756
+nsys_L1234_rdmaF_8gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu_1,13.2,82.5818,240,2.7527
+nsys_L1234_rdmaF_8gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu_2,13.1,81.9342,240,2.7311
+nsys_L1234_rdmaF_8gpu,TVD-RK3 (m_time_steppers),m_time_steppers_s_tvd_rk_544_gpu,11.2,70.5105,240,2.3504
+nsys_L1234_rdmaF_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__2,8.1,50.8990,240,1.6966
+nsys_L1234_rdmaF_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu,7.3,45.7013,240,1.5234
+nsys_L1234_rdmaF_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__1,7.0,44.0246,240,1.4675
+nsys_L1234_rdmaF_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1501_gpu,6.3,39.8209,240,1.3274
+nsys_L1234_rdmaF_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1334_gpu,6.3,39.7998,240,1.3267
+nsys_L1234_rdmaF_8gpu,Cons->Prim (m_vars_conv),m_variables_conversion_s_convert_conservative_to_primitive_variables_442_gpu,5.4,33.9958,240,1.1332
+nsys_L1234_rdmaF_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1250_gpu,5.2,32.4439,240,1.0815
+nsys_L1234_rdmaF_8gpu,Boundary Cond (m_boundary),m_boundary_common_s_populate_bc_direction_159_gpu,1.6,10.3407,720,0.3447
+nsys_L1234_rdmaF_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_738_gpu,0.3,2.0116,240,0.0671
+nsys_L1234_rdmaF_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_859_gpu,0.3,1.7724,240,0.0591
+nsys_L1234_rdmaF_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_1109_gpu,0.3,1.7256,240,0.0575
+nsys_L1234_rdmaF_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_797_gpu,0.3,1.7220,240,0.0574
+nsys_L1234_rdmaF_8gpu,Other GPU Kernels,m_start_up_s_save_data_803_gpu,0.3,1.6838,8,0.0561
+nsys_L1234_rdmaF_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_1035_gpu,0.3,1.6443,240,0.0548
+nsys_L1234_rdmaF_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_963_gpu,0.3,1.6346,240,0.0545
+nsys_L1234_rdmaF_8gpu,Other GPU Kernels,m_rhs_s_compute_rhs_998_gpu,0.0,0.1577,240,0.0053
+nsys_L1234_rdmaT_8gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu,13.3,83.2835,240,2.7761
+nsys_L1234_rdmaT_8gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu_1,13.2,82.5762,240,2.7525
+nsys_L1234_rdmaT_8gpu,WENO5 (m_weno),m_weno_s_weno_1128_gpu_2,13.0,81.9042,240,2.7301
+nsys_L1234_rdmaT_8gpu,TVD-RK3 (m_time_steppers),m_time_steppers_s_tvd_rk_544_gpu,11.2,70.5005,240,2.3500
+nsys_L1234_rdmaT_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__2,8.1,50.8751,240,1.6958
+nsys_L1234_rdmaT_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu,7.3,45.6807,240,1.5227
+nsys_L1234_rdmaT_8gpu,HLLC Riemann (m_riemann),m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__1,7.0,44.0188,240,1.4673
+nsys_L1234_rdmaT_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1501_gpu,6.3,39.8488,240,1.3283
+nsys_L1234_rdmaT_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1334_gpu,6.3,39.8279,240,1.3276
+nsys_L1234_rdmaT_8gpu,Cons->Prim (m_vars_conv),m_variables_conversion_s_convert_conservative_to_primitive_variables_442_gpu,5.4,33.9869,240,1.1329
+nsys_L1234_rdmaT_8gpu,Advection Src (m_rhs),m_rhs_s_compute_advection_source_term_1250_gpu,5.2,32.4317,240,1.0811
+nsys_L1234_rdmaT_8gpu,Boundary Cond (m_boundary),m_boundary_common_s_populate_bc_direction_159_gpu,1.7,10.3806,720,0.3460
+nsys_L1234_rdmaT_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_738_gpu,0.3,2.0082,240,0.0669
+nsys_L1234_rdmaT_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_859_gpu,0.3,1.7761,240,0.0592
+nsys_L1234_rdmaT_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_1109_gpu,0.3,1.7276,240,0.0576
+nsys_L1234_rdmaT_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_797_gpu,0.3,1.7236,240,0.0575
+nsys_L1234_rdmaT_8gpu,Other GPU Kernels,m_start_up_s_save_data_803_gpu,0.3,1.6816,8,0.0561
+nsys_L1234_rdmaT_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_963_gpu,0.3,1.6573,240,0.0552
+nsys_L1234_rdmaT_8gpu,MPI Halo Pack/Unpack,m_mpi_common_s_mpi_sendrecv_variables_buffers_1035_gpu,0.3,1.6528,240,0.0551
+nsys_L1234_rdmaT_8gpu,Other GPU Kernels,m_rhs_s_compute_rhs_998_gpu,0.0,0.1568,240,0.0052

@@ -1,0 +1,1190 @@
+ Simulating a case-optimized 255x255x255 case on 8 rank(s) with OpenACC offloading.
+ [  0%] step 1 of 11 (t_step 0) t/step  0.00E+00s (avg  0.00E+00s) ETA 0:00:00
+ [ 10%] step 2 of 11 (t_step 1) t/step  2.29E-01s (avg  0.00E+00s) ETA 0:00:00
+ [ 19%] step 3 of 11 (t_step 2) t/step  1.06E-02s (avg  0.00E+00s) ETA 0:00:00
+ [ 28%] step 4 of 11 (t_step 3) t/step  1.04E-02s (avg  1.04E-02s) ETA 0:00:00
+ [ 37%] step 5 of 11 (t_step 4) t/step  1.06E-02s (avg  1.05E-02s) ETA 0:00:00
+ [ 46%] step 6 of 11 (t_step 5) t/step  1.02E-02s (avg  1.04E-02s) ETA 0:00:00
+ [ 55%] step 7 of 11 (t_step 6) t/step  1.17E-02s (avg  1.07E-02s) ETA 0:00:00
+ [ 64%] step 8 of 11 (t_step 7) t/step  1.24E-02s (avg  1.10E-02s) ETA 0:00:00
+ [ 73%] step 9 of 11 (t_step 8) t/step  1.03E-02s (avg  1.09E-02s) ETA 0:00:00
+ [ 82%] step 10 of 11 (t_step 9) t/step  1.14E-02s (avg  1.10E-02s) ETA 0:00:00
+ Performance:   2.5254238565860794E-002 ns/gp/eq/rhs
+Collecting data...
+Generating '/tmp/nsys-report-7b56.qdstrm'
+[1/9] [0%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [0%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [8%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [7%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [6%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [13%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [12%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==18%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=17%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=16%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==20%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==19%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==18%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==21%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==20%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===23%                      ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===22%                      ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==21%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==20%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==19%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==18%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=17%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=16%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=15%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [14%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [13%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [12%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [11%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [10%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [9%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [8%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [7%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [6%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [7%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [8%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [9%                          ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [10%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [11%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [12%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [13%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [14%                         ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=15%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=16%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=17%                        ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==18%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==19%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==20%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==21%                       ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===22%                      ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===23%                      ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===24%                      ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [====25%                     ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [====26%                     ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [====27%                     ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [====28%                     ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=====29%                    ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=====30%                    ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=====31%                    ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=====32%                    ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [======33%                   ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [======34%                   ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [======35%                   ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=======36%                  ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=======37%                  ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=======38%                  ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=======39%                  ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [========40%                 ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [========41%                 ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [========42%                 ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=========43%                ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=========44%                ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=========45%                ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [=========46%                ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==========47%               ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==========48%               ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [==========49%               ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===========50%              ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===========51%              ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===========52%              ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [===========53%              ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [============54%             ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [============55%             ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [============56%             ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [============57%             ] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [========================100%] nsys_L1234_rdmaT_8gpu.nsys-rep[1/9] [========================100%] nsys_L1234_rdmaT_8gpu.nsys-rep
+[2/9] [0%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2KProcessing 5586643 events: 
+[2/9] [1%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [2%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [3%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [4%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [5%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [6%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [7%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [8%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [9%                          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [10%                         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [11%                         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [12%                         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [13%                         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [14%                         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=15%                        ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=16%                        ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=17%                        ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==18%                       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==19%                       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==20%                       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==21%                       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===22%                      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===23%                      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===24%                      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====25%                     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====26%                     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====27%                     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====28%                     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====29%                    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====30%                    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====31%                    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====32%                    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [======33%                   ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [======34%                   ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [======35%                   ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======36%                  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======37%                  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======38%                  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======39%                  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========40%                 ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========41%                 ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========42%                 ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=========43%                ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=========44%                ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=========45%                ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=========46%                ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==========47%               ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==========48%               ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==========49%               ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===========50%              ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===========51%              ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===========52%              ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===========53%              ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [============54%             ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [============55%             ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [============56%             ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [============57%             ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=============58%            ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=============59%            ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=============60%            ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==============61%           ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==============62%           ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==============63%           ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==============64%           ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===============65%          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===============66%          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===============67%          ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [================68%         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [================69%         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [================70%         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [================71%         ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=================72%        ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=================73%        ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=================74%        ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==================75%       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==================76%       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==================77%       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [==================78%       ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===================79%      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===================80%      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===================81%      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [===================82%      ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====================83%     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====================84%     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [====================85%     ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====================86%    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====================87%    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====================88%    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=====================89%    ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [======================90%   ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [======================91%   ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [======================92%   ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======================93%  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======================94%  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======================95%  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [=======================96%  ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========================97% ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========================98% ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========================99% ] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========================100%] nsys_L1234_rdmaT_8gpu.sqlite[2/9] [========================100%] nsys_L1234_rdmaT_8gpu.sqlite
+[3/9] Executing 'nvtx_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances      Avg (ns)          Med (ns)         Min (ns)        Max (ns)     StdDev (ns)    Style            Range         
+ --------  ---------------  ---------  ----------------  ----------------  --------------  --------------  ------------  -------  -----------------------
+     39.4   85,810,261,684          8  10,726,282,710.5  10,728,070,522.0  10,716,071,557  10,735,415,753   6,635,893.7  PushPop  :INIT                  
+     35.6   77,415,114,492          8   9,676,889,311.5   9,678,356,695.0   9,666,172,594   9,685,454,746   6,909,532.8  PushPop  :INIT-MPI              
+      8.3   18,106,129,438          8   2,263,266,179.8   2,266,419,907.0   2,252,607,274   2,272,031,719   7,929,340.6  PushPop  :FINALIZE-MODULES      
+      4.8   10,539,742,083          8   1,317,467,760.4   1,317,044,346.5   1,313,978,675   1,320,256,297   1,997,087.5  PushPop  :SIMULATION-TIME-MARCH 
+      3.8    8,215,617,934          8   1,026,952,241.8   1,026,886,562.0   1,026,708,161   1,027,227,232     185,447.8  PushPop  :INIT-MODULES          
+      3.6    7,918,403,382          8     989,800,422.8     989,787,392.5     989,698,766     989,917,371      63,016.5  PushPop  :SAVE-DATA             
+      1.2    2,616,918,639         80      32,711,483.0      10,584,902.0      10,135,676     231,878,506  65,865,801.9  PushPop  :TIMESTEP              
+      1.2    2,532,909,176        240      10,553,788.2       3,118,706.0       3,030,826     222,673,268  38,087,243.1  PushPop  :COMPUTE-RHS           
+      0.9    1,864,855,698        240       7,770,232.1         432,372.0         355,601     217,350,380  37,731,994.9  PushPop  :RHS-COMMUNICATION     
+      0.8    1,779,373,724        720       2,471,352.4          39,125.0          26,776     103,645,345  13,059,291.8  PushPop  :RHS-COMM-SENDRECV-RDMA
+      0.1      287,294,851        720         399,020.6         389,126.5         382,136       1,444,489      66,402.5  PushPop  :RHS-RECONSTRUCTION    
+      0.1      200,320,834        720         278,223.4         275,073.5         246,436       2,228,042      84,014.8  PushPop  :RHS-RIEMANN-SOLVER    
+      0.1      179,336,233          8      22,417,029.1      22,796,376.5      19,385,165      26,054,661   2,126,020.7  PushPop  :INIT-GPU-VARS         
+      0.1      131,079,741        720         182,055.2         181,379.0         149,281       1,090,713      86,837.9  PushPop  :RHS-ADVECTION-SRC     
+      0.0       40,525,235        240         168,855.1         158,076.0         155,030         552,834      56,030.9  PushPop  :RHS-CONVERT           
+      0.0       28,979,738        720          40,249.6          32,943.5          29,790         706,667      61,873.4  PushPop  :RHS-COMM-PACKBUF      
+      0.0       16,923,620        720          23,505.0          22,148.0          20,070          77,320       5,625.1  PushPop  :RHS-COMM-UNPACKBUF    
+
+[4/9] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls     Avg (ns)         Med (ns)        Min (ns)        Max (ns)       StdDev (ns)              Name          
+ --------  ---------------  ---------  ---------------  ---------------  -------------  --------------  ---------------  ------------------------
+     47.8  335,120,810,689  3,993,439         83,917.8          1,076.0            999  13,992,235,426     23,967,054.7  epoll_wait              
+     26.2  183,578,462,309      8,447     21,732,977.7     10,060,430.0          1,198   2,445,220,380     76,790,685.8  poll                    
+     10.8   75,937,853,525    124,235        611,243.6        152,919.0          1,000     391,266,122      3,554,590.0  ioctl                   
+      9.1   64,001,514,605         16  4,000,094,662.8  4,000,079,666.5  4,000,020,641   4,000,463,145        103,256.8  pthread_cond_timedwait  
+      4.6   32,184,005,388         17  1,893,176,787.5  1,802,498,372.0        761,932  16,092,088,451  3,786,365,370.4  select                  
+      0.3    2,295,311,716     33,148         69,244.4         17,758.0          1,000       2,897,086        195,942.1  read                    
+      0.3    2,159,870,717    238,115          9,070.7          9,461.0          1,000       1,552,157          7,266.9  fgets                   
+      0.3    1,794,402,776     23,012         77,976.8          1,337.0            999       4,181,387        321,020.0  close                   
+      0.1      956,608,516      6,262        152,764.1        153,613.0        105,407         195,824          5,176.7  usleep                  
+      0.1      683,807,292        157      4,355,460.5         15,940.0          1,047      48,943,728      8,662,808.9  pthread_spin_lock       
+      0.1      531,162,414     50,675         10,481.7          9,594.0          1,001         591,328          7,658.3  openat                  
+      0.0      323,504,520         64      5,054,758.1      5,055,874.0      5,008,877       5,061,796          7,950.9  nanosleep               
+      0.0      271,459,958     58,078          4,674.1          2,939.0          1,000         349,211          7,535.3  open                    
+      0.0      185,375,959         56      3,310,285.0      4,700,608.5          1,414       9,821,642      3,064,069.4  pread                   
+      0.0      182,882,695     16,780         10,898.8          3,396.0          1,046       7,626,675        150,975.8  fopen                   
+      0.0      155,684,482     29,403          5,294.9          1,300.0          1,000      19,726,167        233,958.1  socket                  
+      0.0       63,042,499      5,538         11,383.6         11,502.0          1,009         732,892         10,762.6  recvmsg                 
+      0.0       43,641,573        563         77,516.1          4,257.0          1,006         509,498        119,755.9  process_vm_readv        
+      0.0       38,130,776      5,249          7,264.4          2,764.0          1,000         174,864          7,920.4  write                   
+      0.0       35,504,707      7,722          4,597.9          1,619.0          1,000          65,834          5,698.0  sendmsg                 
+      0.0       24,534,485        606         40,485.9         15,070.5          1,588         755,387         90,577.3  pthread_cond_wait       
+      0.0       23,254,782        597         38,952.7         11,071.0          4,707         879,631        128,487.7  mmap64                  
+      0.0       15,685,601      6,082          2,579.0          2,486.0          1,001          13,231          1,106.5  epoll_ctl               
+      0.0       14,096,222     10,317          1,366.3          1,173.0            999          25,639            704.0  fclose                  
+      0.0       11,984,269      4,464          2,684.6          2,223.0          1,000          38,932          1,455.1  pthread_spin_trylock    
+      0.0       11,863,038         58        204,535.1        194,500.0        131,927         448,023         51,295.4  pthread_create          
+      0.0        9,393,404         24        391,391.8          3,236.5          1,507       1,275,644        562,503.1  getdelim                
+      0.0        8,236,604      1,461          5,637.6          4,523.0          1,133          28,942          3,813.8  open64                  
+      0.0        5,706,089         27        211,336.6        186,864.0        108,938         659,813        109,296.0  pthread_join            
+      0.0        5,366,446        906          5,923.2          1,956.0          1,000          27,673          5,305.1  pthread_rwlock_rdlock   
+      0.0        4,946,374          8        618,296.8        604,781.5        577,373         713,662         43,492.3  fork                    
+      0.0        3,030,017        150         20,200.1         19,776.5         12,228          37,627          4,060.4  sem_timedwait           
+      0.0        2,816,465        295          9,547.3          7,377.0          1,078          37,817          6,263.1  writev                  
+      0.0        1,504,615        352          4,274.5          3,172.0          2,284          13,069          2,341.6  mprotect                
+      0.0        1,388,549        193          7,194.6          5,245.0          1,178          58,993          8,653.3  shmget                  
+      0.0        1,387,270        491          2,825.4          1,596.0          1,001          46,684          3,517.7  shmctl                  
+      0.0        1,150,095        735          1,564.8          1,327.0          1,000          12,016            786.9  bind                    
+      0.0        1,011,627         52         19,454.4          1,592.0          1,015         718,074         99,563.7  recv                    
+      0.0          992,822        103          9,639.0         10,184.0          1,089          23,176          5,011.7  pthread_rwlock_wrlock   
+      0.0          871,687        311          2,802.9          2,646.0          1,263           7,731            691.6  getc                    
+      0.0          766,848        520          1,474.7          1,271.5          1,001          14,128            843.3  stat                    
+      0.0          746,943        261          2,861.9          2,380.0          1,017          22,592          2,168.7  fcntl                   
+      0.0          659,658        425          1,552.1          1,567.0          1,000           5,427            432.7  pthread_cond_broadcast  
+      0.0          593,168          9         65,907.6         71,360.0          1,552          92,626         25,427.5  waitpid                 
+      0.0          442,774         24         18,448.9         11,006.0          6,343          39,894         13,532.9  connect                 
+      0.0          390,131         68          5,737.2          4,428.0          1,014          30,644          4,848.4  fread                   
+      0.0          302,669        202          1,498.4          1,370.5          1,001           6,232            534.0  fopen64                 
+      0.0          279,638         64          4,369.3          4,214.5          3,466           6,462            527.7  process_vm_writev       
+      0.0          195,211         18         10,845.1         10,899.0          2,932          19,911          5,768.6  shutdown                
+      0.0          187,686         24          7,820.3          8,133.0          3,699          10,131          1,609.7  sendto                  
+      0.0          173,254         24          7,218.9          6,615.5          2,295          22,455          5,035.6  send                    
+      0.0          152,361         26          5,860.0          5,601.5          4,414          12,141          1,409.9  socketpair              
+      0.0          116,946         24          4,872.8          5,087.0          2,133           7,946          1,763.8  pipe2                   
+      0.0          108,694         36          3,019.3          2,307.5          1,466           7,889          1,566.2  pipe                    
+      0.0           88,256          1         88,256.0         88,256.0         88,256          88,256              0.0  ftruncate               
+      0.0           83,830          9          9,314.4          9,433.0          8,643          10,316            528.3  shmdt                   
+      0.0           72,190         11          6,562.7          4,871.0          3,151          14,861          4,139.3  fputc                   
+      0.0           71,557         54          1,325.1          1,168.5          1,003           2,620            371.8  listen                  
+      0.0           63,692         39          1,633.1          1,575.0          1,015           3,133            514.1  lstat                   
+      0.0           53,273          7          7,610.4         10,508.0          1,115          12,151          4,794.3  pthread_mutex_lock      
+      0.0           53,153         21          2,531.1          1,871.0          1,143          13,991          2,669.7  fwrite                  
+      0.0           46,002          9          5,111.3          5,050.0          4,695           5,881            379.5  shmat                   
+      0.0           44,448         16          2,778.0          2,382.5          1,444           7,104          1,412.7  accept                  
+      0.0           42,798          9          4,755.3          3,945.0          3,512          10,167          2,119.3  fflush                  
+      0.0           30,387         21          1,447.0          1,332.0          1,067           2,195            333.2  recvfrom                
+      0.0           22,345          1         22,345.0         22,345.0         22,345          22,345              0.0  mkfifo                  
+      0.0           16,641          1         16,641.0         16,641.0         16,641          16,641              0.0  munmap                  
+      0.0           14,298          1         14,298.0         14,298.0         14,298          14,298              0.0  fgetc                   
+      0.0           13,291          6          2,215.2          2,184.0          1,261           3,215          1,007.3  fputs_unlocked          
+      0.0           12,331          1         12,331.0         12,331.0         12,331          12,331              0.0  pthread_rwlock_trywrlock
+      0.0            8,834          2          4,417.0          4,417.0          4,315           4,519            144.2  sigaction               
+      0.0            8,783          1          8,783.0          8,783.0          8,783           8,783              0.0  mmap                    
+      0.0            5,914          2          2,957.0          2,957.0          2,746           3,168            298.4  fwrite_unlocked         
+      0.0            4,904          1          4,904.0          4,904.0          4,904           4,904              0.0  statx                   
+      0.0            4,685          3          1,561.7          1,050.0          1,017           2,618            915.0  fstat                   
+      0.0            3,495          3          1,165.0          1,160.0          1,099           1,236             68.6  fdopen                  
+
+[5/9] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)               Name             
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  ------------------------------
+     28.8      825,120,373         15  55,008,024.9  56,711,887.0  51,053,507  59,151,682  3,328,066.9  cuModuleLoadDataEx            
+     24.5      702,113,433     17,264      40,669.2       5,346.0       1,507   2,129,890     90,746.4  cuStreamSynchronize           
+     14.3      410,327,500         64   6,411,367.2   6,316,819.0   5,334,627   9,042,195    722,436.8  cuMemcpyDtoHAsync_v2          
+      8.8      252,193,563      1,767     142,724.1       2,175.0       1,549   1,934,154    291,906.4  cuMemAlloc_v2                 
+      8.0      228,685,322          8  28,585,665.3  29,187,511.5  24,109,999  29,600,601  1,828,069.6  cuMemHostAlloc                
+      7.5      214,816,204     15,333      14,010.1       2,526.0       1,837   3,817,295    172,213.3  cuMemcpyHtoDAsync_v2          
+      5.5      157,944,200         24   6,581,008.3   5,761,633.5   1,802,271  13,291,730  3,862,166.1  cuIpcOpenMemHandle_v2         
+      0.7       19,098,485         15   1,273,232.3     964,654.0     843,710   3,301,395    776,410.7  cuMemAllocHost_v2             
+      0.6       17,009,339      5,048       3,369.5       2,942.5       2,387     451,556      6,563.9  cuLaunchKernel                
+      0.4       11,426,312     31,007         368.5         292.0         264     409,288      2,352.9  cuEventQuery                  
+      0.2        5,398,178      2,503       2,156.7       1,936.0       1,347      15,334        971.9  cuMemsetD32Async              
+      0.1        4,122,360          8     515,295.0     486,790.5     369,882     715,293    144,680.6  cuMemCreate                   
+      0.1        2,832,087        720       3,933.5       3,144.0       2,427      50,324      3,404.7  cuMemcpyDtoDAsync_v2          
+      0.1        2,769,195      1,352       2,048.2       1,215.5         711      29,104      2,097.0  cuMemRetainAllocationHandle   
+      0.1        1,921,611         24      80,067.1      13,582.5       7,847     461,188    111,186.0  cuStreamCreate                
+      0.1        1,637,071        720       2,273.7       2,005.0       1,847      20,193      1,328.7  cuCtxSynchronize              
+      0.0          743,795      3,536         210.3         139.0          76      10,522        336.9  cuGetProcAddress_v2           
+      0.0          584,661          8      73,082.6      68,063.5      55,613     100,691     16,126.8  cuMemGetHandleForAddressRange 
+      0.0          542,106        720         752.9         412.0         341      24,992      2,137.8  cuEventRecord                 
+      0.0          448,043         72       6,222.8       5,611.5         132      34,155      7,158.6  cuCtxSetFlags                 
+      0.0          417,617         24      17,400.7       9,315.5       6,161      67,469     14,916.3  cuStreamDestroy_v2            
+      0.0          261,144      1,025         254.8         184.0         166       5,429        226.2  cuEventCreate                 
+      0.0          248,102      1,025         242.1         142.0         137       6,473        348.7  cuEventDestroy_v2             
+      0.0          156,582      1,769          88.5          59.0          55       4,123        187.6  cuCtxGetId                    
+      0.0           98,081         16       6,130.1       3,021.5       1,755      13,915      4,963.9  cuInit                        
+      0.0           56,366          8       7,045.8       6,315.5       6,044      11,418      1,811.9  cuMemFree_v2                  
+      0.0           51,402          8       6,425.3       6,383.0       4,368      10,217      1,844.0  cuMemGetAllocationGranularity 
+      0.0           36,017         45         800.4         458.0          96       3,132        869.1  cuCtxSetCurrent               
+      0.0            2,196          8         274.5         273.0         205         360         58.4  cuModuleGetLoadingMode        
+      0.0            1,452          8         181.5         174.5         162         211         20.5  cudaGetDeviceProperties_v12000
+
+[6/9] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                                      Name                                    
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  ----------------------------------------------------------------------------
+     13.3       83,283,519        240  347,014.7  346,928.5   345,024   349,248        773.3  m_weno_s_weno_1128_gpu                                                      
+     13.2       82,576,249        240  344,067.7  344,065.0   341,826   347,167        936.4  m_weno_s_weno_1128_gpu_1                                                    
+     13.0       81,904,157        240  341,267.3  341,185.0   339,360   344,192        822.8  m_weno_s_weno_1128_gpu_2                                                    
+     11.2       70,500,507        240  293,752.1  262,752.0   261,216   358,239     44,465.8  m_time_steppers_s_tvd_rk_544_gpu                                            
+      8.1       50,875,084        240  211,979.5  211,904.5   209,152   214,848      1,102.3  m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__2                      
+      7.3       45,680,659        240  190,336.1  190,592.0   174,624   205,823     13,341.9  m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu                         
+      7.0       44,018,830        240  183,411.8  183,392.5   181,248   187,264      1,017.1  m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__1                      
+      6.3       39,848,783        240  166,036.6  166,016.5   164,352   167,712        744.6  m_rhs_s_compute_advection_source_term_1501_gpu                              
+      6.3       39,827,886        240  165,949.5  165,983.5   163,937   167,584        748.8  m_rhs_s_compute_advection_source_term_1334_gpu                              
+      5.4       33,986,861        240  141,611.9  141,504.0   139,872   144,256        978.8  m_variables_conversion_s_convert_conservative_to_primitive_variables_442_gpu
+      5.2       32,431,688        240  135,132.0  135,008.0   133,855   137,312        746.8  m_rhs_s_compute_advection_source_term_1250_gpu                              
+      1.7       10,380,650        720   14,417.6   12,672.0    10,656    20,704      3,434.9  m_boundary_common_s_populate_bc_direction_159_gpu                           
+      0.3        2,008,225        240    8,367.6    8,528.0     7,616    10,208        622.7  m_mpi_common_s_mpi_sendrecv_variables_buffers_738_gpu                       
+      0.3        1,776,096        240    7,400.4    7,392.0     7,136     8,352        158.4  m_mpi_common_s_mpi_sendrecv_variables_buffers_859_gpu                       
+      0.3        1,727,583        240    7,198.3    7,168.0     6,976     8,288        173.2  m_mpi_common_s_mpi_sendrecv_variables_buffers_1109_gpu                      
+      0.3        1,723,648        240    7,181.9    7,168.0     6,944     7,936        128.8  m_mpi_common_s_mpi_sendrecv_variables_buffers_797_gpu                       
+      0.3        1,681,634          8  210,204.3  210,160.5   209,440   210,784        473.1  m_start_up_s_save_data_803_gpu                                              
+      0.3        1,657,280        240    6,905.3    6,848.0     6,592     8,704        307.8  m_mpi_common_s_mpi_sendrecv_variables_buffers_963_gpu                       
+      0.3        1,652,833        240    6,886.8    6,848.0     6,592     8,640        217.7  m_mpi_common_s_mpi_sendrecv_variables_buffers_1035_gpu                      
+      0.0          156,832        240      653.5      672.0       544       928         70.6  m_rhs_s_compute_rhs_998_gpu                                                 
+
+[7/9] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  ------  -----------  -----------  ---------  ---------  -----------  ----------------------------
+     67.3      378,267,087      64  5,910,423.2  5,780,468.0  4,745,630  8,408,350    663,244.9  [CUDA memcpy Device-to-Host]
+     30.2      169,966,237  15,333     11,085.0        768.0        704  3,543,293    159,691.2  [CUDA memcpy Host-to-Device]
+      2.1       11,743,428     720     16,310.3     14,592.0     13,280    189,792     16,220.8  [CUDA memcpy Peer-to-Peer]  
+      0.4        2,000,225   2,503        799.1        768.0        704      2,080        135.8  [CUDA memset]               
+
+[8/9] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count   Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  ------  --------  --------  --------  --------  -----------  ----------------------------
+  3,212.575     720     4.462     4.456     4.194     4.735        0.221  [CUDA memcpy Peer-to-Peer]  
+  1,295.265  15,333     0.084     0.000     0.000    20.124        1.297  [CUDA memcpy Host-to-Device]
+  1,287.913      64    20.124    20.124    20.124    20.124        0.000  [CUDA memcpy Device-to-Host]
+      0.012   2,503     0.000     0.000     0.000     0.000        0.000  [CUDA memset]               
+
+[9/9] Executing 'openacc_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)                        Name                      
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  ------------------------------------------------
+     13.3      468,287,088          8  58,535,886.0  58,534,985.0  57,407,885  59,552,794    978,609.3  Device Init@m_mpi_common.fpp:141                
+     11.7      411,112,562         64   6,423,633.8   6,348,161.5   5,343,839   9,085,143    724,847.0  Update@m_start_up.fpp:821                       
+     11.6      410,508,145         64   6,414,189.8   6,324,076.5   5,336,895   9,069,129    723,948.5  Enqueue Download@m_start_up.fpp:821             
+      7.2      255,193,035        720     354,434.8     353,876.5     348,998     622,588     10,387.2  Compute Construct@m_weno.fpp:1128               
+      7.2      253,171,475      1,440     175,813.5     174,896.0       2,058     616,875    173,643.7  Wait@m_weno.fpp:1128                            
+      5.1      179,226,898        272     658,922.4      25,639.5      10,041   3,838,540  1,130,050.9  Update@m_start_up.fpp.f90:44                    
+      5.0      176,076,216      1,024     171,949.4       3,506.0       2,030   3,822,391    647,256.0  Enqueue Upload@m_start_up.fpp.f90:44            
+      4.3      149,994,050        720     208,325.1     204,826.5     184,695   2,154,653     74,655.4  Compute Construct@m_riemann_state.fpp.f90:922   
+      4.2      147,476,235      1,440     102,414.1       4,710.5       2,029   2,143,329    112,992.3  Wait@m_riemann_state.fpp.f90:922                
+      2.2       78,003,467        128     609,402.1     628,458.5     122,226   1,488,152    293,190.5  Enter Data@m_time_steppers.fpp:191              
+      2.1       74,432,692        240     310,136.2     272,793.5     270,617   1,759,574    104,090.0  Compute Construct@m_time_steppers.fpp:544       
+      2.1       73,129,662        240     304,706.9     267,551.0     265,840   1,755,045    103,962.2  Wait@m_time_steppers.fpp:544                    
+      1.2       43,011,230         64     672,050.5     662,874.0     222,406   1,421,308    276,234.8  Enter Data@m_time_steppers.fpp:236              
+      1.2       42,340,125        240     176,417.2     176,152.0     174,087     217,012      2,881.7  Compute Construct@m_rhs.fpp:1501                
+      1.2       42,272,268        240     176,134.5     176,035.0     173,922     180,444      1,084.0  Compute Construct@m_rhs.fpp:1334                
+      1.2       42,058,305        480      87,621.5     168,519.0       2,104     398,589     85,501.6  Wait@m_rhs.fpp:1501                             
+      1.2       41,627,314        480      86,723.6      85,455.0       2,138     175,198     84,363.6  Wait@m_rhs.fpp:1334                             
+      1.1       39,694,757         64     620,230.6     604,390.5     208,083   1,336,343    262,475.9  Enter Data@m_rhs.fpp:169                        
+      1.0       36,652,476        240     152,718.6     151,479.0     149,142     209,109      6,326.7  Compute Construct@m_variables_conversion.fpp:442
+      1.0       35,703,082        480      74,381.4      73,252.5       2,073     148,924     71,979.0  Wait@m_variables_conversion.fpp:442             
+      1.0       34,891,194        240     145,380.0     145,108.0     143,645     151,567      1,272.0  Compute Construct@m_rhs.fpp:1250                
+      1.0       34,255,851        480      71,366.4      72,110.5       2,113     142,445     68,888.8  Wait@m_rhs.fpp:1250                             
+      1.0       34,031,946         64     531,749.2     535,526.5     115,596   1,390,008    308,570.1  Enter Data@m_time_steppers.fpp:399              
+      0.5       18,869,141         32     589,660.7     560,180.0     244,155   1,222,646    243,884.4  Enter Data@m_rhs.fpp:173                        
+      0.5       17,880,859        720      24,834.5      22,753.5      20,210      48,466      4,175.5  Compute Construct@m_boundary_common.fpp:159     
+      0.5       16,188,190        720      22,483.6      21,430.5      19,742     463,837     16,545.4  Update@m_riemann_state.fpp:341                  
+      0.5       16,097,490      1,440      11,178.8      12,369.0       2,068     408,890     13,654.7  Wait@m_boundary_common.fpp:159                  
+      0.4       13,597,507        720      18,885.4      18,255.0      16,466      53,424      2,908.1  Update@m_weno.fpp:974                           
+      0.4       13,522,374        720      18,781.1      18,329.5      16,851      87,137      2,947.5  Update@m_riemann_state.fpp:319                  
+      0.4       13,043,061        720      18,115.4      17,737.0      16,114      32,601      1,616.2  Update@m_riemann_state.fpp:339                  
+      0.3       10,946,778         24     456,115.8      19,209.0      14,633   2,199,736    715,793.3  Exit Data@m_rhs.fpp:2437                        
+      0.3        9,429,354      2,880       3,274.1       3,158.0       2,592       9,610        563.5  Enqueue Upload@m_riemann_state.fpp:341          
+      0.2        7,769,876      2,160       3,597.2       3,379.0       2,515      36,025      1,256.1  Enqueue Upload@m_weno.fpp:974                   
+      0.2        7,604,453      2,160       3,520.6       3,354.0       2,572      72,406      1,625.8  Enqueue Upload@m_riemann_state.fpp:319          
+      0.2        7,549,039        720      10,484.8      10,123.0       9,180      26,359      1,535.8  Update@m_mpi_common.fpp:705                     
+      0.2        7,235,599      2,160       3,349.8       3,178.0       2,443      16,909        827.2  Enqueue Upload@m_riemann_state.fpp:339          
+      0.2        7,226,609        720      10,037.0       9,813.0       8,957      23,771      1,001.3  Update@m_weno.fpp:977                           
+      0.2        5,314,846        720       7,381.7       3,785.0       3,237     392,864     34,936.8  Enter Data@m_weno.fpp:1128                      
+      0.1        4,768,182        720       6,622.5       6,647.0       5,496      13,748        826.5  Wait@m_riemann_state.fpp:341                    
+      0.1        4,675,945        720       6,494.4       6,187.0       3,505      12,578        790.6  Wait@m_riemann_state.fpp:319                    
+      0.1        4,593,337        720       6,379.6       6,085.5       2,963      12,248        747.7  Wait@m_riemann_state.fpp:339                    
+      0.1        4,506,562        720       6,259.1       5,979.0       3,050      10,101        703.6  Wait@m_weno.fpp:974                             
+      0.1        4,435,293        720       6,160.1       6,146.0       2,958       9,387        339.9  Wait@m_mpi_common.fpp:705                       
+      0.1        4,432,629        240      18,469.3      18,289.5      16,295      24,280      1,350.4  Compute Construct@m_mpi_common.fpp:738          
+      0.1        4,375,955        220      19,890.7       6,227.0       2,621     379,959     60,522.6  Enqueue Upload@m_mpi_common.fpp:141             
+      0.1        4,340,081        720       6,027.9       6,011.5       2,810       9,062        274.4  Wait@m_weno.fpp:977                             
+      0.1        4,311,045        240      17,962.7      17,195.5      15,811      54,438      3,817.1  Compute Construct@m_mpi_common.fpp:1109         
+      0.1        4,284,220        240      17,850.9      16,889.0      15,647      41,685      4,134.8  Compute Construct@m_mpi_common.fpp:963          
+      0.1        4,207,881        240      17,532.8      16,856.0      15,674      43,203      3,160.7  Compute Construct@m_mpi_common.fpp:1035         
+      0.1        4,178,432        240      17,410.1      17,053.0      16,161      22,902      1,108.7  Compute Construct@m_mpi_common.fpp:859          
+      0.1        4,113,152        240      17,138.1      16,914.5      15,911      21,646        967.6  Compute Construct@m_mpi_common.fpp:797          
+      0.1        3,966,819        720       5,509.5       4,525.5       3,908     411,489     15,254.1  Enter Data@m_boundary_common.fpp:159            
+      0.1        3,742,596        480       7,797.1      11,413.0       2,051      18,332      5,399.5  Wait@m_mpi_common.fpp:738                       
+      0.1        3,502,648        480       7,297.2       8,751.5       2,047      17,432      4,895.1  Wait@m_mpi_common.fpp:859                       
+      0.1        3,480,369        480       7,250.8       8,292.0       2,086      15,732      4,787.8  Wait@m_mpi_common.fpp:1109                      
+      0.1        3,435,019        480       7,156.3       7,552.0       2,042      16,040      4,796.6  Wait@m_mpi_common.fpp:797                       
+      0.1        3,422,663        480       7,130.5       6,904.5       2,119      16,337      4,609.8  Wait@m_mpi_common.fpp:963                       
+      0.1        3,417,456        480       7,119.7       7,429.5       2,086      15,764      4,691.2  Wait@m_mpi_common.fpp:1035                      
+      0.1        3,319,555        720       4,610.5       3,811.0       3,115     453,087     16,755.5  Enqueue Launch@m_riemann_state.fpp.f90:922      
+      0.1        3,089,011        720       4,290.3       3,947.0       3,156      25,695      1,838.0  Enqueue Launch@m_boundary_common.fpp:159        
+      0.1        3,019,886        240      12,582.9      10,541.5       9,706     403,115     25,351.6  Update@m_rhs.fpp:641                            
+      0.1        2,872,221        720       3,989.2       3,780.5       3,081      10,882        847.4  Enqueue Launch@m_weno.fpp:1128                  
+      0.1        2,681,981        240      11,174.9      10,731.5       9,940      51,651      2,812.9  Update@m_time_steppers.fpp:485                  
+      0.1        2,651,282        720       3,682.3       3,558.5       3,110      10,137        479.5  Enter Data@m_riemann_state.fpp.f90:922          
+      0.1        2,604,302        240      10,851.3      10,610.0       9,586      16,328        901.4  Compute Construct@m_rhs.fpp:998                 
+      0.1        2,342,710        720       3,253.8       2,811.0       2,450      29,188      2,007.8  Wait@m_mpi_common.fpp:939                       
+      0.1        2,337,110        720       3,246.0       2,934.0       2,260      17,181      1,292.8  Enqueue Upload@m_mpi_common.fpp:705             
+      0.1        2,134,659        720       2,964.8       2,761.0       2,199      10,116        818.0  Enqueue Upload@m_weno.fpp:977                   
+      0.1        2,042,374        256       7,978.0       5,875.0       3,418      53,094      7,926.9  Enqueue Upload@m_time_steppers.fpp:1119         
+      0.1        2,002,329        128      15,643.2      10,573.5       8,364     108,416     17,910.1  Exit Data@m_time_steppers.fpp:1119              
+      0.1        1,943,847        480       4,049.7       4,826.5       2,067       9,356      1,677.4  Wait@m_rhs.fpp:998                              
+      0.1        1,887,266        272       6,938.5       6,264.5       2,914      14,460      1,505.2  Wait@m_start_up.fpp.f90:44                      
+      0.1        1,813,925        240       7,558.0       5,920.0       5,206     398,639     25,351.7  Wait@m_rhs.fpp:641                              
+      0.1        1,782,889          8     222,861.1     222,543.0     221,613     224,214        936.1  Compute Construct@m_start_up.fpp:803            
+      0.0        1,723,392          8     215,424.0     215,530.0     214,628     216,109        448.3  Wait@m_start_up.fpp:803                         
+      0.0        1,658,110          8     207,263.8       7,210.5       6,405   1,604,972    564,762.3  Exit Data@m_riemann_solvers.fpp:186             
+      0.0        1,575,162        720       2,187.7       2,008.0       1,692      10,881        762.3  Exit Data@m_boundary_common.fpp:159             
+      0.0        1,530,078        280       5,464.6       5,120.0       3,754      15,076      1,459.6  Enqueue Upload@m_time_steppers.fpp:191          
+      0.0        1,468,588        240       6,119.1       6,124.0       2,795       8,802        376.5  Wait@m_time_steppers.fpp:485                    
+      0.0        1,362,634         72      18,925.5      18,343.5      15,081      37,696      3,345.9  Enter Data@m_rhs.fpp:362                        
+      0.0        1,362,250         72      18,920.1      18,209.0      13,882      69,719      6,369.7  Enter Data@m_rhs.fpp:361                        
+      0.0        1,332,292        240       5,551.2       3,765.0       3,238     400,857     25,633.7  Enter Data@m_rhs.fpp:1501                       
+      0.0        1,327,433         72      18,436.6      18,422.5      14,485      23,123      1,509.0  Enter Data@m_rhs.fpp:366                        
+      0.0        1,302,702         72      18,093.1      18,229.5      14,223      23,730      1,587.3  Enter Data@m_rhs.fpp:364                        
+      0.0        1,279,786         72      17,774.8      17,763.5      13,841      26,034      2,227.2  Enter Data@m_rhs.fpp:365                        
+      0.0        1,260,144         72      17,502.0      17,907.0      13,828      25,909      2,456.3  Enter Data@m_rhs.fpp:363                        
+      0.0        1,251,699          8     156,462.4      86,037.5      38,651     497,533    162,686.3  Update@m_mpi_common.fpp:141                     
+      0.0        1,151,759        240       4,799.0       3,780.5       3,052      45,344      4,596.8  Enqueue Launch@m_variables_conversion.fpp:442   
+      0.0        1,139,084        240       4,746.2       3,925.0       3,162      26,761      3,553.2  Enqueue Launch@m_mpi_common.fpp:963             
+      0.0        1,113,501        240       4,639.6       3,940.0       3,188      31,607      3,267.9  Enqueue Launch@m_mpi_common.fpp:1109            
+      0.0        1,079,833        240       4,499.3       3,816.0       3,096      30,975      2,991.7  Enqueue Launch@m_mpi_common.fpp:1035            
+      0.0        1,019,322        240       4,247.2       3,936.0       3,358      10,004      1,019.3  Enter Data@m_variables_conversion.fpp:442       
+      0.0        1,017,576        720       1,413.3       1,322.5       1,090       4,821        310.3  Exit Data@m_weno.fpp:1128                       
+      0.0        1,012,720        240       4,219.7       3,880.0       3,299      11,249      1,156.9  Enter Data@m_rhs.fpp:1250                       
+      0.0          986,506        240       4,110.4       3,801.5       3,063       8,975      1,034.1  Enqueue Launch@m_mpi_common.fpp:738             
+      0.0          982,131        240       4,092.2       3,813.0       3,051      40,861      2,488.3  Enqueue Launch@m_rhs.fpp:1501                   
+      0.0          974,119        240       4,058.8       3,801.0       2,996      11,568      1,212.9  Enqueue Launch@m_time_steppers.fpp:544          
+      0.0          970,015        240       4,041.7       3,768.0       3,130       9,809        894.4  Enqueue Launch@m_mpi_common.fpp:859             
+      0.0          957,605        240       3,990.0       3,845.5       3,115       8,278        793.9  Enqueue Launch@m_mpi_common.fpp:797             
+      0.0          956,567        240       3,985.7       3,795.5       3,010       8,025        798.2  Enqueue Launch@m_rhs.fpp:1250                   
+      0.0          952,793        240       3,970.0       3,803.5       3,047       8,961        702.9  Enqueue Launch@m_rhs.fpp:998                    
+      0.0          944,713        240       3,936.3       3,748.0       3,014       8,118        770.7  Enqueue Launch@m_rhs.fpp:1334                   
+      0.0          939,885          8     117,485.6      49,833.5       8,396     454,843    157,103.0  Wait@m_mpi_common.fpp:141                       
+      0.0          938,123        240       3,908.8       3,522.0       2,872      10,726      1,201.8  Enqueue Upload@m_rhs.fpp:641                    
+      0.0          936,310        240       3,901.3       3,823.0       3,333       5,237        360.4  Enter Data@m_rhs.fpp:1334                       
+      0.0          917,831        240       3,824.3       3,440.0       2,597      44,384      2,742.0  Enqueue Upload@m_time_steppers.fpp:485          
+      0.0          903,263        720       1,254.5       1,173.0         923       6,618        405.7  Exit Data@m_riemann_state.fpp.f90:922           
+      0.0          888,816        152       5,847.5       5,487.0       3,921      10,148      1,269.1  Enqueue Upload@m_time_steppers.fpp:236          
+      0.0          870,437        240       3,626.8       3,327.5       2,897      11,731      1,145.8  Enter Data@m_mpi_common.fpp:963                 
+      0.0          859,024        240       3,579.3       3,330.0       2,824      14,230      1,098.2  Enter Data@m_mpi_common.fpp:1109                
+      0.0          857,456        240       3,572.7       3,332.5       2,859      15,312      1,152.6  Enter Data@m_mpi_common.fpp:1035                
+      0.0          856,122        240       3,567.2       3,403.5       2,900       9,412        685.6  Enter Data@m_rhs.fpp:998                        
+      0.0          823,950        240       3,433.1       3,259.0       2,700      14,298        884.8  Enter Data@m_mpi_common.fpp:738                 
+      0.0          804,121        240       3,350.5       3,238.0       2,674       7,573        555.5  Enter Data@m_mpi_common.fpp:859                 
+      0.0          799,466        240       3,331.1       3,242.0       2,753       5,362        406.5  Enter Data@m_mpi_common.fpp:797                 
+      0.0          784,136          8      98,017.0     101,605.0      81,924     104,762      9,309.6  Update@m_boundary_io.fpp:393                    
+      0.0          776,297        152       5,107.2       5,050.5       3,598       9,436        885.4  Enqueue Upload@m_time_steppers.fpp:399          
+      0.0          737,108         24      30,712.8      19,410.5      15,575      70,870     19,342.0  Enter Data@m_rhs.fpp:357                        
+      0.0          725,247        128       5,666.0       5,633.5       2,975       9,364        535.5  Wait@m_time_steppers.fpp:191                    
+      0.0          705,292        128       5,510.1       5,389.0       3,230      11,199      1,393.4  Enqueue Upload@m_time_steppers.fpp:1143         
+      0.0          700,377        128       5,471.7       5,037.0       3,464      14,149      1,807.9  Enqueue Upload@m_rhs.fpp:169                    
+      0.0          661,494         64      10,335.8       9,846.5       7,921      17,236      1,961.0  Exit Data@m_time_steppers.fpp:1143              
+      0.0          652,371        128       5,096.6       4,985.5       3,059       9,592      1,248.3  Enqueue Upload@m_time_steppers.fpp:1183         
+      0.0          628,468         64       9,819.8       9,527.0       7,420      15,604      1,563.5  Exit Data@m_time_steppers.fpp:1183              
+      0.0          605,034        144       4,201.6       3,483.0       2,686      55,110      6,055.8  Enqueue Upload@m_rhs.fpp:361                    
+      0.0          597,335         24      24,889.0      19,305.0      15,610     158,306     28,444.6  Enter Data@m_rhs.fpp:354                        
+      0.0          587,755          8      73,469.4      73,886.5      68,491      79,185      3,175.2  Enter Data@m_mpi_common.fpp:1776                
+      0.0          535,900         16      33,493.8      31,130.0      16,237      54,743     16,873.1  Enqueue Upload@m_boundary_io.fpp:393            
+      0.0          522,957        144       3,631.6       3,508.5       2,660      10,264      1,075.5  Enqueue Upload@m_rhs.fpp:365                    
+      0.0          517,805        128       4,045.4       3,950.0       2,965       8,912        802.0  Enqueue Upload@m_eos.fpp:101                    
+      0.0          515,081        144       3,577.0       3,437.0       2,745       9,695        899.1  Enqueue Upload@m_rhs.fpp:362                    
+      0.0          509,398         96       5,306.2       5,005.5       3,057      12,112      1,575.8  Enqueue Upload@m_rhs.fpp:2437                   
+      0.0          503,158        144       3,494.2       3,443.0       2,638       9,330        764.0  Enqueue Upload@m_rhs.fpp:364                    
+      0.0          502,028         24      20,917.8      20,299.5      17,176      28,536      2,469.4  Enter Data@m_rhs.fpp:333                        
+      0.0          501,105         24      20,879.4      19,302.5      16,481      27,308      3,215.3  Enter Data@m_rhs.fpp:353                        
+      0.0          499,869        144       3,471.3       3,457.5       2,546       5,406        484.2  Enqueue Upload@m_rhs.fpp:366                    
+      0.0          490,994        144       3,409.7       3,381.0       2,612       5,378        475.0  Enqueue Upload@m_rhs.fpp:363                    
+      0.0          485,566         24      20,231.9      19,988.0      17,339      27,682      1,996.9  Enter Data@m_rhs.fpp:334                        
+      0.0          466,514        112       4,165.3       3,720.0       2,672      10,911      1,496.5  Enqueue Upload@m_global_parameters.fpp:1056     
+      0.0          457,425         24      19,059.4      19,458.5      15,030      21,952      1,936.0  Enter Data@m_rhs.fpp:355                        
+      0.0          450,995         24      18,791.5      18,944.0      15,613      23,089      1,544.9  Enter Data@m_rhs.fpp:356                        
+      0.0          446,236         24      18,593.2      18,690.0      14,807      20,608      1,305.5  Enter Data@m_rhs.fpp:358                        
+      0.0          428,225         72       5,947.6       5,812.5       5,335      12,067        954.5  Wait@m_rhs.fpp:363                              
+      0.0          420,409         72       5,839.0       5,811.5       5,094       9,798        573.3  Wait@m_rhs.fpp:361                              
+      0.0          417,697         72       5,801.3       5,691.5       5,216      10,697        745.4  Wait@m_rhs.fpp:366                              
+      0.0          417,466         72       5,798.1       5,767.5       5,171       8,210        370.0  Wait@m_rhs.fpp:365                              
+      0.0          416,496         72       5,784.7       5,706.0       5,167      11,324        693.9  Wait@m_rhs.fpp:362                              
+      0.0          412,106         72       5,723.7       5,753.5       5,284       6,091        204.4  Wait@m_rhs.fpp:364                              
+      0.0          411,002        240       1,712.5       1,443.5       1,108       9,949        987.4  Exit Data@m_variables_conversion.fpp:442        
+      0.0          406,814         80       5,085.2       4,923.0       3,350      10,949      1,212.2  Enqueue Upload@m_weno.fpp:896                   
+      0.0          399,928        112       3,570.8       3,408.5       2,678       6,823        552.2  Enqueue Upload@m_global_parameters.fpp:1055     
+      0.0          377,684          8      47,210.5      45,800.5      42,780      63,936      6,890.7  Update@m_weno.fpp:896                           
+      0.0          367,818         64       5,747.2       5,647.5       4,981      11,775        828.3  Wait@m_time_steppers.fpp:399                    
+      0.0          366,676         80       4,583.4       4,482.0       3,013       7,089        841.6  Enqueue Upload@m_weno.fpp:898                   
+      0.0          364,438         64       5,694.3       5,631.0       5,101       8,840        466.8  Wait@m_rhs.fpp:169                              
+      0.0          360,982         64       5,640.3       5,563.5       4,881       7,718        504.6  Wait@m_time_steppers.fpp:236                    
+      0.0          359,523          8      44,940.4      43,765.0      42,348      52,010      3,194.7  Exit Data@m_eos.fpp:101                         
+      0.0          349,219         24      14,550.8      14,794.5      11,372      18,709      1,513.8  Enter Data@m_rhs.fpp:467                        
+      0.0          344,711         64       5,386.1       4,925.5       3,755       9,100      1,375.4  Enqueue Upload@m_rhs.fpp:173                    
+      0.0          340,406          8      42,550.8      42,470.5      40,477      46,036      1,758.6  Update@m_boundary_io.fpp:399                    
+      0.0          339,531          8      42,441.4      41,509.0      39,402      48,712      2,907.3  Update@m_weno.fpp:900                           
+      0.0          339,352          8      42,419.0      41,984.0      38,908      49,669      3,386.9  Update@m_weno.fpp:898                           
+      0.0          337,155         24      14,048.1      14,670.0      10,954      16,426      1,605.9  Enter Data@m_rhs.fpp:470                        
+      0.0          336,720         56       6,012.9       4,628.0       2,322      15,426      3,436.0  Enqueue Upload@m_global_parameters.fpp:1032     
+      0.0          335,139         24      13,964.1      14,744.0      10,964      16,564      1,705.0  Enter Data@m_rhs.fpp:473                        
+      0.0          328,614          8      41,076.8      38,572.0      35,963      59,031      7,407.1  Update@m_eos.fpp:94                             
+      0.0          328,492         64       5,132.7       5,188.5       3,228       9,220      1,152.8  Enqueue Upload@m_rhs.fpp:2304                   
+      0.0          324,525          8      40,565.6      41,736.5      36,431      42,825      2,454.0  Update@m_global_parameters.fpp:1076             
+      0.0          321,882          8      40,235.3      37,507.0      35,067      61,469      8,753.1  Enter Data@m_global_parameters.fpp:1352         
+      0.0          320,806        240       1,336.7       1,232.5         992       2,869        338.2  Exit Data@m_rhs.fpp:1250                        
+      0.0          317,511        240       1,323.0       1,200.5         981       4,138        410.8  Exit Data@m_rhs.fpp:1334                        
+      0.0          314,911         32       9,841.0       9,293.0       6,930      13,483      1,834.4  Exit Data@m_rhs.fpp:2304                        
+      0.0          314,365         64       4,912.0       4,755.5       3,223       7,804      1,064.8  Enqueue Upload@m_rhs.fpp:2305                   
+      0.0          313,673        240       1,307.0       1,234.0         977       4,832        331.3  Exit Data@m_rhs.fpp:1501                        
+      0.0          310,997         16      19,437.3      19,011.0      16,148      22,822      1,681.7  Enter Data@m_time_steppers.fpp:100              
+      0.0          308,106          8      38,513.3      37,368.5      36,679      44,945      2,799.8  Update@m_global_parameters.fpp:1032             
+      0.0          306,644         32       9,582.6       9,308.0       7,583      14,176      1,503.7  Exit Data@m_rhs.fpp:2305                        
+      0.0          302,775         72       4,205.2       4,017.0       2,941      10,550      1,084.4  Enqueue Upload@m_rhs.fpp:334                    
+      0.0          286,389          8      35,798.6      35,863.5      34,468      36,469        615.2  Update@m_global_parameters.fpp:1196             
+      0.0          277,991         64       4,343.6       4,269.5       2,547       6,203        833.4  Enqueue Upload@m_mpi_common.fpp:105             
+      0.0          273,748          8      34,218.5      33,673.0      31,982      39,712      2,350.4  Update@m_boundary_io.fpp:404                    
+      0.0          273,178         64       4,268.4       3,817.5       3,270      10,522      1,444.2  Wait@m_start_up.fpp:821                         
+      0.0          265,237          8      33,154.6      32,903.5      30,910      36,427      1,690.8  Update@m_global_parameters.fpp:1192             
+      0.0          264,421         64       4,131.6       4,084.0       3,081       5,783        610.1  Enqueue Upload@m_global_parameters.fpp:1394     
+      0.0          262,503         48       5,468.8       5,397.0       3,456       8,633      1,369.4  Enqueue Upload@m_rhs.fpp:2380                   
+      0.0          259,383         48       5,403.8       5,280.0       3,805       7,821      1,047.0  Enqueue Upload@m_rhs.fpp:2379                   
+      0.0          257,539         56       4,598.9       4,354.0       2,945       8,506      1,015.3  Enqueue Upload@m_weno.fpp:900                   
+      0.0          255,161         32       7,973.8       7,843.0       5,322      12,384      1,654.0  Enqueue Upload@m_start_up.fpp:987               
+      0.0          254,584         64       3,977.9       3,923.0       2,931       5,506        595.7  Enqueue Upload@m_global_parameters.fpp:1368     
+      0.0          253,951         64       3,968.0       3,876.5       2,870       6,912        759.4  Enqueue Upload@m_global_parameters.fpp:1397     
+      0.0          252,083         72       3,501.2       3,523.0       2,688       4,998        503.0  Enqueue Upload@m_rhs.fpp:473                    
+      0.0          251,395         64       3,928.0       4,010.0       3,098       5,485        572.1  Enqueue Upload@m_global_parameters.fpp:1400     
+      0.0          240,653         16      15,040.8      15,186.0      10,875      20,148      3,419.4  Enqueue Upload@m_boundary_io.fpp:399            
+      0.0          239,622         48       4,992.1       5,094.5       2,886       7,676      1,099.2  Enqueue Upload@m_time_steppers.fpp:1206         
+      0.0          238,987          8      29,873.4      30,402.5      27,583      31,328      1,340.0  Enter Data@m_global_parameters.fpp:1056         
+      0.0          238,831         40       5,970.8       5,604.0       3,698      12,046      1,893.0  Enqueue Upload@m_weno.fpp:118                   
+      0.0          237,735         40       5,943.4       3,455.0       2,692      21,985      5,489.1  Enqueue Upload@m_eos.fpp:60                     
+      0.0          232,139         72       3,224.2       2,819.5       2,395      24,648      2,613.6  Enqueue Upload@m_eos.fpp:94                     
+      0.0          231,218         48       4,817.0       4,891.5       3,126       7,521        985.5  Enqueue Upload@m_time_steppers.fpp:1205         
+      0.0          230,974         40       5,774.4       5,843.5       3,980       8,937      1,097.6  Enqueue Upload@m_riemann_solvers.fpp:101        
+      0.0          228,584         24       9,524.3       9,120.5       7,639      13,042      1,536.8  Exit Data@m_time_steppers.fpp:1205              
+      0.0          226,725         24       9,446.9       9,262.0       6,927      12,818      1,230.5  Exit Data@m_time_steppers.fpp:1206              
+      0.0          225,085         72       3,126.2       2,875.0       2,431       8,161      1,002.8  Enqueue Upload@m_global_parameters.fpp:1076     
+      0.0          222,526          8      27,815.8      27,685.0      26,738      30,419      1,182.5  Enter Data@m_rhs.fpp:164                        
+      0.0          221,956         40       5,548.9       5,325.0       3,472       9,091      1,206.2  Enqueue Upload@m_riemann_solvers.fpp:103        
+      0.0          218,990         40       5,474.8       5,372.0       3,692       9,491      1,225.5  Enqueue Upload@m_weno.fpp:119                   
+      0.0          211,527        240         881.4         795.0         550       2,377        319.6  Exit Data@m_mpi_common.fpp:1109                 
+      0.0          208,845         40       5,221.1       4,816.5       3,410      10,046      1,292.6  Enqueue Upload@m_weno.fpp:121                   
+      0.0          208,501        240         868.8         766.0         566       2,688        343.4  Exit Data@m_mpi_common.fpp:963                  
+      0.0          208,396        240         868.3         794.0         538       3,980        319.0  Exit Data@m_mpi_common.fpp:859                  
+      0.0          206,654        240         861.1         793.0         503       2,437        256.0  Exit Data@m_mpi_common.fpp:738                  
+      0.0          206,008         40       5,150.2       4,984.5       3,204       7,371      1,093.6  Enqueue Upload@m_riemann_solvers.fpp:114        
+      0.0          205,849        240         857.7         786.5         563       3,127        340.7  Exit Data@m_mpi_common.fpp:1035                 
+      0.0          202,447         56       3,615.1       3,435.5       2,868       7,905        703.8  Enqueue Upload@m_global_parameters.fpp:1057     
+      0.0          202,063         16      12,628.9      12,439.5      11,065      16,676      1,423.6  Enter Data@m_rhs.fpp:200                        
+      0.0          201,844        240         841.0         789.0         594       3,528        252.3  Exit Data@m_rhs.fpp:998                         
+      0.0          197,895         40       4,947.4       4,648.0       3,060      10,836      1,452.4  Enqueue Upload@m_riemann_solvers.fpp:147        
+      0.0          197,135         40       4,928.4       4,503.0       3,194      12,298      1,877.6  Enqueue Upload@m_time_steppers.fpp:347          
+      0.0          195,708         16      12,231.8      12,230.5      10,865      13,651        693.1  Enter Data@m_rhs.fpp:207                        
+      0.0          195,434         48       4,071.5       3,905.0       3,269       5,783        606.0  Enqueue Upload@m_rhs.fpp:224                    
+      0.0          193,669         40       4,841.7       4,552.0       3,245      11,112      1,436.5  Enqueue Upload@m_riemann_solvers.fpp:141        
+      0.0          192,624         72       2,675.3       2,730.5       1,995       3,570        397.8  Enqueue Upload@m_global_parameters.fpp:1196     
+      0.0          192,215          8      24,026.9      24,028.5      21,185      25,668      1,369.2  Enter Data@m_time_steppers.fpp:412              
+      0.0          191,332        240         797.2         746.0         527       1,936        214.1  Exit Data@m_mpi_common.fpp:797                  
+      0.0          190,847          8      23,855.9      22,770.0      22,319      30,248      2,678.5  Exit Data@m_global_parameters.fpp:1394          
+      0.0          190,741         40       4,768.5       4,677.0       3,576       7,453        888.5  Enqueue Upload@m_riemann_solvers.fpp:134        
+      0.0          189,750         40       4,743.8       4,566.0       2,993       7,499      1,010.4  Enqueue Upload@m_weno.fpp:154                   
+      0.0          188,588         40       4,714.7       4,467.0       3,339       7,120        948.4  Enqueue Upload@m_weno.fpp:122                   
+      0.0          186,253          8      23,281.6      23,157.0      21,058      25,651      1,549.2  Exit Data@m_rhs.fpp:2379                        
+      0.0          186,041         40       4,651.0       4,305.5       3,273       7,105        943.8  Enqueue Upload@m_weno.fpp:156                   
+      0.0          184,513         40       4,612.8       4,258.5       3,179       6,753      1,114.8  Enqueue Upload@m_global_parameters.fpp:1036     
+      0.0          184,362         32       5,761.3       5,101.0       3,669      10,865      1,885.5  Enqueue Upload@m_cbc.fpp:101                    
+      0.0          184,105         48       3,835.5       3,713.0       2,893       7,645        881.8  Enqueue Upload@m_rhs.fpp:353                    
+      0.0          183,618          8      22,952.3      22,801.5      18,945      28,432      2,983.7  Enter Data@m_time_steppers.fpp:413              
+      0.0          182,789          8      22,848.6      23,058.0      19,506      26,145      2,852.4  Exit Data@m_rhs.fpp:2380                        
+      0.0          182,399         40       4,560.0       4,243.5       3,102       7,421        949.8  Enqueue Upload@m_weno.fpp:157                   
+      0.0          182,371         40       4,559.3       4,486.5       3,249       7,413        954.5  Enqueue Upload@m_weno.fpp:175                   
+      0.0          181,900         40       4,547.5       4,527.5       3,220       6,474        774.7  Enqueue Upload@m_rhs.fpp:346                    
+      0.0          181,470          8      22,683.8      22,647.0      21,838      23,353        466.0  Update@m_global_parameters.fpp:1197             
+      0.0          181,233         40       4,530.8       4,387.0       3,367       7,262        864.4  Enqueue Upload@m_weno.fpp:153                   
+      0.0          180,846         40       4,521.1       4,310.5       3,422       7,408        877.0  Enqueue Upload@m_weno.fpp:174                   
+      0.0          180,254          8      22,531.8      22,753.0      19,633      24,412      1,451.8  Enter Data@m_time_steppers.fpp:420              
+      0.0          178,213         32       5,569.2       5,540.0       5,021       6,093        245.2  Wait@m_rhs.fpp:173                              
+      0.0          177,672          8      22,209.0      22,919.5      18,424      25,400      2,374.7  Exit Data@m_rhs.fpp:2309                        
+      0.0          177,275         16      11,079.7      10,763.0      10,113      13,788      1,122.3  Enqueue Upload@m_boundary_io.fpp:404            
+      0.0          176,957          8      22,119.6      21,872.0      19,322      25,604      2,368.1  Update@m_cbc.fpp:101                            
+      0.0          176,828          8      22,103.5      21,620.5      20,799      25,767      1,631.1  Exit Data@m_global_parameters.fpp:1368          
+      0.0          176,309         40       4,407.7       4,156.5       2,980       7,188      1,038.3  Enqueue Upload@m_weno.fpp:177                   
+      0.0          176,071         48       3,668.1       3,541.5       2,854       5,690        573.1  Enqueue Upload@m_rhs.fpp:355                    
+      0.0          176,045         48       3,667.6       3,731.5       2,953       5,549        481.9  Enqueue Upload@m_rhs.fpp:333                    
+      0.0          175,340          8      21,917.5      21,433.5      19,207      25,938      2,066.5  Exit Data@m_global_parameters.fpp:1397          
+      0.0          175,113          8      21,889.1      22,581.0      16,042      23,300      2,391.5  Update@m_global_parameters.fpp:1220             
+      0.0          174,072         64       2,719.9       2,500.5       2,046       4,854        576.6  Enqueue Upload@m_global_parameters.fpp:1192     
+      0.0          173,897          8      21,737.1      21,643.5      18,633      27,554      2,765.0  Enter Data@m_time_steppers.fpp:417              
+      0.0          173,834         32       5,432.3       5,254.0       3,434       7,637      1,259.7  Enqueue Upload@m_rhs.fpp:2439                   
+      0.0          173,609         32       5,425.3       5,187.5       3,311       8,925      1,283.0  Enqueue Upload@m_rhs.fpp:2309                   
+      0.0          173,176         40       4,329.4       4,108.5       3,196       6,455        789.4  Enqueue Upload@m_weno.fpp:178                   
+      0.0          172,321          8      21,540.1      21,118.5      19,624      26,051      1,960.2  Exit Data@m_global_parameters.fpp:1400          
+      0.0          171,703         24       7,154.3       6,810.0       4,489      10,396      1,801.5  Enqueue Upload@m_riemann_solvers.fpp:96         
+      0.0          171,565          8      21,445.6      21,387.0      18,306      23,948      1,597.7  Enter Data@m_time_steppers.fpp:421              
+      0.0          170,869         48       3,559.8       3,549.0       2,746       5,526        532.6  Enqueue Upload@m_rhs.fpp:356                    
+      0.0          170,437         40       4,260.9       4,293.5       3,315       5,947        632.2  Enqueue Upload@m_time_steppers.fpp:381          
+      0.0          169,098          8      21,137.3      20,969.0      19,798      23,110      1,004.2  Update@m_global_parameters.fpp:1222             
+      0.0          169,008          8      21,126.0      20,531.0      18,719      24,887      2,212.1  Enter Data@m_time_steppers.fpp:416              
+      0.0          168,753          8      21,094.1      20,461.5      19,563      25,328      1,866.2  Update@m_variables_conversion.fpp:288           
+      0.0          167,931         56       2,998.8       2,940.0       2,080       4,655        651.0  Enqueue Upload@m_variables_conversion.fpp:288   
+      0.0          167,823         48       3,496.3       3,378.0       2,655       5,393        514.6  Enqueue Upload@m_rhs.fpp:354                    
+      0.0          167,406          8      20,925.8      20,022.5      18,787      28,428      3,085.0  Update@m_global_parameters.fpp:1224             
+      0.0          167,134         32       5,222.9       4,773.5       3,519       9,150      1,512.5  Enqueue Upload@m_weno.fpp:1764                  
+      0.0          166,937         32       5,216.8       5,207.0       3,223       8,483      1,245.6  Enqueue Upload@m_rhs.fpp:2315                   
+      0.0          166,888         48       3,476.8       3,273.0       2,178      10,261      1,606.7  Enqueue Upload@m_variables_conversion.fpp:279   
+      0.0          166,259         32       5,195.6       5,132.0       3,844       7,628      1,027.1  Enqueue Upload@m_time_steppers.fpp:1124         
+      0.0          165,664          8      20,708.0      19,692.5      18,705      25,644      2,430.5  Update@m_global_parameters.fpp:1193             
+      0.0          165,332         16      10,333.3      10,289.5       8,964      13,451      1,230.1  Exit Data@m_time_steppers.fpp:1124              
+      0.0          164,449         48       3,426.0       3,429.0       2,744       4,031        373.1  Enqueue Upload@m_rhs.fpp:357                    
+      0.0          163,594         48       3,408.2       3,419.0       2,717       4,539        426.0  Enqueue Upload@m_rhs.fpp:358                    
+      0.0          163,427          8      20,428.4      20,367.5      19,863      21,250        439.9  Enter Data@m_rhs.fpp:165                        
+      0.0          161,444         48       3,363.4       3,456.5       2,817       4,348        386.6  Enqueue Upload@m_rhs.fpp:467                    
+      0.0          161,126         16      10,070.4       8,919.5       5,572      16,597      4,201.5  Enter Data@m_rhs.fpp:201                        
+      0.0          160,823         40       4,020.6       3,983.5       3,167       5,214        563.4  Enqueue Upload@m_rhs.fpp:316                    
+      0.0          160,180         40       4,004.5       3,841.0       2,888       5,253        634.1  Enqueue Upload@m_rhs.fpp:317                    
+      0.0          158,562         40       3,964.1       3,909.0       2,955       5,169        637.4  Enqueue Upload@m_time_steppers.fpp:421          
+      0.0          156,726         40       3,918.2       3,886.0       2,881       4,950        545.4  Enqueue Upload@m_rhs.fpp:323                    
+      0.0          155,834         48       3,246.5       3,250.0       2,700       3,854        354.0  Enqueue Upload@m_rhs.fpp:470                    
+      0.0          155,702         48       3,243.8       3,057.5       2,052       6,022        819.6  Enqueue Upload@m_global_parameters.fpp:1229     
+      0.0          153,525         40       3,838.1       3,774.0       2,980       5,349        653.1  Enqueue Upload@m_rhs.fpp:320                    
+      0.0          149,976          8      18,747.0      17,314.0      15,613      25,145      3,078.1  Enter Data@m_global_parameters.fpp:1057         
+      0.0          149,454         40       3,736.3       3,726.5       2,943       5,143        587.6  Enqueue Upload@m_rhs.fpp:326                    
+      0.0          149,240          8      18,655.0      18,485.5      14,920      21,923      2,079.6  Enter Data@m_rhs.fpp:463                        
+      0.0          147,571         40       3,689.3       3,630.5       3,019       6,219        560.3  Enqueue Upload@m_eos.fpp:57                     
+      0.0          146,857         40       3,671.4       3,514.0       3,086       4,721        451.0  Enqueue Upload@m_eos.fpp:55                     
+      0.0          146,665         40       3,666.6       3,545.0       3,010       4,778        502.2  Enqueue Upload@m_rhs.fpp:318                    
+      0.0          146,373         40       3,659.3       3,431.5       2,951       4,932        572.1  Enqueue Upload@m_rhs.fpp:321                    
+      0.0          146,218         24       6,092.4       5,817.5       3,911      11,773      1,817.6  Enqueue Upload@m_rhs.fpp:208                    
+      0.0          146,206          8      18,275.8      18,713.0      15,210      18,963      1,249.6  Enter Data@m_rhs.fpp:462                        
+      0.0          145,980         40       3,649.5       3,586.5       2,770       4,698        532.5  Enqueue Upload@m_rhs.fpp:327                    
+      0.0          145,512          8      18,189.0      17,848.5      16,757      22,175      1,686.3  Update@m_global_parameters.fpp:1205             
+      0.0          145,457          8      18,182.1      18,641.5      15,551      21,834      2,322.1  Enter Data@m_rhs.fpp:464                        
+      0.0          145,396          8      18,174.5      18,234.5      17,334      18,742        489.8  Enter Data@m_mpi_common.fpp:108                 
+      0.0          144,688          8      18,086.0      17,655.0      15,955      21,772      1,885.4  Enter Data@m_weno.fpp:118                       
+      0.0          144,457         40       3,611.4       3,650.5       3,032       4,507        378.8  Enqueue Upload@m_eos.fpp:59                     
+      0.0          144,209         40       3,605.2       3,604.0       2,842       4,553        381.5  Enqueue Upload@m_variables_conversion.fpp:281   
+      0.0          143,975         40       3,599.4       3,589.5       2,910       4,857        537.2  Enqueue Upload@m_rhs.fpp:324                    
+      0.0          143,313         32       4,478.5       4,000.5       2,925       8,842      1,302.4  Enqueue Upload@m_riemann_solvers.fpp:82         
+      0.0          143,230         40       3,580.8       3,529.0       2,784       4,498        451.8  Enqueue Upload@m_global_parameters.fpp:1242     
+      0.0          143,192         40       3,579.8       3,444.5       3,006       4,593        426.1  Enqueue Upload@m_global_parameters.fpp:1240     
+      0.0          143,153         40       3,578.8       3,477.0       2,644       5,132        559.9  Enqueue Upload@m_global_parameters.fpp:1251     
+      0.0          142,917         24       5,954.9       5,861.5       5,389       9,717        819.2  Wait@m_rhs.fpp:357                              
+      0.0          142,763          8      17,845.4      17,984.0      16,879      18,470        542.4  Update@m_time_steppers.fpp:453                  
+      0.0          142,103         40       3,552.6       3,395.5       2,882       5,224        476.2  Enqueue Upload@m_eos.fpp:56                     
+      0.0          142,044         24       5,918.5       5,866.0       5,282       8,413        574.4  Wait@m_rhs.fpp:333                              
+      0.0          141,763          8      17,720.4      16,853.0      16,374      22,783      2,115.8  Update@m_global_parameters.fpp:1207             
+      0.0          141,691         40       3,542.3       3,403.0       2,730       5,237        570.6  Enqueue Upload@m_global_parameters.fpp:1252     
+      0.0          141,493         40       3,537.3       3,379.5       2,862       4,580        446.3  Enqueue Upload@m_rhs.fpp:325                    
+      0.0          141,481         32       4,421.3       4,222.0       2,756       9,341      1,372.8  Enqueue Upload@m_rhs.fpp:207                    
+      0.0          141,283         40       3,532.1       3,392.0       2,756       5,574        549.5  Enqueue Upload@m_eos.fpp:58                     
+      0.0          140,351         24       5,848.0       5,842.5       5,411       6,195        208.9  Wait@m_rhs.fpp:353                              
+      0.0          139,955         32       4,373.6       4,330.5       3,327       6,389        776.6  Enqueue Upload@m_variables_conversion.fpp:1260  
+      0.0          139,830          8      17,478.8      17,114.5      16,718      20,399      1,203.7  Update@m_variables_conversion.fpp:279           
+      0.0          139,811          8      17,476.4      16,925.5      15,839      22,142      1,991.1  Update@m_start_up.fpp:987                       
+      0.0          139,787         40       3,494.7       3,411.0       2,716       5,953        574.9  Enqueue Upload@m_global_parameters.fpp:1259     
+      0.0          139,691         40       3,492.3       3,353.5       2,895       4,210        413.3  Enqueue Upload@m_eos.fpp:54                     
+      0.0          139,607         40       3,490.2       3,382.5       2,875       4,340        396.1  Enqueue Upload@m_global_parameters.fpp:1250     
+      0.0          139,398         24       5,808.3       5,702.5       5,271       8,470        599.4  Wait@m_rhs.fpp:334                              
+      0.0          139,100         40       3,477.5       3,339.0       2,911       5,204        446.5  Enqueue Upload@m_global_parameters.fpp:1260     
+      0.0          138,965         24       5,790.2       5,788.0       5,452       6,326        208.8  Wait@m_rhs.fpp:473                              
+      0.0          138,917         24       5,788.2       5,769.5       5,383       6,227        204.7  Wait@m_rhs.fpp:470                              
+      0.0          138,074         24       5,753.1       5,798.5       5,348       5,974        196.4  Wait@m_rhs.fpp:467                              
+      0.0          137,643         40       3,441.1       3,397.5       2,845       4,106        384.8  Enqueue Upload@m_global_parameters.fpp:1249     
+      0.0          137,273         40       3,431.8       3,346.0       2,918       4,136        377.8  Enqueue Upload@m_global_parameters.fpp:1239     
+      0.0          136,856         24       5,702.3       5,761.5       5,229       6,100        242.4  Wait@m_rhs.fpp:355                              
+      0.0          136,248         24       5,677.0       5,698.5       5,249       5,953        180.3  Wait@m_rhs.fpp:354                              
+      0.0          136,078         24       5,669.9       5,683.5       5,261       6,007        212.4  Wait@m_rhs.fpp:356                              
+      0.0          135,808         24       5,658.7       5,689.5       5,197       5,891        169.2  Wait@m_rhs.fpp:358                              
+      0.0          135,673         40       3,391.8       3,304.5       2,798       4,077        411.1  Enqueue Upload@m_global_parameters.fpp:1261     
+      0.0          135,548         40       3,388.7       3,261.0       2,815       4,266        386.9  Enqueue Upload@m_global_parameters.fpp:1241     
+      0.0          134,707          8      16,838.4      16,874.0      16,376      17,316        335.6  Update@m_global_parameters.fpp:1229             
+      0.0          134,324          8      16,790.5      16,876.5      13,833      19,038      1,530.1  Enter Data@m_time_steppers.fpp:347              
+      0.0          133,647         32       4,176.5       4,155.0       3,110       6,003        705.2  Enqueue Upload@m_weno.fpp:1772                  
+      0.0          131,527          8      16,440.9      16,981.0      13,696      19,782      2,218.7  Enter Data@m_time_steppers.fpp:344              
+      0.0          131,474         32       4,108.6       3,601.0       2,942       8,297      1,422.6  Enqueue Upload@m_time_steppers.fpp:100          
+      0.0          130,955         32       4,092.3       3,863.0       3,008       7,049        917.5  Enqueue Upload@m_boundary_common.fpp:45         
+      0.0          129,785          8      16,223.1      16,096.0      12,834      20,030      2,015.1  Enter Data@m_time_steppers.fpp:378              
+      0.0          129,251         32       4,039.1       4,027.5       3,149       5,871        623.4  Enqueue Upload@m_mpi_common.fpp:1995            
+      0.0          128,706          8      16,088.3      15,594.0      14,130      19,346      1,676.9  Exit Data@m_rhs.fpp:2315                        
+      0.0          128,355         32       4,011.1       3,921.5       3,124       5,423        592.5  Enqueue Upload@m_weno.fpp:1765                  
+      0.0          124,906         32       3,903.3       3,800.0       3,025       5,662        675.6  Enqueue Upload@m_rhs.fpp:200                    
+      0.0          124,375          8      15,546.9      15,094.5      14,129      18,465      1,458.5  Enter Data@m_riemann_solvers.fpp:101            
+      0.0          123,903          8      15,487.9      14,296.0      12,667      23,771      3,627.5  Exit Data@m_weno.fpp:1764                       
+      0.0          122,294          8      15,286.8      15,377.5      13,694      18,450      1,577.5  Exit Data@m_rhs.fpp:2439                        
+      0.0          121,893         32       3,809.2       3,679.5       2,667       5,485        661.3  Enqueue Upload@m_weno.fpp:1771                  
+      0.0          120,871         32       3,777.2       3,875.0       3,039       4,781        481.4  Enqueue Upload@m_global_parameters.fpp:1369     
+      0.0          120,690         32       3,771.6       3,705.0       3,149       4,365        390.2  Enqueue Upload@m_mpi_common.fpp:108             
+      0.0          119,173          8      14,896.6      15,099.0      12,225      17,496      1,636.1  Enter Data@m_riemann_solvers.fpp:157            
+      0.0          118,740          8      14,842.5      15,378.0      11,942      16,736      1,758.1  Enter Data@m_time_steppers.fpp:381              
+      0.0          118,632         32       3,707.3       3,597.0       3,001       5,192        510.3  Enqueue Upload@m_weno.fpp:1779                  
+      0.0          118,320         16       7,395.0       6,832.0       4,803      11,887      2,167.9  Enqueue Upload@m_time_steppers.fpp:1127         
+      0.0          118,220          8      14,777.5      14,538.5      13,810      17,240      1,102.5  Update@m_global_parameters.fpp:1132             
+      0.0          117,910         32       3,684.7       3,571.0       3,096       4,818        416.3  Enqueue Upload@m_mpi_common.fpp:116             
+      0.0          117,133          8      14,641.6      14,647.0      13,639      15,886        805.6  Enter Data@m_riemann_solvers.fpp:114            
+      0.0          117,021          8      14,627.6      14,334.0      13,229      18,010      1,566.3  Enter Data@m_weno.fpp:119                       
+      0.0          116,463         32       3,639.5       3,605.5       2,588       5,358        573.0  Enqueue Upload@m_weno.fpp:1778                  
+      0.0          115,804          8      14,475.5      14,425.0      13,981      14,957        279.6  Update@m_mpi_common.fpp:105                     
+      0.0          115,756          8      14,469.5      13,255.0      11,798      19,378      2,994.2  Enter Data@m_riemann_solvers.fpp:141            
+      0.0          115,537          8      14,442.1      13,930.0      13,452      16,872      1,142.8  Enter Data@m_weno.fpp:121                       
+      0.0          114,830          8      14,353.8      13,389.0      12,679      18,329      2,281.2  Enter Data@m_riemann_solvers.fpp:147            
+      0.0          113,897          8      14,237.1      13,917.0      12,348      18,826      2,087.7  Exit Data@m_variables_conversion.fpp:1260       
+      0.0          113,867          8      14,233.4      14,064.0      13,290      16,455      1,016.7  Enter Data@m_riemann_solvers.fpp:103            
+      0.0          112,663          8      14,082.9      14,374.0      13,002      14,710        695.2  Wait@m_boundary_io.fpp:393                      
+      0.0          111,960          8      13,995.0      13,465.5      13,023      18,188      1,705.6  Update@m_global_parameters.fpp:1172             
+      0.0          111,554          8      13,944.3      13,739.5      12,853      15,448        820.1  Enter Data@m_riemann_solvers.fpp:77             
+      0.0          110,782          8      13,847.8      13,575.5      13,252      15,453        723.8  Enter Data@m_riemann_solvers.fpp:134            
+      0.0          110,691          8      13,836.4      13,393.5      12,607      15,904      1,225.4  Enqueue Upload@m_mpi_common.fpp:1776            
+      0.0          109,785         16       6,861.6       6,385.5       5,324      11,946      1,889.2  Enqueue Upload@m_global_parameters.fpp:1352     
+      0.0          109,461          8      13,682.6      13,633.5      12,923      14,122        386.0  Enter Data@m_weno.fpp:156                       
+      0.0          108,448         16       6,778.0       6,300.0       4,600      11,730      1,879.9  Enqueue Upload@m_time_steppers.fpp:1199         
+      0.0          108,296          8      13,537.0      13,095.5      12,609      16,846      1,408.6  Enter Data@m_rhs.fpp:224                        
+      0.0          108,201          8      13,525.1      13,508.5      12,456      14,759        710.4  Enter Data@m_weno.fpp:122                       
+      0.0          108,165          8      13,520.6      12,853.0      12,621      18,263      1,923.9  Update@m_global_parameters.fpp:1195             
+      0.0          108,028          8      13,503.5      13,376.0      12,407      15,253        839.0  Enter Data@m_weno.fpp:154                       
+      0.0          108,008          8      13,501.0      13,432.0      13,115      14,250        375.6  Update@m_variables_conversion.fpp:300           
+      0.0          107,959          8      13,494.9      13,534.5      12,555      14,667        662.6  Enter Data@m_weno.fpp:159                       
+      0.0          107,935          8      13,491.9      12,966.5      11,904      18,735      2,202.4  Enter Data@m_time_steppers.fpp:388              
+      0.0          107,779          8      13,472.4      13,240.5      12,739      15,676        930.7  Enter Data@m_weno.fpp:175                       
+      0.0          107,353          8      13,419.1      13,080.5      12,081      17,128      1,657.6  Enter Data@m_time_steppers.fpp:353              
+      0.0          107,339         16       6,708.7       6,724.5       5,483       8,352        810.4  Enqueue Upload@m_riemann_solvers.fpp:188        
+      0.0          106,915          8      13,364.4      13,255.0      12,938      14,645        544.1  Enter Data@m_weno.fpp:124                       
+      0.0          106,791          8      13,348.9      13,317.5      12,239      14,566        687.0  Enter Data@m_rhs.fpp:328                        
+      0.0          106,654          8      13,331.8      13,180.0      12,771      14,651        633.1  Enter Data@m_weno.fpp:157                       
+      0.0          105,944          8      13,243.0      13,213.0      12,493      14,369        606.7  Enter Data@m_time_steppers.fpp:410              
+      0.0          105,493          8      13,186.6      13,143.0      12,082      14,023        615.7  Enter Data@m_time_steppers.fpp:442              
+      0.0          105,274          8      13,159.3      13,111.0      12,343      13,747        520.3  Enter Data@m_rhs.fpp:348                        
+      0.0          105,269          8      13,158.6      12,606.5      11,866      17,740      1,933.2  Enter Data@m_rhs.fpp:318                        
+      0.0          105,249          8      13,156.1      12,968.5      12,031      15,209        980.3  Enter Data@m_weno.fpp:177                       
+      0.0          105,152          8      13,144.0      12,807.5      11,786      15,367      1,318.9  Enter Data@m_global_parameters.fpp:1036         
+      0.0          105,133          8      13,141.6      13,180.5      12,269      13,844        566.8  Enter Data@m_time_steppers.fpp:319              
+      0.0          104,781          8      13,097.6      11,947.5      10,512      17,363      2,709.1  Exit Data@m_time_steppers.fpp:1127              
+      0.0          104,594          8      13,074.3      12,866.0      11,791      15,590      1,135.4  Enter Data@m_rhs.fpp:323                        
+      0.0          104,583          8      13,072.9      12,978.0      12,570      13,978        486.7  Enter Data@m_weno.fpp:174                       
+      0.0          104,387          8      13,048.4      12,979.0      12,372      13,599        429.3  Enter Data@m_rhs.fpp:346                        
+      0.0          104,361          8      13,045.1      12,958.0      12,581      13,634        369.5  Enter Data@m_weno.fpp:153                       
+      0.0          104,187          8      13,023.4      13,044.0      12,200      13,838        455.2  Enter Data@m_time_steppers.fpp:232              
+      0.0          103,990          8      12,998.8      12,908.0      12,500      14,024        467.3  Enter Data@m_weno.fpp:178                       
+      0.0          103,909          8      12,988.6      13,116.0      12,306      13,601        456.1  Enter Data@m_weno.fpp:180                       
+      0.0          103,179          8      12,897.4      12,752.0      11,469      15,140      1,048.3  Enter Data@m_variables_conversion.fpp:290       
+      0.0          103,057          8      12,882.1      12,828.0      12,407      13,645        406.3  Enter Data@m_riemann_solvers.fpp:85             
+      0.0          102,787          8      12,848.4      12,211.5      11,178      18,210      2,218.6  Enter Data@m_variables_conversion.fpp:281       
+      0.0          102,217          8      12,777.1      12,675.5      12,201      13,313        403.3  Enter Data@m_rhs.fpp:317                        
+      0.0          102,197          8      12,774.6      12,303.5      11,352      16,593      1,633.0  Enter Data@m_rhs.fpp:326                        
+      0.0          101,979          8      12,747.4      12,935.5      11,463      13,986        795.3  Enter Data@m_boundary_common.fpp:47             
+      0.0          101,970          8      12,746.3      12,728.5      11,746      13,748        614.6  Enter Data@m_rhs.fpp:316                        
+      0.0          101,924         24       4,246.8       3,974.5       3,146       6,853        850.7  Enqueue Upload@m_time_steppers.fpp:350          
+      0.0          101,223          8      12,652.9      12,524.5      11,646      13,594        617.9  Enter Data@m_rhs.fpp:327                        
+      0.0          100,876          8      12,609.5      12,219.5      11,991      14,414        892.0  Enter Data@m_eos.fpp:55                         
+      0.0          100,870          8      12,608.8      12,482.5      11,811      13,463        685.4  Enter Data@m_rhs.fpp:324                        
+      0.0          100,812         40       2,520.3       2,364.0       2,036       4,141        390.7  Enqueue Upload@m_global_parameters.fpp:1197     
+      0.0          100,433         24       4,184.7       3,988.0       3,404       5,311        584.6  Enqueue Upload@m_time_steppers.fpp:384          
+      0.0          100,400          8      12,550.0      12,605.0      11,956      13,125        427.3  Enter Data@m_global_parameters.fpp:1055         
+      0.0          100,082          8      12,510.3      12,269.5      11,642      13,600        786.2  Enter Data@m_rhs.fpp:321                        
+      0.0           99,886          8      12,485.8      12,503.0      11,943      13,184        455.9  Enter Data@m_rhs.fpp:320                        
+      0.0           99,856         16       6,241.0       5,975.5       5,254       9,360        937.1  Wait@m_rhs.fpp:224                              
+      0.0           99,765          8      12,470.6      12,494.5      11,805      12,886        338.3  Enter Data@m_time_steppers.fpp:96               
+      0.0           98,510          8      12,313.8      12,394.5      11,351      12,700        434.1  Enter Data@m_global_parameters.fpp:1239         
+      0.0           98,508         16       6,156.8       6,081.5       5,368       6,901        493.0  Enter Data@m_rhs.fpp:208                        
+      0.0           98,503          8      12,312.9      12,410.0      11,595      12,919        434.9  Enter Data@m_global_parameters.fpp:1249         
+      0.0           98,437          8      12,304.6      12,353.0      11,653      12,747        319.4  Enter Data@m_eos.fpp:54                         
+      0.0           98,352          8      12,294.0      12,160.5      11,598      13,247        530.4  Enter Data@m_rhs.fpp:325                        
+      0.0           97,854          8      12,231.8      12,225.0      11,063      13,013        592.1  Enter Data@m_global_parameters.fpp:1251         
+      0.0           97,776         32       3,055.5       2,949.5       2,674       5,104        450.4  Enqueue Upload@m_global_parameters.fpp:1222     
+      0.0           97,383         16       6,086.4       5,792.5       5,276      11,071      1,349.4  Wait@m_rhs.fpp:200                              
+      0.0           97,325          8      12,165.6      12,062.0      11,278      13,238        588.2  Enter Data@m_eos.fpp:58                         
+      0.0           96,654          8      12,081.8      12,034.5      11,586      12,450        299.5  Enter Data@m_eos.fpp:59                         
+      0.0           96,348          8      12,043.5      12,095.5      11,286      12,603        457.6  Enter Data@m_eos.fpp:60                         
+      0.0           96,294          8      12,036.8      12,018.5      11,437      12,531        332.7  Enter Data@m_eos.fpp:57                         
+      0.0           95,940          8      11,992.5      12,007.0      11,251      12,875        562.6  Enter Data@m_global_parameters.fpp:1259         
+      0.0           95,918          8      11,989.8      11,797.0      10,427      14,244      1,146.3  Exit Data@m_mpi_common.fpp:1995                 
+      0.0           95,842          8      11,980.3      12,010.5      11,160      12,429        387.3  Enter Data@m_variables_conversion.fpp:282       
+      0.0           95,839          8      11,979.9      12,088.0      11,156      12,864        556.3  Enter Data@m_global_parameters.fpp:1058         
+      0.0           95,689          8      11,961.1      11,921.5      11,021      12,893        556.2  Enter Data@m_global_parameters.fpp:1252         
+      0.0           95,634          8      11,954.3      12,037.0      11,184      12,505        400.3  Enter Data@m_eos.fpp:61                         
+      0.0           95,598          8      11,949.8      12,020.5      11,269      12,567        457.5  Enter Data@m_global_parameters.fpp:1242         
+      0.0           95,476          8      11,934.5      11,657.0      11,032      14,074        985.4  Exit Data@m_weno.fpp:1772                       
+      0.0           95,444          8      11,930.5      11,870.0      11,335      12,634        426.0  Enter Data@m_global_parameters.fpp:1250         
+      0.0           95,237          8      11,904.6      11,889.0      11,228      12,407        388.1  Enter Data@m_global_parameters.fpp:1261         
+      0.0           94,996          8      11,874.5      11,907.0      11,444      12,243        303.5  Enter Data@m_global_parameters.fpp:1241         
+      0.0           94,825          8      11,853.1      11,776.5      11,506      12,295        287.8  Update@m_boundary_common.fpp:89                 
+      0.0           94,700          8      11,837.5      11,731.5      11,371      12,607        415.5  Enter Data@m_eos.fpp:56                         
+      0.0           94,688          8      11,836.0      11,894.5      11,307      12,247        354.6  Enter Data@m_global_parameters.fpp:1240         
+      0.0           93,674          8      11,709.3      11,841.0      10,933      12,109        392.3  Enter Data@m_global_parameters.fpp:1260         
+      0.0           93,597          8      11,699.6      11,619.0      10,965      13,460        786.0  Exit Data@m_weno.fpp:1765                       
+      0.0           93,523          8      11,690.4      11,669.0      10,930      12,234        428.6  Enter Data@m_global_parameters.fpp:1262         
+      0.0           93,336         32       2,916.8       2,621.5       2,080      11,467      1,583.6  Enqueue Upload@m_global_parameters.fpp:1224     
+      0.0           93,015         16       5,813.4       5,811.5       5,487       6,173        223.3  Wait@m_time_steppers.fpp:100                    
+      0.0           91,012          8      11,376.5      11,042.5      10,519      14,541      1,322.2  Update@m_boundary_common.fpp:45                 
+      0.0           89,348          8      11,168.5      11,245.5      10,323      11,898        489.4  Update@m_rhs.fpp:224                            
+      0.0           89,298         16       5,581.1       5,251.5       3,453       9,839      1,699.6  Enqueue Upload@m_riemann_solvers.fpp:157        
+      0.0           88,718         16       5,544.9       5,456.0       3,211      10,516      1,676.5  Enqueue Upload@m_time_steppers.fpp:1179         
+      0.0           88,705         16       5,544.1       4,688.5       3,688      10,072      2,012.5  Enqueue Upload@m_riemann_solvers.fpp:186        
+      0.0           88,524         16       5,532.8       5,749.5       2,453       6,024        845.6  Wait@m_rhs.fpp:207                              
+      0.0           88,221          8      11,027.6      10,797.0      10,258      13,164        890.0  Update@m_mpi_common.fpp:116                     
+      0.0           87,491          8      10,936.4      10,797.5      10,186      12,697        795.6  Exit Data@m_weno.fpp:1771                       
+      0.0           87,230          8      10,903.8      10,761.5      10,022      12,369        710.5  Exit Data@m_global_parameters.fpp:1369          
+      0.0           85,984          8      10,748.0      10,553.5       9,928      11,627        584.1  Update@m_riemann_solvers.fpp:82                 
+      0.0           84,638          8      10,579.8      10,458.0      10,196      11,815        524.8  Exit Data@m_weno.fpp:1779                       
+      0.0           84,333          8      10,541.6      10,127.0       9,851      13,441      1,185.3  Update@m_eos.fpp:93                             
+      0.0           84,009         16       5,250.6       5,441.0       4,057       7,259        960.8  Enqueue Upload@m_time_steppers.fpp:1203         
+      0.0           83,711          8      10,463.9      10,085.5       9,759      12,847      1,018.4  Exit Data@m_weno.fpp:1778                       
+      0.0           83,435         16       5,214.7       5,112.0       4,110       7,091        936.2  Enqueue Upload@m_time_steppers.fpp:1210         
+      0.0           83,218         16       5,201.1       5,066.0       3,973       7,548      1,045.8  Enqueue Upload@m_riemann_solvers.fpp:185        
+      0.0           82,346         16       5,146.6       5,161.0       3,714       7,731      1,241.1  Enqueue Upload@m_time_steppers.fpp:1186         
+      0.0           82,069         32       2,564.7       2,483.0       2,026       3,545        408.1  Wait@m_rhs.fpp:201                              
+      0.0           81,975         32       2,561.7       2,277.0       1,934       7,662        987.9  Enqueue Upload@m_global_parameters.fpp:1193     
+      0.0           81,832          8      10,229.0      10,312.0       9,842      10,515        247.4  Update@m_rhs.fpp:162                            
+      0.0           81,784         16       5,111.5       4,976.0       3,113       8,120      1,347.5  Enqueue Upload@m_time_steppers.fpp:1201         
+      0.0           81,058          8      10,132.3      10,316.5       9,362      10,739        515.7  Update@m_global_parameters.fpp:1091             
+      0.0           80,894          8      10,111.8       9,697.0       8,405      14,060      1,935.3  Exit Data@m_time_steppers.fpp:1199              
+      0.0           80,748          8      10,093.5      10,214.0       8,903      11,109        888.3  Wait@m_boundary_io.fpp:399                      
+      0.0           80,745          8      10,093.1      10,145.5       9,597      10,516        313.0  Update@m_variables_conversion.fpp:298           
+      0.0           80,375         16       5,023.4       4,737.0       3,059       9,116      1,638.1  Enqueue Upload@m_riemann_solvers.fpp:190        
+      0.0           80,035         16       5,002.2       4,758.5       3,335       8,395      1,514.3  Enqueue Upload@m_time_steppers.fpp:1197         
+      0.0           79,096         16       4,943.5       5,024.0       3,623       6,933      1,037.2  Enqueue Upload@m_time_steppers.fpp:1196         
+      0.0           79,064         16       4,941.5       5,014.5       3,649       7,208        919.8  Enqueue Upload@m_time_steppers.fpp:1200         
+      0.0           78,969          8       9,871.1       9,892.0       9,403      10,134        235.4  Update@m_global_parameters.fpp:1201             
+      0.0           78,816          8       9,852.0       9,867.0       9,530      10,146        197.4  Update@m_global_parameters.fpp:1203             
+      0.0           77,960          8       9,745.0       9,509.5       9,207      11,339        670.5  Update@m_global_parameters.fpp:1221             
+      0.0           77,355         16       4,834.7       4,895.5       3,543       6,529        913.4  Enqueue Upload@m_rhs.fpp:2311                   
+      0.0           77,252          8       9,656.5       9,691.5       8,969      10,141        332.3  Update@m_global_parameters.fpp:1199             
+      0.0           76,714         16       4,794.6       4,651.5       3,312       6,258        751.3  Enqueue Upload@m_riemann_solvers.fpp:189        
+      0.0           76,699         16       4,793.7       5,069.5       3,574       6,244        768.4  Enqueue Upload@m_riemann_solvers.fpp:77         
+      0.0           76,645         32       2,395.2       2,353.0       2,063       2,969        244.7  Wait@m_rhs.fpp:208                              
+      0.0           76,624         16       4,789.0       4,774.5       2,885       6,432      1,393.5  Enqueue Upload@m_time_steppers.fpp:453          
+      0.0           75,333         16       4,708.3       4,269.5       3,260      10,186      2,056.9  Enqueue Upload@m_time_steppers.fpp:388          
+      0.0           75,138         16       4,696.1       4,434.5       3,272       5,746        782.2  Enqueue Upload@m_time_steppers.fpp:1208         
+      0.0           75,113          8       9,389.1       9,177.5       7,850      13,352      1,786.0  Enter Data@m_time_steppers.fpp:384              
+      0.0           75,076          8       9,384.5       9,802.0       7,924      10,267        870.9  Exit Data@m_riemann_solvers.fpp:188             
+      0.0           74,809         16       4,675.6       4,563.5       3,467       6,347        903.1  Enqueue Upload@m_weno.fpp:159                   
+      0.0           74,471         24       3,103.0       3,023.5       2,535       4,661        417.7  Enqueue Upload@m_global_parameters.fpp:1205     
+      0.0           74,177          8       9,272.1       9,078.5       7,883      13,318      1,729.9  Exit Data@m_time_steppers.fpp:1179              
+      0.0           74,113          8       9,264.1       9,255.0       8,883       9,681        274.7  Wait@m_boundary_io.fpp:404                      
+      0.0           73,887          8       9,235.9       8,541.0       7,720      11,712      1,521.3  Exit Data@m_riemann_solvers.fpp:185             
+      0.0           73,236         16       4,577.3       4,466.5       3,772       6,467        723.8  Enqueue Upload@m_rhs.fpp:164                    
+      0.0           72,780         16       4,548.8       4,549.0       3,448       6,162        849.5  Enqueue Upload@m_weno.fpp:124                   
+      0.0           71,921         24       2,996.7       2,763.5       2,124       8,451      1,191.6  Enqueue Upload@m_global_parameters.fpp:1207     
+      0.0           70,763          8       8,845.4       8,487.0       7,775      10,343      1,039.2  Exit Data@m_time_steppers.fpp:1196              
+      0.0           70,376         16       4,398.5       4,521.0       3,226       5,552        688.5  Enqueue Upload@m_time_steppers.fpp:410          
+      0.0           69,615          8       8,701.9       8,564.0       7,507       9,887        807.5  Wait@m_global_parameters.fpp:1352               
+      0.0           69,263         16       4,328.9       4,206.0       3,516       5,676        692.9  Enqueue Upload@m_time_steppers.fpp:319          
+      0.0           69,221         16       4,326.3       4,166.0       3,389       5,683        642.3  Enqueue Upload@m_weno.fpp:180                   
+      0.0           68,807          8       8,600.9       8,090.0       6,857      11,652      1,701.6  Exit Data@m_time_steppers.fpp:1197              
+      0.0           68,787          8       8,598.4       8,532.0       7,263      10,223      1,110.8  Exit Data@m_rhs.fpp:2311                        
+      0.0           68,502         16       4,281.4       4,317.0       3,519       5,640        610.1  Enqueue Upload@m_boundary_common.fpp:497        
+      0.0           68,443          8       8,555.4       8,179.0       6,648      13,557      2,157.5  Exit Data@m_global_parameters.fpp:1367          
+      0.0           67,422         16       4,213.9       4,440.0       3,058       5,407        739.2  Enqueue Upload@m_time_steppers.fpp:420          
+      0.0           67,325         16       4,207.8       4,233.0       3,380       5,414        661.3  Enqueue Upload@m_riemann_solvers.fpp:85         
+      0.0           67,085          8       8,385.6       8,294.5       7,862       9,398        490.1  Exit Data@m_time_steppers.fpp:1203              
+      0.0           66,944         16       4,184.0       4,085.0       3,110       5,352        657.3  Enqueue Upload@m_time_steppers.fpp:353          
+      0.0           66,833         16       4,177.1       4,116.5       3,371       5,168        610.1  Enqueue Upload@m_time_steppers.fpp:232          
+      0.0           66,818         16       4,176.1       4,086.5       3,451       5,919        662.9  Enqueue Upload@m_global_parameters.fpp:1367     
+      0.0           66,729         16       4,170.6       4,056.0       3,104       5,057        614.2  Enqueue Upload@m_time_steppers.fpp:378          
+      0.0           66,600         16       4,162.5       4,218.0       3,348       5,469        663.9  Enqueue Upload@m_time_steppers.fpp:412          
+      0.0           66,563          8       8,320.4       8,223.5       7,546      10,383        899.9  Exit Data@m_time_steppers.fpp:1200              
+      0.0           66,337          8       8,292.1       8,113.0       7,142       9,657        918.6  Exit Data@m_time_steppers.fpp:1210              
+      0.0           66,311         16       4,144.4       4,165.0       3,035       5,005        580.2  Enqueue Upload@m_boundary_common.fpp:47         
+      0.0           66,196         16       4,137.3       4,068.5       3,147       5,181        680.3  Enqueue Upload@m_time_steppers.fpp:344          
+      0.0           66,068          8       8,258.5       7,784.5       7,209      10,404      1,207.6  Exit Data@m_time_steppers.fpp:1186              
+      0.0           65,766         16       4,110.4       4,053.0       3,155       5,065        618.5  Enqueue Upload@m_time_steppers.fpp:442          
+      0.0           65,484         16       4,092.8       4,071.0       3,010       5,355        684.6  Enqueue Upload@m_rhs.fpp:328                    
+      0.0           65,083         24       2,711.8       2,775.0       2,128       2,982        186.9  Enqueue Upload@m_global_parameters.fpp:1220     
+      0.0           64,767         16       4,047.9       4,230.0       3,254       5,108        568.9  Enqueue Upload@m_rhs.fpp:165                    
+      0.0           64,266         16       4,016.6       4,094.0       3,224       5,157        553.4  Enqueue Upload@m_time_steppers.fpp:413          
+      0.0           64,214         16       4,013.4       4,010.5       3,330       4,898        491.1  Enqueue Upload@m_rhs.fpp:348                    
+      0.0           63,543          8       7,942.9       7,965.5       7,468       8,294        290.7  Wait@m_global_parameters.fpp:1197               
+      0.0           63,413          8       7,926.6       7,661.0       6,342      10,749      1,436.0  Exit Data@m_time_steppers.fpp:1201              
+      0.0           63,191          8       7,898.9       7,937.5       7,416       8,278        252.8  Wait@m_global_parameters.fpp:1192               
+      0.0           62,980          8       7,872.5       7,841.0       7,680       8,059        142.0  Wait@m_global_parameters.fpp:1196               
+      0.0           62,829         16       3,926.8       3,809.5       2,958       6,217        853.6  Enqueue Upload@m_global_parameters.fpp:1363     
+      0.0           62,412          8       7,801.5       8,004.5       6,015       8,252        737.1  Wait@m_global_parameters.fpp:1193               
+      0.0           62,395         16       3,899.7       3,945.5       3,132       4,980        582.4  Enqueue Upload@m_riemann_solvers.fpp:187        
+      0.0           62,012         16       3,875.8       3,869.0       2,998       5,315        606.8  Enqueue Upload@m_weno.fpp:1766                  
+      0.0           61,826         16       3,864.1       3,691.0       3,089       4,914        612.4  Enqueue Upload@m_time_steppers.fpp:416          
+      0.0           61,433          8       7,679.1       7,655.5       7,342       8,215        313.4  Wait@m_variables_conversion.fpp:288             
+      0.0           61,348         16       3,834.3       3,772.5       3,227       4,580        459.3  Enqueue Upload@m_time_steppers.fpp:417          
+      0.0           61,021          8       7,627.6       7,604.0       7,112       8,066        287.5  Wait@m_eos.fpp:94                               
+      0.0           60,838          8       7,604.8       7,003.0       6,636      11,887      1,742.6  Wait@m_global_parameters.fpp:1172               
+      0.0           60,660          8       7,582.5       7,507.5       6,729       8,367        562.4  Exit Data@m_time_steppers.fpp:1208              
+      0.0           60,477         16       3,779.8       3,745.0       2,874       5,132        661.6  Enqueue Upload@m_riemann_solvers.fpp:191        
+      0.0           60,228          8       7,528.5       7,035.0       5,913      11,071      1,636.5  Exit Data@m_riemann_solvers.fpp:190             
+      0.0           59,945          8       7,493.1       7,136.5       5,718      11,842      1,881.8  Wait@m_global_parameters.fpp:1076               
+      0.0           59,591         16       3,724.4       3,696.5       3,076       4,251        389.3  Enqueue Upload@m_time_steppers.fpp:96           
+      0.0           59,531         16       3,720.7       3,785.0       2,979       4,438        443.0  Enqueue Upload@m_riemann_solvers.fpp:196        
+      0.0           59,479          8       7,434.9       7,479.0       7,066       7,712        215.4  Wait@m_global_parameters.fpp:1224               
+      0.0           59,333         16       3,708.3       3,640.0       2,930       5,318        594.6  Enqueue Upload@m_riemann_solvers.fpp:195        
+      0.0           59,218         16       3,701.1       3,609.5       2,936       4,480        423.8  Enqueue Upload@m_variables_conversion.fpp:290   
+      0.0           59,086         16       3,692.9       3,673.0       3,013       4,281        390.1  Enqueue Upload@m_variables_conversion.fpp:282   
+      0.0           59,075         16       3,692.2       3,697.0       3,087       4,666        413.4  Enqueue Upload@m_global_parameters.fpp:1058     
+      0.0           58,976          8       7,372.0       7,146.5       5,514      11,296      1,752.8  Wait@m_global_parameters.fpp:1205               
+      0.0           58,914         16       3,682.1       3,775.5       3,070       4,659        469.4  Enqueue Upload@m_global_parameters.fpp:1370     
+      0.0           58,484          8       7,310.5       7,285.5       6,936       7,759        292.8  Wait@m_global_parameters.fpp:1220               
+      0.0           58,461          8       7,307.6       7,508.0       5,914       7,760        593.2  Wait@m_variables_conversion.fpp:279             
+      0.0           58,423         16       3,651.4       3,504.5       2,591       5,697        747.0  Enqueue Upload@m_global_parameters.fpp:1380     
+      0.0           58,289         16       3,643.1       3,607.5       2,873       4,347        449.3  Enqueue Upload@m_rhs.fpp:463                    
+      0.0           57,803          8       7,225.4       7,216.5       6,807       7,550        257.6  Wait@m_global_parameters.fpp:1207               
+      0.0           57,589          8       7,198.6       7,173.5       6,800       7,644        283.6  Wait@m_global_parameters.fpp:1229               
+      0.0           57,539          8       7,192.4       6,508.0       5,965      12,294      2,080.7  Wait@m_variables_conversion.fpp:281             
+      0.0           57,391          8       7,173.9       7,194.0       6,133       8,483        718.8  Exit Data@m_riemann_solvers.fpp:189             
+      0.0           57,275         16       3,579.7       3,599.5       2,581       4,595        585.6  Enqueue Upload@m_weno.fpp:1780                  
+      0.0           57,222          8       7,152.8       6,519.5       6,172      11,599      1,819.7  Wait@m_rhs.fpp:318                              
+      0.0           57,120         16       3,570.0       3,631.5       2,945       4,192        430.4  Enqueue Upload@m_weno.fpp:1773                  
+      0.0           56,858          8       7,107.3       7,158.0       6,468       7,851        438.5  Wait@m_mpi_common.fpp:1776                      
+      0.0           56,764         16       3,547.8       3,432.0       2,935       3,943        334.6  Enqueue Upload@m_global_parameters.fpp:1262     
+      0.0           56,493         16       3,530.8       3,589.5       3,026       4,191        381.1  Enqueue Upload@m_rhs.fpp:464                    
+      0.0           55,836         16       3,489.8       3,602.0       2,738       4,257        426.4  Enqueue Upload@m_variables_conversion.fpp:1265  
+      0.0           55,786          8       6,973.3       7,019.5       6,649       7,217        228.9  Wait@m_global_parameters.fpp:1032               
+      0.0           55,772         16       3,485.8       3,477.5       2,910       4,039        361.2  Enqueue Upload@m_eos.fpp:61                     
+      0.0           55,563          8       6,945.4       6,972.0       6,708       7,121        154.9  Wait@m_global_parameters.fpp:1195               
+      0.0           54,710          8       6,838.8       6,721.0       6,223       7,607        459.4  Wait@m_global_parameters.fpp:1222               
+      0.0           54,580         16       3,411.3       3,405.0       3,129       3,652        150.1  Enqueue Upload@m_global_parameters.fpp:1132     
+      0.0           54,397          8       6,799.6       6,550.0       6,239       8,652        779.3  Wait@m_eos.fpp:55                               
+      0.0           54,260          8       6,782.5       6,735.0       5,240       9,152      1,117.3  Wait@m_variables_conversion.fpp:290             
+      0.0           54,239          8       6,779.9       6,615.0       5,285       9,493      1,195.4  Wait@m_rhs.fpp:323                              
+      0.0           53,879          8       6,734.9       6,542.0       6,156       8,035        604.9  Exit Data@m_boundary_common.fpp:497             
+      0.0           53,481          8       6,685.1       6,663.0       6,171       7,025        278.3  Wait@m_mpi_common.fpp:108                       
+      0.0           53,211          8       6,651.4       6,587.5       6,254       7,054        312.3  Wait@m_eos.fpp:59                               
+      0.0           53,115         16       3,319.7       3,337.0       2,835       3,864        346.6  Enqueue Upload@m_rhs.fpp:462                    
+      0.0           52,762          8       6,595.3       6,440.0       5,226      10,008      1,507.8  Wait@m_time_steppers.fpp:353                    
+      0.0           52,725          8       6,590.6       6,493.5       5,675       7,788        592.8  Wait@m_rhs.fpp:324                              
+      0.0           52,648          8       6,581.0       6,612.0       6,210       6,908        237.0  Wait@m_rhs.fpp:327                              
+      0.0           52,383          8       6,547.9       6,533.0       6,028       6,888        299.2  Wait@m_global_parameters.fpp:1249               
+      0.0           52,176          8       6,522.0       6,596.5       6,008       6,906        278.5  Wait@m_eos.fpp:61                               
+      0.0           52,048          8       6,506.0       6,541.5       5,950       6,968        289.4  Wait@m_rhs.fpp:325                              
+      0.0           51,913          8       6,489.1       6,504.5       6,033       6,822        263.1  Wait@m_rhs.fpp:321                              
+      0.0           51,911          8       6,488.9       6,476.5       6,100       6,862        284.5  Wait@m_global_parameters.fpp:1239               
+      0.0           51,908          8       6,488.5       6,461.0       6,115       6,821        271.0  Wait@m_eos.fpp:60                               
+      0.0           51,875          8       6,484.4       6,454.5       6,142       6,904        244.1  Wait@m_rhs.fpp:348                              
+      0.0           51,831          8       6,478.9       6,521.0       6,041       6,954        301.8  Wait@m_global_parameters.fpp:1259               
+      0.0           51,680          8       6,460.0       6,352.0       6,019       6,860        282.1  Wait@m_eos.fpp:56                               
+      0.0           51,669          8       6,458.6       6,384.5       5,988       6,823        312.3  Wait@m_global_parameters.fpp:1056               
+      0.0           51,660          8       6,457.5       6,446.0       6,078       6,803        241.9  Wait@m_global_parameters.fpp:1250               
+      0.0           51,628          8       6,453.5       5,678.5       5,350      10,712      1,785.8  Wait@m_riemann_solvers.fpp:147                  
+      0.0           51,504          8       6,438.0       6,379.0       6,110       6,821        284.6  Wait@m_eos.fpp:58                               
+      0.0           51,404          8       6,425.5       6,535.0       5,523       6,829        419.4  Wait@m_rhs.fpp:346                              
+      0.0           51,317          8       6,414.6       6,371.5       6,046       6,774        287.3  Wait@m_eos.fpp:57                               
+      0.0           51,296          8       6,412.0       6,545.0       5,396       6,835        470.2  Wait@m_time_steppers.fpp:442                    
+      0.0           51,221          8       6,402.6       5,598.0       5,431      10,750      1,805.5  Wait@m_riemann_solvers.fpp:141                  
+      0.0           51,184          8       6,398.0       6,330.5       5,876       6,834        310.3  Wait@m_global_parameters.fpp:1242               
+      0.0           51,136          8       6,392.0       6,369.0       5,938       6,741        248.0  Wait@m_global_parameters.fpp:1241               
+      0.0           51,127          8       6,390.9       6,470.5       5,895       6,614        250.1  Wait@m_global_parameters.fpp:1058               
+      0.0           51,071          8       6,383.9       6,518.5       5,478       6,991        509.7  Wait@m_rhs.fpp:317                              
+      0.0           51,043          8       6,380.4       6,462.0       5,661       6,704        357.4  Enter Data@m_time_steppers.fpp:350              
+      0.0           50,958          8       6,369.8       6,370.5       5,940       6,647        220.9  Wait@m_eos.fpp:54                               
+      0.0           50,887          8       6,360.9       6,392.0       5,869       6,687        280.2  Wait@m_global_parameters.fpp:1261               
+      0.0           50,815          8       6,351.9       6,488.0       5,517       6,786        408.5  Wait@m_rhs.fpp:326                              
+      0.0           50,754          8       6,344.3       6,300.5       5,977       6,684        269.7  Wait@m_global_parameters.fpp:1240               
+      0.0           50,753          8       6,344.1       6,372.5       5,752       6,841        331.6  Wait@m_rhs.fpp:320                              
+      0.0           50,744          8       6,343.0       6,335.5       5,832       6,692        269.5  Wait@m_global_parameters.fpp:1260               
+      0.0           50,623          8       6,327.9       6,251.0       5,886       6,679        261.5  Wait@m_global_parameters.fpp:1251               
+      0.0           50,616          8       6,327.0       6,235.5       5,872       6,764        299.9  Wait@m_global_parameters.fpp:1262               
+      0.0           50,464          8       6,308.0       6,335.0       5,904       6,605        251.2  Wait@m_global_parameters.fpp:1055               
+      0.0           50,461          8       6,307.6       6,327.0       5,867       6,655        239.6  Wait@m_variables_conversion.fpp:282             
+      0.0           50,446          8       6,305.8       6,313.0       5,817       6,759        287.8  Wait@m_global_parameters.fpp:1252               
+      0.0           50,347          8       6,293.4       6,273.5       5,930       6,546        210.7  Wait@m_time_steppers.fpp:96                     
+      0.0           50,093          8       6,261.6       6,212.5       5,471       7,244        599.5  Exit Data@m_riemann_solvers.fpp:187             
+      0.0           50,011          8       6,251.4       5,947.5       5,742       7,988        758.5  Exit Data@m_global_parameters.fpp:1363          
+      0.0           50,002          8       6,250.3       5,587.5       5,117      11,464      2,114.8  Wait@m_time_steppers.fpp:344                    
+      0.0           49,632          8       6,204.0       6,407.5       5,171       6,665        526.8  Wait@m_rhs.fpp:316                              
+      0.0           49,519          8       6,189.9       6,366.0       5,438       6,856        556.9  Wait@m_riemann_solvers.fpp:85                   
+      0.0           49,455          8       6,181.9       6,357.5       5,340       6,820        612.3  Wait@m_time_steppers.fpp:388                    
+      0.0           49,221          8       6,152.6       5,799.5       5,490       8,938      1,133.2  Wait@m_eos.fpp:93                               
+      0.0           48,816          8       6,102.0       6,213.0       5,104       6,696        582.6  Wait@m_boundary_common.fpp:47                   
+      0.0           48,778          8       6,097.3       6,327.0       5,407       6,591        473.1  Wait@m_weno.fpp:180                             
+      0.0           48,767         16       3,047.9       3,032.0       2,696       3,526        227.3  Enqueue Upload@m_variables_conversion.fpp:300   
+      0.0           48,766          8       6,095.8       6,028.0       5,691       7,077        438.7  Wait@m_weno.fpp:900                             
+      0.0           48,758          8       6,094.8       6,000.5       5,650       6,977        393.1  Wait@m_mpi_common.fpp:105                       
+      0.0           48,268          8       6,033.5       6,077.0       5,681       6,249        199.0  Wait@m_global_parameters.fpp:1203               
+      0.0           48,187          8       6,023.4       6,006.0       5,743       6,217        169.5  Wait@m_rhs.fpp:162                              
+      0.0           48,049          8       6,006.1       5,744.5       5,189       7,656        798.6  Wait@m_rhs.fpp:328                              
+      0.0           47,900          8       5,987.5       6,195.0       5,385       6,482        430.1  Wait@m_weno.fpp:177                             
+      0.0           47,646          8       5,955.8       6,080.5       5,019       6,752        689.3  Wait@m_time_steppers.fpp:410                    
+      0.0           47,497          8       5,937.1       5,902.0       5,613       6,202        190.8  Wait@m_global_parameters.fpp:1091               
+      0.0           47,261          8       5,907.6       5,745.5       4,844       7,743        855.4  Exit Data@m_weno.fpp:1766                       
+      0.0           47,249          8       5,906.1       6,350.0       2,527       6,781      1,406.6  Wait@m_global_parameters.fpp:1057               
+      0.0           47,204          8       5,900.5       5,917.5       5,578       6,095        164.1  Wait@m_boundary_common.fpp:45                   
+      0.0           47,141          8       5,892.6       5,834.5       5,592       6,376        245.4  Wait@m_boundary_common.fpp:89                   
+      0.0           47,126          8       5,890.8       5,916.5       5,508       6,116        201.4  Wait@m_variables_conversion.fpp:300             
+      0.0           47,110          8       5,888.8       5,925.5       5,538       6,066        174.1  Wait@m_global_parameters.fpp:1199               
+      0.0           47,105          8       5,888.1       5,802.0       5,029       7,325        657.0  Exit Data@m_riemann_solvers.fpp:195             
+      0.0           46,916          8       5,864.5       5,797.0       5,284       6,448        438.1  Wait@m_weno.fpp:153                             
+      0.0           46,868          8       5,858.5       5,843.0       5,410       6,248        264.8  Wait@m_time_steppers.fpp:412                    
+      0.0           46,830          8       5,853.8       5,452.0       5,097       7,684        892.4  Wait@m_global_parameters.fpp:1036               
+      0.0           46,829          8       5,853.6       5,876.5       5,007       6,999        638.9  Exit Data@m_riemann_solvers.fpp:191             
+      0.0           46,716          8       5,839.5       5,833.5       5,506       6,128        185.7  Wait@m_global_parameters.fpp:1201               
+      0.0           46,655          8       5,831.9       5,818.5       5,382       6,508        390.3  Exit Data@m_riemann_solvers.fpp:196             
+      0.0           46,648          8       5,831.0       5,881.5       5,492       6,020        191.4  Wait@m_global_parameters.fpp:1221               
+      0.0           46,553          8       5,819.1       5,820.5       5,587       6,076        168.5  Wait@m_weno.fpp:898                             
+      0.0           46,471          8       5,808.9       5,872.0       5,491       5,948        166.7  Wait@m_rhs.fpp:462                              
+      0.0           46,429          8       5,803.6       5,861.5       5,562       5,930        127.5  Wait@m_start_up.fpp:987                         
+      0.0           46,367          8       5,795.9       5,801.5       5,470       6,076        187.9  Wait@m_mpi_common.fpp:116                       
+      0.0           46,233          8       5,779.1       5,797.5       5,459       6,005        178.2  Wait@m_weno.fpp:896                             
+      0.0           46,158          8       5,769.8       5,543.0       5,292       6,447        472.3  Wait@m_weno.fpp:174                             
+      0.0           46,124          8       5,765.5       5,725.0       5,493       6,075        215.9  Wait@m_time_steppers.fpp:347                    
+      0.0           45,900          8       5,737.5       5,797.5       5,304       5,918        212.6  Wait@m_rhs.fpp:464                              
+      0.0           45,894          8       5,736.8       5,520.0       5,400       6,509        460.7  Wait@m_weno.fpp:175                             
+      0.0           45,854          8       5,731.8       5,784.0       5,368       5,878        169.4  Wait@m_time_steppers.fpp:421                    
+      0.0           45,822          8       5,727.8       5,758.0       5,495       5,874        133.3  Wait@m_cbc.fpp:101                              
+      0.0           45,757          8       5,719.6       5,741.5       5,014       6,395        576.6  Wait@m_weno.fpp:178                             
+      0.0           45,701          8       5,712.6       5,759.5       5,381       5,888        176.8  Wait@m_time_steppers.fpp:416                    
+      0.0           45,686          8       5,710.8       5,650.5       5,049       6,451        456.7  Wait@m_time_steppers.fpp:319                    
+      0.0           45,646          8       5,705.8       5,738.0       5,255       5,919        214.0  Wait@m_riemann_solvers.fpp:134                  
+      0.0           45,595          8       5,699.4       5,531.5       5,316       6,535        456.5  Wait@m_weno.fpp:159                             
+      0.0           45,539          8       5,692.4       5,679.0       5,323       5,957        210.7  Wait@m_time_steppers.fpp:420                    
+      0.0           45,531          8       5,691.4       5,497.0       5,257       6,589        450.7  Wait@m_weno.fpp:156                             
+      0.0           45,461          8       5,682.6       5,624.5       5,331       6,076        261.8  Wait@m_riemann_solvers.fpp:101                  
+      0.0           45,423          8       5,677.9       5,681.0       5,363       5,939        190.3  Wait@m_time_steppers.fpp:417                    
+      0.0           45,396          8       5,674.5       5,687.0       5,420       5,885        150.3  Wait@m_riemann_solvers.fpp:103                  
+      0.0           45,345          8       5,668.1       5,728.0       5,248       5,918        229.2  Wait@m_time_steppers.fpp:413                    
+      0.0           45,299          8       5,662.4       5,574.0       5,307       6,387        318.5  Wait@m_weno.fpp:157                             
+      0.0           45,222          8       5,652.8       5,604.5       5,345       6,367        321.2  Wait@m_weno.fpp:124                             
+      0.0           45,112          8       5,639.0       5,308.0       5,117       7,694        855.1  Exit Data@m_global_parameters.fpp:1380          
+      0.0           44,991          8       5,623.9       5,579.0       5,126       6,452        378.6  Wait@m_weno.fpp:122                             
+      0.0           44,913          8       5,614.1       5,625.5       5,273       5,966        193.4  Wait@m_riemann_solvers.fpp:82                   
+      0.0           44,908          8       5,613.5       5,606.5       5,225       5,978        239.3  Wait@m_time_steppers.fpp:453                    
+      0.0           44,812          8       5,601.5       5,635.0       5,124       5,823        221.5  Wait@m_rhs.fpp:463                              
+      0.0           44,780          8       5,597.5       5,549.5       5,264       5,905        233.8  Exit Data@m_variables_conversion.fpp:1265       
+      0.0           44,762          8       5,595.3       5,578.0       5,242       5,909        266.6  Wait@m_riemann_solvers.fpp:114                  
+      0.0           44,718          8       5,589.8       5,928.5       2,583       6,432      1,234.0  Wait@m_global_parameters.fpp:1132               
+      0.0           44,689          8       5,586.1       5,459.5       5,218       6,430        391.6  Exit Data@m_global_parameters.fpp:1370          
+      0.0           44,651          8       5,581.4       5,614.5       5,172       5,782        204.6  Wait@m_time_steppers.fpp:381                    
+      0.0           44,411          8       5,551.4       5,474.5       5,264       6,024        268.2  Wait@m_riemann_solvers.fpp:77                   
+      0.0           44,396          8       5,549.5       5,550.0       5,278       5,763        170.4  Wait@m_weno.fpp:121                             
+      0.0           44,198          8       5,524.8       5,507.5       5,015       5,922        280.3  Wait@m_time_steppers.fpp:378                    
+      0.0           43,997          8       5,499.6       5,523.5       5,173       5,673        178.4  Wait@m_rhs.fpp:164                              
+      0.0           43,969          8       5,496.1       5,364.5       4,854       6,510        487.0  Wait@m_weno.fpp:154                             
+      0.0           43,642          8       5,455.3       5,466.5       5,207       5,709        149.2  Wait@m_rhs.fpp:165                              
+      0.0           43,574          8       5,446.8       5,501.0       5,086       5,666        185.5  Wait@m_time_steppers.fpp:232                    
+      0.0           43,422          8       5,427.8       5,388.5       4,762       6,204        505.3  Enqueue Launch@m_start_up.fpp:803               
+      0.0           43,403          8       5,425.4       5,652.5       3,213       6,101        928.0  Wait@m_variables_conversion.fpp:298             
+      0.0           43,250          8       5,406.3       5,390.0       4,997       5,654        216.0  Wait@m_weno.fpp:119                             
+      0.0           43,188          8       5,398.5       5,314.5       4,448       6,254        627.7  Exit Data@m_weno.fpp:1780                       
+      0.0           42,996         16       2,687.3       2,345.0       2,084       7,962      1,411.6  Enqueue Upload@m_global_parameters.fpp:1195     
+      0.0           42,461          8       5,307.6       5,264.0       5,088       5,776        210.2  Exit Data@m_weno.fpp:1773                       
+      0.0           42,118          8       5,264.8       5,561.5       3,289       5,733        814.0  Wait@m_riemann_solvers.fpp:157                  
+      0.0           40,860          8       5,107.5       5,099.0       4,982       5,249        110.5  Wait@m_weno.fpp:118                             
+      0.0           40,576         16       2,536.0       2,575.0       2,153       2,897        230.3  Enqueue Upload@m_global_parameters.fpp:1172     
+      0.0           39,470          8       4,933.8       5,012.5       4,071       5,352        414.1  Wait@m_time_steppers.fpp:350                    
+      0.0           39,112          8       4,889.0       4,952.0       4,316       5,265        343.9  Enter Data@m_riemann_solvers.fpp:96             
+      0.0           37,800          8       4,725.0       4,705.0       4,585       4,882        105.0  Enter Data@m_variables_conversion.fpp:278       
+      0.0           35,792          8       4,474.0       4,353.5       4,028       5,222        403.0  Enqueue Upload@m_boundary_common.fpp:89         
+      0.0           32,502          8       4,062.8       3,710.5       3,425       6,815      1,127.6  Enter Data@m_rhs.fpp:161                        
+      0.0           29,408          8       3,676.0       3,624.5       3,303       4,461        389.6  Exit Data@m_global_parameters.fpp:1390          
+      0.0           27,049          8       3,381.1       3,354.0       3,195       3,640        144.7  Enqueue Upload@m_eos.fpp:93                     
+      0.0           25,733          8       3,216.6       3,234.0       3,060       3,412        126.2  Enqueue Upload@m_rhs.fpp:162                    
+      0.0           25,722          8       3,215.3       3,324.0       2,703       3,483        271.2  Enqueue Upload@m_variables_conversion.fpp:298   
+      0.0           24,323          8       3,040.4       3,041.0       2,812       3,204        126.2  Enqueue Upload@m_global_parameters.fpp:1201     
+      0.0           24,208          8       3,026.0       2,854.5       2,675       4,396        561.0  Enqueue Upload@m_global_parameters.fpp:1221     
+      0.0           23,190          8       2,898.8       2,885.5       2,747       3,189        143.4  Enqueue Upload@m_global_parameters.fpp:1203     
+      0.0           23,021          8       2,877.6       2,875.5       2,592       3,176        169.2  Enqueue Upload@m_global_parameters.fpp:1199     
+      0.0           22,877          8       2,859.6       2,779.0       2,424       3,548        376.7  Enqueue Upload@m_global_parameters.fpp:1091     
+      0.0           21,798          8       2,724.8       2,725.5       2,536       2,987        141.7  Wait@m_riemann_solvers.fpp:96                   
+      0.0           21,626          8       2,703.3       2,303.0       2,165       5,415      1,102.3  Wait@m_rhs.fpp:161                              
+      0.0           21,152          8       2,644.0       2,651.0       2,341       2,982        177.9  Wait@m_time_steppers.fpp:384                    
+      0.0           20,562          8       2,570.3       2,577.5       2,444       2,694         89.4  Wait@m_variables_conversion.fpp:278             
+      0.0           14,933          8       1,866.6       1,726.0       1,461       2,482        361.1  Exit Data@m_time_steppers.fpp:1198              
+      0.0           14,853          8       1,856.6       1,700.5       1,346       3,202        613.5  Exit Data@m_time_steppers.fpp:1202              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_boundary_common.fpp:45                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_cbc.fpp:101                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:54                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:55                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:56                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:57                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:58                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:59                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_eos.fpp:60                              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1032              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1036              
+      0.0                0         32           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1055              
+      0.0                0         16           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1056              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1057              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1229              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1239              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1240              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1241              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1242              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1249              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1250              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1251              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1252              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1259              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1260              
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_global_parameters.fpp:1261              
+      0.0                0         16           0.0           0.0           0           0          0.0  Alloc@m_mpi_common.fpp:105                      
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_mpi_common.fpp:116                      
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_mpi_common.fpp:141                      
+      0.0                0         16           0.0           0.0           0           0          0.0  Alloc@m_mpi_common.fpp:1776                     
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:164                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:165                             
+      0.0                0         64           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:169                             
+      0.0                0         32           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:173                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:208                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:224                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:316                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:317                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:318                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:320                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:321                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:323                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:324                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:325                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:326                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:327                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:333                             
+      0.0                0         32           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:334                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:346                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:353                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:354                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:355                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:356                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:357                             
+      0.0                0         24           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:358                             
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:361                             
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:362                             
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:363                             
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:364                             
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:365                             
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:366                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:462                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:463                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:464                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_rhs.fpp:473                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:101                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:103                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:114                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:134                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:141                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:147                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:82                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_riemann_solvers.fpp:96                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_start_up.fpp:987                        
+      0.0                0         16           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:100                   
+      0.0                0        136           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:191                   
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:236                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:350                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:384                   
+      0.0                0         72           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:399                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:412                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:413                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:416                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:417                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:420                   
+      0.0                0         16           0.0           0.0           0           0          0.0  Alloc@m_time_steppers.fpp:421                   
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_variables_conversion.fpp:279            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_variables_conversion.fpp:281            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_variables_conversion.fpp:288            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:118                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:119                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:121                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:122                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:153                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:154                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:156                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:157                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:174                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:175                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:177                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:178                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:896                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Alloc@m_weno.fpp:898                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_boundary_common.fpp:45                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_cbc.fpp:101                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:54                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:55                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:56                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:57                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:58                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:59                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_eos.fpp:60                             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1032             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1036             
+      0.0                0         32           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1055             
+      0.0                0         16           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1056             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1057             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1229             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1239             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1240             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1241             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1242             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1249             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1250             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1251             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1252             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1259             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1260             
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_global_parameters.fpp:1261             
+      0.0                0         16           0.0           0.0           0           0          0.0  Create@m_mpi_common.fpp:105                     
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_mpi_common.fpp:116                     
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_mpi_common.fpp:141                     
+      0.0                0         16           0.0           0.0           0           0          0.0  Create@m_mpi_common.fpp:1776                    
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:164                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:165                            
+      0.0                0         64           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:169                            
+      0.0                0         32           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:173                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:208                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:224                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:316                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:317                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:318                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:320                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:321                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:323                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:324                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:325                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:326                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:327                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:333                            
+      0.0                0         32           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:334                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:346                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:353                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:354                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:355                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:356                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:357                            
+      0.0                0         24           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:358                            
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:361                            
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:362                            
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:363                            
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:364                            
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:365                            
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:366                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:462                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:463                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:464                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_rhs.fpp:473                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:101                
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:103                
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:114                
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:134                
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:141                
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:147                
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:82                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_riemann_solvers.fpp:96                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_start_up.fpp:987                       
+      0.0                0         16           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:100                  
+      0.0                0        136           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:191                  
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:236                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:350                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:384                  
+      0.0                0         72           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:399                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:412                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:413                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:416                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:417                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:420                  
+      0.0                0         16           0.0           0.0           0           0          0.0  Create@m_time_steppers.fpp:421                  
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_variables_conversion.fpp:279           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_variables_conversion.fpp:281           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_variables_conversion.fpp:288           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:118                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:119                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:121                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:122                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:153                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:154                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:156                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:157                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:174                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:175                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:177                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:178                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:896                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Create@m_weno.fpp:898                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_boundary_common.fpp:497                
+      0.0                0         64           0.0           0.0           0           0          0.0  Delete@m_eos.fpp:101                            
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1363             
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1367             
+      0.0                0         32           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1368             
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1369             
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1370             
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1380             
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1390             
+      0.0                0         32           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1394             
+      0.0                0         32           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1397             
+      0.0                0         32           0.0           0.0           0           0          0.0  Delete@m_global_parameters.fpp:1400             
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_mpi_common.fpp:1995                    
+      0.0                0         32           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2304                           
+      0.0                0         32           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2305                           
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2309                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2311                           
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2315                           
+      0.0                0         24           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2379                           
+      0.0                0         24           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2380                           
+      0.0                0         48           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2437                           
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_rhs.fpp:2439                           
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:185                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:186                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:187                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:188                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:189                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:190                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:191                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:195                
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_riemann_solvers.fpp:196                
+      0.0                0        128           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1119                 
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1124                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1127                 
+      0.0                0         64           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1143                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1179                 
+      0.0                0         64           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1183                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1186                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1199                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1203                 
+      0.0                0         24           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1205                 
+      0.0                0         24           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1206                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1208                 
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_time_steppers.fpp:1210                 
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_variables_conversion.fpp:1260          
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_variables_conversion.fpp:1265          
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1764                          
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1765                          
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1766                          
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1771                          
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1772                          
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1773                          
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1778                          
+      0.0                0         16           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1779                          
+      0.0                0          8           0.0           0.0           0           0          0.0  Delete@m_weno.fpp:1780                          
+
+Generated:
+	/tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.nsys-rep
+	/tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.sqlite

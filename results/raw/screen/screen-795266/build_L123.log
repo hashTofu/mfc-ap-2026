@@ -1,0 +1,38 @@
+mfc: Starting...
+mfc: OK > (venv) Entered the Python 3.12.13 virtual environment (3.9-3.14).
+
+      .=++*:          -+*+=.        | ianshen1110@25a-hgpn002 [Linux]
+     :+   -*-        ==   =* .      | -------------------------------
+   :*+      ==      ++    .+-       | 
+  :*##-.....:*+   .#%+++=--+=:::.   | --jobs 24
+  -=-++-======#=--**+++==+*++=::-:. | --mpi --acc-gpu --no-debug --no-reldebug --no-gcov --no-unified --no-single --no-mixed --no-fastmath
+ .:++=----------====+*= ==..:%..... | --targets simulation
+  .:-=++++===--==+=-+=   +.  :=     | 
+  +#=::::::::=%=. -+:    =+   *:    | ------------------------------------------------------------------
+ .*=-=*=..    :=+*+:      -...--    | $ ./mfc.sh (build, run, test, clean, new, validate, params) --help
+
+ Acquiring /tmp/ianshen1110/mfc-scr-795266/case_256/case.py...
+ Build | syscheck and simulation | Case Optimized: /tmp/ianshen1110/mfc-scr-795266/case_256/case.py
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Building syscheck...
+   ✓ Built syscheck
+
+   Installing syscheck...
+   ✓ Installed syscheck
+
+ Generating case.fpp.
+   Case optimization is enabled.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Building simulation...
+   (build took 139.7s)
+   ✓ Built simulation
+
+   Installing simulation...
+   ✓ Installed simulation
+
+
+mfc: (venv) Exiting the Python virtual environment.

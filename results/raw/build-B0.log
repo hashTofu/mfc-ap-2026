@@ -1,0 +1,471 @@
+mfc: Starting...
+mfc: OK > (venv) Entered the Python 3.12.13 virtual environment (3.9-3.14).
+
+ Switching from mpi=Yes & gpu=No & debug=No & reldebug=No & gcov=No & unified=No & single=No & mixed=No & fastmath=No to mpi=Yes & gpu=Acc & debug=No & reldebug=No & gcov=No & unified=No & single=No & mixed=No & fastmath=No
+ 
+ Auto-regenerating completion scripts...
+      .=++*:          -+*+=.        | ianshen1110@25a-lgn01 [Linux]
+     :+   -*-        ==   =* .      | -----------------------------
+   :*+      ==      ++    .+-       | 
+  :*##-.....:*+   .#%+++=--+=:::.   | --jobs 16
+  -=-++-======#=--**+++==+*++=::-:. | --mpi --acc-gpu --no-debug --no-reldebug --no-gcov --no-unified --no-single --no-mixed --no-fastmath
+ .:++=----------====+*= ==..:%..... | --targets pre_process and simulation
+  .:-=++++===--==+=-+=   +.  :=     | 
+  +#=::::::::=%=. -+:    =+   *:    | ------------------------------------------------------------------
+ .*=-=*=..    :=+*+:      -...--    | $ ./mfc.sh (build, run, test, clean, new, validate, params) --help
+
+ Build | syscheck, pre_process, and simulation
+
+   Configuring hipfort...
+   ✓ Configured hipfort
+
+   Building hipfort (-v)...
+   ✓ Built hipfort
+
+   Installing hipfort...
+   ✓ Installed hipfort
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Configuring syscheck...
+   ✓ Configured syscheck
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Building syscheck (-v)...
+   [ 25%] syscheck.fpp
+   [ 50%] syscheck.fpp.f90
+   [ 50%] syscheck_lib
+   [ 75%] syscheck.fpp.f90
+   [100%] syscheck
+   [100%] syscheck
+   (build took 8.0s)
+   ✓ Built syscheck
+
+   Installing syscheck...
+   ✓ Installed syscheck
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Configuring pre_process...
+   ✓ Configured pre_process
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Building pre_process (-v)...
+   [  1%] includes
+   [  1%] m_box.fpp
+   [  2%] m_assign_variables.fpp
+   [  4%] m_boundary_io.fpp
+   [  4%] m_check_ib_patches.fpp
+   [  6%] m_checker_common.fpp
+   [  6%] m_chemistry.fpp
+   [  8%] m_derived_types.fpp
+   [  8%] m_boundary_primitives.fpp
+   [  9%] m_amr_restart_io.fpp
+   [  9%] m_data_output.fpp
+   [ 11%] m_boundary_conditions.fpp
+   [ 11%] m_boundary_common.fpp
+   [ 12%] m_constants.fpp
+   [ 13%] m_check_patches.fpp
+   [ 14%] m_checker.fpp
+   [ 15%] m_eos.fpp
+   [ 16%] m_finite_differences.fpp
+   [ 17%] m_helper_basic.fpp
+   [ 19%] m_global_parameters_common.fpp
+   [ 19%] m_helper.fpp
+   [ 19%] m_global_parameters.fpp
+   [ 22%] m_initial_condition.fpp
+   [ 22%] m_model.fpp
+   [ 22%] m_icpp_patches.fpp
+   [ 23%] m_mpi_common.fpp
+   [ 24%] m_mpi_proxy.fpp
+   [ 25%] m_particle_cloud.fpp
+   [ 26%] m_patch_geometries.fpp
+   [ 27%] m_perturbation.fpp
+   [ 28%] m_phase_change.fpp
+   [ 28%] m_simplex_noise.fpp
+   [ 29%] m_start_up.fpp
+   [ 30%] m_thermochem.fpp
+   [ 30%] m_variables_conversion.fpp
+   [ 30%] m_precision_select.f90
+   [ 31%] m_nvtx.f90
+   [ 34%] m_delay_file_access.f90
+   [ 34%] m_constants.fpp.f90
+   [ 34%] m_thermochem.fpp.f90
+   [ 34%] m_simplex_noise.fpp.f90
+   [ 35%] m_derived_types.fpp.f90
+   [ 37%] m_helper_basic.fpp.f90
+   [ 37%] m_global_parameters_common.fpp.f90
+   [ 38%] m_global_parameters.fpp.f90
+   [ 39%] m_chemistry.fpp.f90
+   [ 39%] m_helper.fpp.f90
+   [ 41%] m_box.fpp.f90
+   [ 41%] m_finite_differences.fpp.f90
+   [ 42%] m_mpi_common.fpp.f90
+   [ 43%] m_boundary_primitives.fpp.f90
+   [ 45%] m_amr_restart_io.fpp.f90
+   [ 47%] m_particle_cloud.fpp.f90
+   [ 47%] m_mpi_proxy.fpp.f90
+   [ 47%] m_eos.fpp.f90
+   [ 48%] m_checker_common.fpp.f90
+   [ 49%] m_grid.f90
+   [ 50%] m_compile_specific.f90
+   [ 50%] m_model.fpp.f90
+   [ 51%] m_checker.fpp.f90
+   [ 52%] m_variables_conversion.fpp.f90
+   [ 54%] m_boundary_conditions.fpp.f90
+   [ 54%] m_boundary_io.fpp.f90
+   [ 57%] m_assign_variables.fpp.f90
+   [ 57%] m_phase_change.fpp.f90
+   [ 57%] m_patch_geometries.fpp.f90
+   [ 58%] m_boundary_common.fpp.f90
+   [ 58%] m_data_output.fpp.f90
+   [ 59%] m_perturbation.fpp.f90
+   [ 60%] m_icpp_patches.fpp.f90
+   [ 62%] m_check_ib_patches.fpp.f90
+   [ 62%] m_check_patches.fpp.f90
+   [ 63%] m_initial_condition.fpp.f90
+   [ 64%] m_start_up.fpp.f90
+   [ 65%] p_main.f90
+   [ 65%] pre_process_lib
+   [ 65%] m_precision_select.f90
+   [ 66%] m_nvtx.f90
+   [ 69%] m_delay_file_access.f90
+   [ 69%] m_thermochem.fpp.f90
+   [ 69%] m_constants.fpp.f90
+   [ 69%] m_simplex_noise.fpp.f90
+   [ 70%] m_derived_types.fpp.f90
+   [ 72%] m_global_parameters_common.fpp.f90
+   [ 72%] m_helper_basic.fpp.f90
+   [ 73%] m_global_parameters.fpp.f90
+   [ 73%] m_helper.fpp.f90
+   [ 75%] m_finite_differences.fpp.f90
+   [ 76%] m_chemistry.fpp.f90
+   [ 76%] m_box.fpp.f90
+   [ 77%] m_mpi_common.fpp.f90
+   [ 79%] m_particle_cloud.fpp.f90
+   [ 80%] m_amr_restart_io.fpp.f90
+   [ 80%] m_boundary_primitives.fpp.f90
+   [ 82%] m_eos.fpp.f90
+   [ 82%] m_mpi_proxy.fpp.f90
+   [ 83%] m_compile_specific.f90
+   [ 85%] m_model.fpp.f90
+   [ 86%] m_checker_common.fpp.f90
+   [ 86%] m_checker.fpp.f90
+   [ 86%] m_grid.f90
+   [ 87%] m_boundary_conditions.fpp.f90
+   [ 88%] m_variables_conversion.fpp.f90
+   [ 90%] m_patch_geometries.fpp.f90
+   [ 91%] m_assign_variables.fpp.f90
+   [ 91%] m_phase_change.fpp.f90
+   [ 92%] m_boundary_io.fpp.f90
+   [ 93%] m_icpp_patches.fpp.f90
+   [ 94%] m_boundary_common.fpp.f90
+   [ 95%] m_data_output.fpp.f90
+   [ 95%] m_perturbation.fpp.f90
+   [ 96%] m_check_ib_patches.fpp.f90
+   [ 97%] m_check_patches.fpp.f90
+   [ 98%] m_initial_condition.fpp.f90
+   [ 99%] m_start_up.fpp.f90
+   [100%] p_main.f90
+   [100%] pre_process
+   [100%] pre_process
+   (build took 208.5s)
+   ✓ Built pre_process
+
+   Installing pre_process...
+   ✓ Installed pre_process
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Configuring simulation...
+   ✓ Configured simulation
+
+ Generating case.fpp.
+   Writing a (new) custom case.fpp file.
+   Writing a (new) custom thermochem.fpp file.
+   Building simulation (-v)...
+   [  0%] includes
+   [  0%] m_amr_ghost.fpp
+   [  0%] m_amr_registers.fpp
+   [  2%] m_amr_advance.fpp
+   [  2%] m_amr.fpp
+   [  2%] m_amr_frame.fpp
+   [  2%] m_amr_regrid.fpp
+   [  2%] m_amr_distribution.fpp
+   [  2%] m_amr_cluster.fpp
+   [  4%] m_amr_nest.fpp
+   [  5%] m_amr_exchange.fpp
+   [  5%] m_acoustic_src.fpp
+   [  5%] m_amr_restart.fpp
+   [  5%] m_amr_seam.fpp
+   [  6%] m_amr_stage.fpp
+   [  6%] m_amr_restart_io.fpp
+   [  6%] m_amr_state.fpp
+   [  6%] m_amr_store.fpp
+   [  7%] m_amr_transfer.fpp
+   [  7%] m_boundary_primitives.fpp
+   [  8%] m_body_forces.fpp
+   [  8%] m_boundary_common.fpp
+   [  9%] m_boundary_io.fpp
+   [  9%] m_bubbles_EE.fpp
+   [  9%] m_bubbles.fpp
+   [  9%] m_amr_wave.fpp
+   [  9%] m_box.fpp
+   [ 10%] m_bubbles_EL.fpp
+   [ 10%] m_bubbles_EL_kernels.fpp
+   [ 10%] m_cbc.fpp
+   [ 11%] m_checker.fpp
+   [ 12%] m_checker_common.fpp
+   [ 12%] m_chemistry.fpp
+   [ 12%] m_collisions.fpp
+   [ 13%] m_compute_levelset.fpp
+   [ 13%] m_compute_cbc.fpp
+   [ 13%] m_conduction.fpp
+   [ 14%] m_constants.fpp
+   [ 15%] m_data_output.fpp
+   [ 15%] m_derived_types.fpp
+   [ 15%] m_derived_variables.fpp
+   [ 15%] m_eos.fpp
+   [ 15%] m_euler_lagrange.fpp
+   [ 16%] m_fftw.fpp
+   [ 16%] m_global_parameters.fpp
+   [ 17%] m_finite_differences.fpp
+   [ 17%] m_global_parameters_common.fpp
+   [ 17%] m_hb_function.fpp
+   [ 17%] m_helper.fpp
+   [ 18%] m_helper_basic.fpp
+   [ 19%] m_hypoelastic.fpp
+   [ 20%] m_ibm.fpp
+   [ 20%] m_igr.fpp
+   [ 20%] m_ib_patches.fpp
+   [ 20%] m_model.fpp
+   [ 21%] m_mpi_common.fpp
+   [ 21%] m_mpi_proxy.fpp
+   [ 22%] m_muscl.fpp
+   [ 22%] m_particles_EL.fpp
+   [ 22%] m_particles_EL_kernels.fpp
+   [ 22%] m_patch_geometries.fpp
+   [ 22%] m_phase_change.fpp
+   [ 22%] m_pressure_relaxation.fpp
+   [ 23%] m_phase_timing.fpp
+   [ 24%] m_qbmm.fpp
+   [ 24%] m_rhs.fpp
+   [ 24%] m_reactive_burn.fpp
+   [ 25%] m_riemann_solver_hll.fpp
+   [ 25%] m_riemann_solver_hllc.fpp
+   [ 25%] m_riemann_solver_lf.fpp
+   [ 25%] m_riemann_solver_hlld.fpp
+   [ 27%] m_riemann_solvers.fpp
+   [ 27%] m_riemann_solver_hypo_hlld.fpp
+   [ 27%] m_sim_helpers.fpp
+   [ 27%] m_riemann_state.fpp
+   [ 27%] m_stage_hooks.fpp
+   [ 28%] m_species_bounds.fpp
+   [ 28%] m_start_up.fpp
+   [ 29%] m_surface_tension.fpp
+   [ 29%] m_surface_thermochem.fpp
+   [ 29%] m_thermochem.fpp
+   [ 29%] m_time_steppers.fpp
+   [ 29%] m_thinc.fpp
+   [ 30%] m_variables_conversion.fpp
+   [ 31%] m_viscous.fpp
+   [ 31%] m_weno.fpp
+   [ 32%] p_main.fpp
+   [ 32%] m_nvtx.f90
+   [ 33%] m_precision_select.f90
+   [ 33%] m_thermochem.fpp.f90
+   [ 34%] m_delay_file_access.f90
+   [ 34%] m_constants.fpp.f90
+   [ 35%] m_surface_thermochem.fpp.f90
+   [ 35%] m_derived_types.fpp.f90
+   [ 35%] m_global_parameters_common.fpp.f90
+   [ 36%] m_helper_basic.fpp.f90
+   [ 36%] m_global_parameters.fpp.f90
+   [ 36%] m_helper.fpp.f90
+   [ 37%] m_finite_differences.fpp.f90
+   [ 37%] m_compute_cbc.fpp.f90
+   [ 37%] m_box.fpp.f90
+   [ 37%] m_hb_function.fpp.f90
+   [ 37%] m_chemistry.fpp.f90
+   [ 38%] m_riemann_state.fpp.f90
+   [ 38%] m_mpi_common.fpp.f90
+   [ 38%] m_thinc.fpp.f90
+   [ 38%] m_conduction.fpp.f90
+   [ 38%] m_eos.fpp.f90
+   [ 38%] m_mpi_proxy.fpp.f90
+   [ 39%] m_phase_timing.fpp.f90
+   [ 39%] m_boundary_primitives.fpp.f90
+   [ 40%] m_amr_restart_io.fpp.f90
+   [ 40%] m_amr_registers.fpp.f90
+   [ 41%] m_hypoelastic.fpp.f90
+   [ 42%] m_model.fpp.f90
+   [ 42%] m_fftw.fpp.f90
+   [ 44%] m_variables_conversion.fpp.f90
+   [ 44%] m_checker_common.fpp.f90
+   [ 44%] m_compile_specific.f90
+   [ 45%] m_checker.fpp.f90
+   [ 45%] m_euler_lagrange.fpp.f90
+   [ 46%] m_boundary_io.fpp.f90
+   [ 46%] m_phase_change.fpp.f90
+   [ 46%] m_sim_helpers.fpp.f90
+   [ 46%] m_pressure_relaxation.fpp.f90
+   [ 47%] m_muscl.fpp.f90
+   [ 48%] m_weno.fpp.f90
+   [ 48%] m_riemann_solver_hll.fpp.f90
+   [ 48%] m_riemann_solver_lf.fpp.f90
+   [ 48%] m_riemann_solver_hypo_hlld.fpp.f90
+   [ 48%] m_riemann_solver_hlld.fpp.f90
+   [ 48%] m_cbc.fpp.f90
+   [ 48%] m_qbmm.fpp.f90
+   [ 49%] m_reactive_burn.fpp.f90
+   [ 50%] m_patch_geometries.fpp.f90
+   [ 51%] m_bubbles_EL_kernels.fpp.f90
+   [ 51%] m_particles_EL_kernels.fpp.f90
+   [ 51%] m_boundary_common.fpp.f90
+   [ 51%] m_ib_patches.fpp.f90
+   [ 52%] m_viscous.fpp.f90
+   [ 54%] m_igr.fpp.f90
+   [ 54%] m_surface_tension.fpp.f90
+   [ 54%] m_particles_EL.fpp.f90
+   [ 55%] m_bubbles.fpp.f90
+   [ 56%] m_compute_levelset.fpp.f90
+   [ 56%] m_collisions.fpp.f90
+   [ 57%] m_bubbles_EE.fpp.f90
+   [ 57%] m_acoustic_src.fpp.f90
+   [ 57%] m_ibm.fpp.f90
+   [ 57%] m_bubbles_EL.fpp.f90
+   [ 57%] m_body_forces.fpp.f90
+   [ 57%] m_species_bounds.fpp.f90
+   [ 58%] m_riemann_solver_hllc.fpp.f90
+   [ 58%] m_riemann_solvers.fpp.f90
+   [ 59%] m_stage_hooks.fpp.f90
+   [ 59%] m_data_output.fpp.f90
+   [ 60%] m_amr_state.fpp.f90
+   [ 60%] m_rhs.fpp.f90
+   [ 60%] m_amr_wave.fpp.f90
+   [ 60%] m_amr_distribution.fpp.f90
+   [ 60%] m_amr_ghost.fpp.f90
+   [ 61%] m_derived_variables.fpp.f90
+   [ 61%] m_amr_store.fpp.f90
+   [ 62%] m_amr_cluster.fpp.f90
+   [ 62%] m_amr_seam.fpp.f90
+   [ 63%] m_amr_exchange.fpp.f90
+   [ 63%] m_amr_frame.fpp.f90
+   [ 64%] m_amr_transfer.fpp.f90
+   [ 64%] m_amr_advance.fpp.f90
+   [ 64%] m_amr.fpp.f90
+   [ 64%] m_amr_stage.fpp.f90
+   [ 65%] m_amr_nest.fpp.f90
+   [ 65%] m_time_steppers.fpp.f90
+   [ 65%] m_amr_regrid.fpp.f90
+   [ 66%] m_amr_restart.fpp.f90
+   [ 66%] m_start_up.fpp.f90
+   [ 66%] p_main.fpp.f90
+   [ 66%] simulation_lib
+   [ 66%] m_nvtx.f90
+   [ 66%] m_precision_select.f90
+   [ 67%] m_delay_file_access.f90
+   [ 67%] m_constants.fpp.f90
+   [ 67%] m_thermochem.fpp.f90
+   [ 68%] m_derived_types.fpp.f90
+   [ 69%] m_surface_thermochem.fpp.f90
+   [ 70%] m_global_parameters_common.fpp.f90
+   [ 70%] m_helper_basic.fpp.f90
+   [ 71%] m_global_parameters.fpp.f90
+   [ 72%] m_compute_cbc.fpp.f90
+   [ 72%] m_hb_function.fpp.f90
+   [ 72%] m_finite_differences.fpp.f90
+   [ 72%] m_chemistry.fpp.f90
+   [ 72%] m_box.fpp.f90
+   [ 72%] m_helper.fpp.f90
+   [ 73%] m_riemann_state.fpp.f90
+   [ 73%] m_mpi_common.fpp.f90
+   [ 74%] m_thinc.fpp.f90
+   [ 74%] m_conduction.fpp.f90
+   [ 74%] m_mpi_proxy.fpp.f90
+   [ 75%] m_amr_restart_io.fpp.f90
+   [ 76%] m_boundary_primitives.fpp.f90
+   [ 76%] m_phase_timing.fpp.f90
+   [ 76%] m_eos.fpp.f90
+   [ 77%] m_amr_registers.fpp.f90
+   [ 77%] m_fftw.fpp.f90
+   [ 77%] m_checker_common.fpp.f90
+   [ 77%] m_checker.fpp.f90
+   [ 77%] m_compile_specific.f90
+   [ 78%] m_model.fpp.f90
+   [ 78%] m_variables_conversion.fpp.f90
+   [ 78%] m_hypoelastic.fpp.f90
+   [ 78%] m_euler_lagrange.fpp.f90
+   [ 78%] m_boundary_io.fpp.f90
+   [ 79%] m_bubbles_EL_kernels.fpp.f90
+   [ 79%] m_particles_EL_kernels.fpp.f90
+   [ 79%] m_phase_change.fpp.f90
+   [ 79%] m_riemann_solver_hypo_hlld.fpp.f90
+   [ 79%] m_riemann_solver_hll.fpp.f90
+   [ 79%] m_muscl.fpp.f90
+   [ 80%] m_patch_geometries.fpp.f90
+   [ 81%] m_weno.fpp.f90
+   [ 81%] m_reactive_burn.fpp.f90
+   [ 82%] m_sim_helpers.fpp.f90
+   [ 83%] m_cbc.fpp.f90
+   [ 83%] m_riemann_solver_hlld.fpp.f90
+   [ 83%] m_riemann_solver_lf.fpp.f90
+   [ 83%] m_qbmm.fpp.f90
+   [ 83%] m_pressure_relaxation.fpp.f90
+   [ 83%] m_boundary_common.fpp.f90
+   [ 84%] m_ib_patches.fpp.f90
+   [ 85%] m_bubbles.fpp.f90
+   [ 86%] m_igr.fpp.f90
+   [ 87%] m_particles_EL.fpp.f90
+   [ 88%] m_compute_levelset.fpp.f90
+   [ 89%] m_viscous.fpp.f90
+   [ 89%] m_surface_tension.fpp.f90
+   [ 89%] m_bubbles_EE.fpp.f90
+   [ 89%] m_acoustic_src.fpp.f90
+   [ 90%] m_collisions.fpp.f90
+   [ 90%] m_ibm.fpp.f90
+   [ 90%] m_bubbles_EL.fpp.f90
+   [ 91%] m_riemann_solver_hllc.fpp.f90
+   [ 91%] m_body_forces.fpp.f90
+   [ 91%] m_species_bounds.fpp.f90
+   [ 92%] m_stage_hooks.fpp.f90
+   [ 93%] m_amr_state.fpp.f90
+   [ 93%] m_data_output.fpp.f90
+   [ 93%] m_amr_ghost.fpp.f90
+   [ 94%] m_amr_distribution.fpp.f90
+   [ 94%] m_amr_wave.fpp.f90
+   [ 95%] m_derived_variables.fpp.f90
+   [ 95%] m_amr_store.fpp.f90
+   [ 96%] m_amr_seam.fpp.f90
+   [ 96%] m_amr_cluster.fpp.f90
+   [ 96%] m_riemann_solvers.fpp.f90
+   [ 96%] m_amr_exchange.fpp.f90
+   [ 96%] m_rhs.fpp.f90
+   [ 97%] m_amr_frame.fpp.f90
+   [ 97%] m_amr_transfer.fpp.f90
+   [ 97%] m_amr_advance.fpp.f90
+   [ 98%] m_amr.fpp.f90
+   [ 98%] m_amr_stage.fpp.f90
+   [ 98%] m_amr_nest.fpp.f90
+   [ 98%] m_time_steppers.fpp.f90
+   [ 98%] m_amr_regrid.fpp.f90
+   [ 99%] m_amr_restart.fpp.f90
+   [ 99%] m_start_up.fpp.f90
+   [ 99%] p_main.fpp.f90
+   [100%] simulation
+   [100%] simulation
+   (build took 709.7s)
+   ✓ Built simulation
+
+   Installing simulation...
+   ✓ Installed simulation
+
+
+mfc: (venv) Exiting the Python virtual environment.

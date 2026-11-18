@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+lustre_*.dat
+*.nsys-rep
+*.sqlite
+*.ncu-rep

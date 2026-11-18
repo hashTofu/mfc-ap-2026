@@ -1,0 +1,7 @@
+==PROF== Connected to process 1966467 (/work/ianshen1110/mfc-ap-2026/MFC-base/build/install/gpu-acc-66b7f0b3b6/bin/simulation)
+ Simulating a regular 63x63x63 case on 1 rank(s) with OpenACC offloading.
+ [  0%] step 1 of 3 (t_step 0) t/step  0.00E+00s (avg  0.00E+00s) ETA 0:00:00
+ [ 34%] step 2 of 3 (t_step 1) t/step  3.43E-02s (avg  0.00E+00s) ETA 0:00:00
+ Performance:    0.000000000000000      ns/gp/eq/rhs
+==PROF== Disconnected from process 1966467
+==WARNING== No kernels were profiled.

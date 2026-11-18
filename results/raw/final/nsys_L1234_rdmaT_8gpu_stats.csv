@@ -1,0 +1,55 @@
+
+NOTICE: Existing SQLite export found: /tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.sqlite
+        It is assumed file was previously exported from: /tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.sqlite] with [/work/envstack/apps/nvhpc/25.9/Linux_x86_64/25.9/profilers/13.0/Nsight_Systems/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+13.3,83283519,240,347014.7,346928.5,345024,349248,773.3,m_weno_s_weno_1128_gpu
+13.2,82576249,240,344067.7,344065.0,341826,347167,936.4,m_weno_s_weno_1128_gpu_1
+13.0,81904157,240,341267.3,341185.0,339360,344192,822.8,m_weno_s_weno_1128_gpu_2
+11.2,70500507,240,293752.1,262752.0,261216,358239,44465.8,m_time_steppers_s_tvd_rk_544_gpu
+8.1,50875084,240,211979.5,211904.5,209152,214848,1102.3,m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__2
+7.3,45680659,240,190336.1,190592.0,174624,205823,13341.9,m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu
+7.0,44018830,240,183411.8,183392.5,181248,187264,1017.1,m_riemann_solver_hllc_s_hllc_riemann_solver_922_gpu__1
+6.3,39848783,240,166036.6,166016.5,164352,167712,744.6,m_rhs_s_compute_advection_source_term_1501_gpu
+6.3,39827886,240,165949.5,165983.5,163937,167584,748.8,m_rhs_s_compute_advection_source_term_1334_gpu
+5.4,33986861,240,141611.9,141504.0,139872,144256,978.8,m_variables_conversion_s_convert_conservative_to_primitive_variables_442_gpu
+5.2,32431688,240,135132.0,135008.0,133855,137312,746.8,m_rhs_s_compute_advection_source_term_1250_gpu
+1.7,10380650,720,14417.6,12672.0,10656,20704,3434.9,m_boundary_common_s_populate_bc_direction_159_gpu
+0.3,2008225,240,8367.6,8528.0,7616,10208,622.7,m_mpi_common_s_mpi_sendrecv_variables_buffers_738_gpu
+0.3,1776096,240,7400.4,7392.0,7136,8352,158.4,m_mpi_common_s_mpi_sendrecv_variables_buffers_859_gpu
+0.3,1727583,240,7198.3,7168.0,6976,8288,173.2,m_mpi_common_s_mpi_sendrecv_variables_buffers_1109_gpu
+0.3,1723648,240,7181.9,7168.0,6944,7936,128.8,m_mpi_common_s_mpi_sendrecv_variables_buffers_797_gpu
+0.3,1681634,8,210204.3,210160.5,209440,210784,473.1,m_start_up_s_save_data_803_gpu
+0.3,1657280,240,6905.3,6848.0,6592,8704,307.8,m_mpi_common_s_mpi_sendrecv_variables_buffers_963_gpu
+0.3,1652833,240,6886.8,6848.0,6592,8640,217.7,m_mpi_common_s_mpi_sendrecv_variables_buffers_1035_gpu
+0.0,156832,240,653.5,672.0,544,928,70.6,m_rhs_s_compute_rhs_998_gpu
+
+Processing [/tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.sqlite] with [/work/envstack/apps/nvhpc/25.9/Linux_x86_64/25.9/profilers/13.0/Nsight_Systems/host-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+Time (%),Total Time (ns),Count,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Operation
+67.3,378267087,64,5910423.2,5780468.0,4745630,8408350,663244.9,[CUDA memcpy Device-to-Host]
+30.2,169966237,15333,11085.0,768.0,704,3543293,159691.2,[CUDA memcpy Host-to-Device]
+2.1,11743428,720,16310.3,14592.0,13280,189792,16220.8,[CUDA memcpy Peer-to-Peer]
+0.4,2000225,2503,799.1,768.0,704,2080,135.8,[CUDA memset]
+
+Processing [/tmp/ianshen1110/mfc-final-795552/nsys_L1234_rdmaT_8gpu.sqlite] with [/work/envstack/apps/nvhpc/25.9/Linux_x86_64/25.9/profilers/13.0/Nsight_Systems/host-linux-x64/reports/nvtx_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Style,Range
+39.4,85810261684,8,10726282710.5,10728070522.0,10716071557,10735415753,6635893.7,PushPop,:INIT
+35.6,77415114492,8,9676889311.5,9678356695.0,9666172594,9685454746,6909532.8,PushPop,:INIT-MPI
+8.3,18106129438,8,2263266179.8,2266419907.0,2252607274,2272031719,7929340.6,PushPop,:FINALIZE-MODULES
+4.8,10539742083,8,1317467760.4,1317044346.5,1313978675,1320256297,1997087.5,PushPop,:SIMULATION-TIME-MARCH
+3.8,8215617934,8,1026952241.8,1026886562.0,1026708161,1027227232,185447.8,PushPop,:INIT-MODULES
+3.6,7918403382,8,989800422.8,989787392.5,989698766,989917371,63016.5,PushPop,:SAVE-DATA
+1.2,2616918639,80,32711483.0,10584902.0,10135676,231878506,65865801.9,PushPop,:TIMESTEP
+1.2,2532909176,240,10553788.2,3118706.0,3030826,222673268,38087243.1,PushPop,:COMPUTE-RHS
+0.9,1864855698,240,7770232.1,432372.0,355601,217350380,37731994.9,PushPop,:RHS-COMMUNICATION
+0.8,1779373724,720,2471352.4,39125.0,26776,103645345,13059291.8,PushPop,:RHS-COMM-SENDRECV-RDMA
+0.1,287294851,720,399020.6,389126.5,382136,1444489,66402.5,PushPop,:RHS-RECONSTRUCTION
+0.1,200320834,720,278223.4,275073.5,246436,2228042,84014.8,PushPop,:RHS-RIEMANN-SOLVER
+0.1,179336233,8,22417029.1,22796376.5,19385165,26054661,2126020.7,PushPop,:INIT-GPU-VARS
+0.1,131079741,720,182055.2,181379.0,149281,1090713,86837.9,PushPop,:RHS-ADVECTION-SRC
+0.0,40525235,240,168855.1,158076.0,155030,552834,56030.9,PushPop,:RHS-CONVERT
+0.0,28979738,720,40249.6,32943.5,29790,706667,61873.4,PushPop,:RHS-COMM-PACKBUF
+0.0,16923620,720,23505.0,22148.0,20070,77320,5625.1,PushPop,:RHS-COMM-UNPACKBUF
+

@@ -1,0 +1,57 @@
+=== MFC 2-GPU MPI/RDMA SCREENING + GATE 3B POST-IMPACT PARITY ===
+JOBID=795546 NODE=25a-hgpn002 SLURM_NTASKS=2 START=2026-11-18T06:36:31+08:00
+index, name, memory.total [MiB], power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]
+0, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+1, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+=== 2-GPU MPI SCREENING + RDMA CHECK (256^3) ===
+SCREEN arm=B0_rdmaF np=2 rep=1 wall_s=15.273443 s_per_rhs=0.03604390 ns_gp_eq_rhs=0.27171978
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+SCREEN arm=B0_rdmaF np=2 rep=2 wall_s=15.353601 s_per_rhs=0.03558800 ns_gp_eq_rhs=0.26828294
+SCREEN arm=L1234_rdmaF np=2 rep=1 wall_s=13.628205 s_per_rhs=0.01341600 ns_gp_eq_rhs=0.10113757
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+SCREEN arm=L1234_rdmaF np=2 rep=2 wall_s=16.647283 s_per_rhs=0.01313210 ns_gp_eq_rhs=0.09899737
+SCREEN arm=L1234_rdmaT np=2 rep=1 wall_s=12.372052 s_per_rhs=0.01025800 ns_gp_eq_rhs=0.07733074
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+SCREEN arm=L1234_rdmaT np=2 rep=2 wall_s=14.544459 s_per_rhs=0.01026010 ns_gp_eq_rhs=0.07734657
+=== GATE 3B: POST-IMPACT 3D SHOCK-DROPLET STRICT 8-COMPONENT PARITY (128^3) ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+PARITY_VERDICT=FAIL_TOL mode=strict_component max_rel_l2=4.940e-09 raw_max_rel_l2=1.508e-07
+  alpha_rho_1  rel_l2=2.220e-10  raw_l2=2.220e-10  abs_linf=5.440e-06
+  alpha_rho_2  rel_l2=8.730e-10  raw_l2=8.730e-10  abs_linf=5.075e-07
+  mom_x        rel_l2=4.940e-09  raw_l2=4.944e-09  abs_linf=2.921e-03
+  mom_y        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  mom_z        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  E_tot        rel_l2=2.176e-10  raw_l2=2.176e-10  abs_linf=2.368e+00
+  alpha_1      rel_l2=1.951e-10  raw_l2=1.951e-10  abs_linf=4.805e-09
+  alpha_2      rel_l2=1.774e-11  raw_l2=1.774e-11  abs_linf=4.805e-09

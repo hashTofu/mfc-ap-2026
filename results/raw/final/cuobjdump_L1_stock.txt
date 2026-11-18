@@ -1,0 +1,2011 @@
+
+Fatbin elf code:
+================
+arch = sm_90
+code version = [1,8]
+host = linux
+compile_size = 64bit
+compressed
+identifier = /tmp/pgcudafatrt9LhZvZI7akf.o
+
+Resource usage:
+ Common:
+  GLOBAL:641656624
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thermochem_get_mixture_thermal_conductivity_mixavg_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thermochem_get_creation_destruction_rates_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thermochem_get_net_production_rates_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thermochem_get_temperature_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thermochem_get_mixture_specific_heat_cp_mass_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_trig_reduction_slowpathd:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_acoustic_src_s_acoustic_src_calculations_313_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_acoustic_src_s_acoustic_src_calculations_218_gpu:
+  REG:64 STACK:104 SHARED:0 LOCAL:0 CONSTANT[0]:588 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_acoustic_src_s_acoustic_src_calculations_165_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_advance_s_amr_fine_rk_update_batch_334_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_advance_s_amr_fine_stage_advance_batched_183_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_advance_s_amr_fine_stage_advance_batched_175_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_advance_s_amr_ib_correct_fine_85_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_advance_s_amr_ib_correct_fine_82_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_pack_unpack_block_st_929_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_pack_unpack_block_st_926_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_restrict_rows_wire_607_gpu:
+  REG:88 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_restrict_rows_sf_610_gpu:
+  REG:88 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_unpack_rows_566_gpu:
+  REG:51 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_fx_unpack_367_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_fx_pack_parent_339_gpu:
+  REG:63 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_fx_pack_box_310_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_gather_own_rows_239_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:596 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_unpack_box_device_127_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:636 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_pack_box_device_125_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:620 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_copy_parent_box_86_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_exchange_s_amr_pack_parent_box_device_61_gpu:
+  REG:70 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_igr_restore_sigma_267_gpu__1:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_igr_restore_sigma_267_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_igr_swap_sigma_230_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_igr_swap_sigma_230_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_igr_swap_sigma_200_gpu__1:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_igr_swap_sigma_200_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__8:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__7:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__6:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__5:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__4:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__3:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__2:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu__1:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_restore_coarse_173_gpu:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__8:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__7:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__6:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__5:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__4:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__3:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__2:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu__1:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_swap_to_fine_107_gpu:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_fine_leave_47_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_frame_s_amr_fine_enter_37_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_ghost_s_amr_fill_ghost_rows_130_gpu:
+  REG:128 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:636 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reflux_apply_faces_678_gpu__2:
+  REG:146 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:656 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reflux_apply_faces_678_gpu__1:
+  REG:146 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:656 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reflux_apply_faces_678_gpu:
+  REG:146 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:648 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_zero_registers_633_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_apply_reflux_d3_582_gpu:
+  REG:126 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_apply_reflux_d2_582_gpu:
+  REG:126 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_apply_reflux_d1_582_gpu:
+  REG:126 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_capture_total_426_gpu:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_capture_batch_366_gpu:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_prepare_191_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_prepare_190_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_11:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_11:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_11:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_10:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_10:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_10:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_9:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_9:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_9:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_8:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_8:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_8:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_7:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_7:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_7:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_6:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_5:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_5:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_5:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_4:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_4:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_4:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_3:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_3:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_3:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_2:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_2:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_2:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu_1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu_1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu_1:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_129_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_117_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_registers_s_amr_reg_reserve_104_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_carry_old_into_slot_1108_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_stash_old_blocks_923_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_overlap_copy_wire_872_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_overlap_copy_st_870_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:596 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_stash_copy_device_836_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_mig_pack_device_792_gpu:
+  REG:58 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_compute_lag_supp_191_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_regrid_s_amr_compute_lag_supp_191_gpu:
+  REG:40 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_seam_s_amr_fine_seam_exchange_82_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_stage_s_amr_pc_copy_248_gpu:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_stage_s_amr_pc_copy_233_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_stage_s_amr_pc_fill_204_gpu:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_stage_s_amr_pc_gather_194_gpu__1:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_stage_s_amr_pc_gather_194_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_stage_s_amr_fill_levels_171_gpu:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_f_amr_quartic_half_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_f_amr_lin_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_minmod_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_check_lag_clear_435_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_check_lag_clear_435_gpu:
+  REG:40 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_fine_slice_392_gpu_2:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_fine_slice_380_gpu_2:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:588 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_fine_slice_392_gpu_1:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_fine_slice_380_gpu_1:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:588 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_fine_slice_392_gpu:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_state_s_amr_fine_slice_380_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:588 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_bat_member_prim_514_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_load_batch_477_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_store_faces_442_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_store_faces_442_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_store_faces_442_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_load_faces_442_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_load_faces_442_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_load_faces_442_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_store_405_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_br_load_405_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_reserve_344_gpu_1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_reserve_329_gpu_1:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_reserve_310_gpu_1:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_reserve_344_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_reserve_329_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_reserve_310_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_compact_store_221_gpu__1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_compact_store_221_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_move_slot_186_gpu__1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_st_move_slot_186_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_copy_fine_fields_80_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__8:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__7:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__6:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__5:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__4:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__3:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__2:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu__1:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_store_s_amr_sync_grid_state_to_device_59_gpu:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_restrict_device_wire_1088_gpu:
+  REG:94 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:632 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_restrict_device_st_1090_gpu:
+  REG:92 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_to_parent_1061_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_to_parent_1061_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_to_parent_1061_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_to_parent_1057_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_to_parent_1057_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_to_parent_1057_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_restrict_parent_wave_874_gpu:
+  REG:92 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:596 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_prolong_species_closure_652_gpu:
+  REG:128 STACK:48 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_prolong_alphas_closure_578_gpu:
+  REG:112 STACK:48 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_interpolate_coarse_to_fine_548_gpu:
+  REG:152 STACK:232 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_prolong_guard_480_gpu:
+  REG:160 STACK:48 SHARED:0 LOCAL:0 CONSTANT[0]:636 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_prolong_one_var_419_gpu:
+  REG:98 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_freg_pack_d3_171_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_freg_pack_d2_171_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_freg_pack_d1_171_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_freg_pack_150_gpu__2:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_freg_pack_150_gpu__1:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_freg_pack_150_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_faces_wave_119_gpu__2:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_faces_wave_119_gpu__1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_faces_wave_119_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_faces_wave_112_gpu__2:
+  REG:61 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_faces_wave_112_gpu__1:
+  REG:61 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_amr_transfer_s_amr_reflux_faces_wave_112_gpu:
+  REG:61 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_trig_reduction_slowpathd:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_synthetic_forces_rhs_725_gpu:
+  REG:122 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_synthetic_forces_rhs_709_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_update_mean_sources_615_gpu__red:
+  REG:20 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:632 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_update_mean_sources_615_gpu:
+  REG:168 STACK:96 SHARED:1040 LOCAL:0 CONSTANT[0]:632 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_update_mean_sources_596_gpu__red:
+  REG:20 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_update_mean_sources_596_gpu:
+  REG:56 STACK:0 SHARED:1040 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_apply_synthetic_turbulence_force_527_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_apply_bodyforces_499_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_mts_terms_457_gpu:
+  REG:168 STACK:112 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_428_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_405_gpu__2:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_405_gpu__1:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_405_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_385_gpu:
+  REG:70 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_372_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_367_gpu__1:
+  REG:78 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_forces_rhs_367_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_mixture_density_335_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_force_with_spatial_support_303_gpu:
+  REG:78 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_body_forces_s_compute_body_force_with_spatial_support_290_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_advance_step_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_bpres_dot_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_s_vflux_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_rddot_km_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_cpbw_km_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_rddot_g_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_hdot_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_cpinfdot_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_cgas_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_h_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_f_cpbw_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_ptilde_327_gpu:
+  REG:88 STACK:104 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_bubble_ee_source_293_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_bubble_ee_source_187_gpu:
+  REG:255 STACK:1512 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_bubble_ee_source_168_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_bubbles_ee_rhs_128_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_bubbles_ee_rhs_117_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_compute_bubbles_ee_rhs_104_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_ee_s_comp_alpha_from_n_77_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_calculate_lag_bubble_stats_1067_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_calculate_lag_bubble_stats_1067_gpu:
+  REG:37 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_lag_cloud_bbox_local_1050_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_lag_cloud_bbox_local_1050_gpu:
+  REG:40 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_copy_bubble_time_level_1009_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_enforce_el_bubbles_boundary_conditions_988_gpu:
+  REG:37 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_enforce_el_bubbles_boundary_conditions_944_gpu:
+  REG:54 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:536 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_update_lagrange_tdv_rk_910_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_update_lagrange_tdv_rk_910_gpu:
+  REG:37 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_update_lagrange_tdv_rk_908_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_update_lagrange_tdv_rk_891_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_smear_voidfraction_642_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_smear_voidfraction_614_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubbles_el_source_590_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubbles_el_source_576_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubbles_el_source_561_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubbles_el_source_541_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubbles_el_source_526_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubble_el_dynamics_509_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubble_el_dynamics_416_gpu:
+  REG:255 STACK:1624 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_compute_bubble_el_dynamics_384_gpu:
+  REG:168 STACK:112 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_s_load_bubbles_231_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_f_get_bubble_force_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_f_interpolate_velocity_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_s_compute_pressure_gradients_417_gpu:
+  REG:62 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_s_compute_pressure_gradients_400_gpu:
+  REG:62 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_s_compute_pressure_gradients_384_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_s_gaussian_206_gpu:
+  REG:114 STACK:24 SHARED:0 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_bubbles_el_kernels_s_deltafunc_122_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1326_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1314_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1303_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1291_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1275_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1263_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1252_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1240_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1225_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1213_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1202_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_finalize_cbc_1191_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1161_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1149_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1138_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1126_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1115_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1103_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1087_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1075_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1064_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1052_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1041_gpu:
+  REG:47 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1029_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1013_gpu:
+  REG:39 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_1001_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_990_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_978_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_967_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_initialize_cbc_955_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_600_gpu_2:
+  REG:114 STACK:536 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_580_gpu_2:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_564_gpu_2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_600_gpu_1:
+  REG:114 STACK:536 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_580_gpu_1:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_564_gpu_1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_600_gpu:
+  REG:114 STACK:536 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_580_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_cbc_s_cbc_564_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_detect_wall_collisions_356_gpu__red:
+  REG:16 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_detect_wall_collisions_356_gpu:
+  REG:30 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_detect_ib_collisions_262_gpu:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_apply_wall_collision_forces_soft_sphere_183_gpu:
+  REG:136 STACK:120 SHARED:0 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:656 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_apply_ib_collision_forces_soft_sphere_99_gpu:
+  REG:128 STACK:136 SHARED:0 LOCAL:0 CONSTANT[0]:632 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_apply_collision_forces_70_gpu__red:
+  REG:16 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_collisions_s_apply_collision_forces_70_gpu:
+  REG:30 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_supersonic_outflow_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_supersonic_inflow_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_constant_pressure_subsonic_outflow_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_force_free_subsonic_outflow_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_nonreflecting_subsonic_outflow_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_nonreflecting_subsonic_inflow_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_nonreflecting_subsonic_buffer_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_cbc_s_compute_slip_wall_l_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_levelset_s_apply_levelset_59_gpu:
+  REG:134 STACK:600 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_compute_levelset_s_apply_levelset_37_gpu:
+  REG:154 STACK:776 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_conduction_s_compute_conduction_axis_source_112_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_conduction_s_compute_conduction_axis_source_98_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_conduction_s_compute_conduction_source_flux_43_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_data_output_s_write_void_evol_2207_gpu__red:
+  REG:16 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_data_output_s_write_void_evol_2207_gpu:
+  REG:59 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_data_output_s_write_run_time_information_211_gpu__red:
+  REG:22 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_data_output_s_write_run_time_information_211_gpu:
+  REG:136 STACK:544 SHARED:1040 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_315_gpu:
+  REG:96 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_297_gpu:
+  REG:96 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_284_gpu:
+  REG:96 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_265_gpu:
+  REG:96 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_248_gpu:
+  REG:106 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_233_gpu:
+  REG:78 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_219_gpu:
+  REG:88 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_200_gpu:
+  REG:108 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_184_gpu:
+  REG:114 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_169_gpu:
+  REG:78 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_156_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_derive_acceleration_component_143_gpu:
+  REG:96 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_derived_variables_s_compute_derived_variables_107_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_euler_lagrange_s_get_char_vol_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_euler_lagrange_s_apply_lag_entity_domain_bc_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_euler_lagrange_s_lag_gradient_dir_213_gpu__2:
+  REG:90 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_euler_lagrange_s_lag_gradient_dir_213_gpu__1:
+  REG:90 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_euler_lagrange_s_lag_gradient_dir_213_gpu:
+  REG:86 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_247_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_227_gpu:
+  REG:39 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_205_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_195_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_179_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_159_gpu:
+  REG:39 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_138_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_fftw_s_apply_fourier_filter_128_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hb_function_s_compute_mixture_inv_re_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_trig_reduction_slowpathd:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_enforce_cont_damage_bounds_808_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_damage_state_748_gpu:
+  REG:78 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_axisym_geom_dual_pass_628_gpu:
+  REG:126 STACK:48 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_axisym_geom_iface_573_gpu:
+  REG:114 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_axisym_geom_iface_561_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_475_gpu:
+  REG:128 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_449_gpu:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_437_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_414_gpu:
+  REG:88 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_399_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_385_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_iface_374_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_323_gpu:
+  REG:92 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_273_gpu:
+  REG:168 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_249_gpu:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_237_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_212_gpu:
+  REG:88 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_188_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_177_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_157_gpu:
+  REG:70 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_147_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_132_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_hypoelastic_s_compute_hypoelastic_rhs_finite_diff_per_sweep_122_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_trig_reduction_slowpathd:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_get_neighborhood_idx_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_decode_patch_periodicity_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_update_ib_rotation_matrix_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_get_ib_boxes_399_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_get_ib_boxes_399_gpu:
+  REG:70 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_apply_ib_patches_ib_parallelism_226_gpu:
+  REG:84 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_apply_ib_patches_ib_parallelism_220_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_apply_ib_patches_ib_parallelism_220_gpu:
+  REG:72 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_apply_ib_patches_grid_cell_parallelism_86_gpu:
+  REG:76 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_apply_ib_patches_51_gpu:
+  REG:142 STACK:96 SHARED:0 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ib_patches_s_apply_ib_patches_49_gpu:
+  REG:142 STACK:88 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_trig_reduction_slowpathd:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_wall_src_buffers_3777_gpu:
+  REG:48 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_prepare_3657_gpu:
+  REG:110 STACK:0 SHARED:1028 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_prepare_3651_gpu:
+  REG:48 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_setup_3620_gpu__red:
+  REG:16 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_setup_3620_gpu:
+  REG:78 STACK:0 SHARED:1040 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_setup_3617_gpu:
+  REG:48 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_setup_3598_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ib_flux_wall_setup_3584_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_fine_3500_gpu__1:
+  REG:28 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_fine_3500_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_fine_3495_gpu:
+  REG:122 STACK:304 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_fine_3492_gpu:
+  REG:68 STACK:24 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_fine_3486_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_rebuild_corrected_gps_3463_gpu:
+  REG:28 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_rebuild_corrected_gps_3457_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_restore_from_fine_3416_gpu__1:
+  REG:28 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_restore_from_fine_3416_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_restore_from_fine_3410_gpu:
+  REG:108 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_restore_from_fine_3401_gpu:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_swap_to_fine_3377_gpu__1:
+  REG:28 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_swap_to_fine_3377_gpu:
+  REG:38 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_swap_to_fine_3371_gpu:
+  REG:108 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_swap_to_fine_3359_gpu:
+  REG:108 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_tally_gps_by_body_3276_gpu:
+  REG:16 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_wrap_periodic_ibs_2819_gpu:
+  REG:30 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_compute_moment_of_inertia_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_compute_ib_forces_2618_gpu:
+  REG:24 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_compute_ib_forces_2587_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_accumulate_ib_face_fluxes_2455_gpu:
+  REG:128 STACK:32 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_accumulate_ib_face_fluxes_2431_gpu:
+  REG:26 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_prescribed_kinematics_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_mib_2290_gpu:
+  REG:122 STACK:304 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_mib_2284_gpu:
+  REG:68 STACK:24 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_mib_2277_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_mib_2268_gpu:
+  REG:118 STACK:56 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_mib_2261_gpu:
+  REG:26 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_ib_rotation_matrices_2242_gpu:
+  REG:118 STACK:56 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_compute_interpolation_coeffs_1808_gpu:
+  REG:163 STACK:304 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_ordered_1741_gpu:
+  REG:70 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:536 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_ordered_1730_gpu:
+  REG:24 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_ordered_1703_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_1632_gpu:
+  REG:68 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_1628_gpu__2:
+  REG:66 STACK:24 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_1628_gpu__1:
+  REG:24 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_ghost_points_1628_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_find_num_ghost_points_1578_gpu:
+  REG:60 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_compute_image_points_1474_gpu:
+  REG:56 STACK:368 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_add_swept_cells_1393_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_add_swept_cells_1366_gpu:
+  REG:138 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_conserve_ib_mass_1327_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_conserve_ib_mass_1287_gpu:
+  REG:106 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_conserve_ib_mass_1280_gpu:
+  REG:16 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_ib_temperatures_1258_gpu:
+  REG:18 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_ib_temperatures_1248_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_ib_temperatures_1228_gpu:
+  REG:28 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_ib_temperatures_1210_gpu:
+  REG:22 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_update_ib_temperatures_1203_gpu:
+  REG:18 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_correct_state_961_gpu:
+  REG:128 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:648 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_correct_state_948_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_correct_state_634_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:1432 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_correct_state_634_gpu:
+  REG:246 STACK:1000 SHARED:1024 LOCAL:0 CONSTANT[0]:1432 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_correct_state_625_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_correct_state_590_gpu:
+  REG:64 STACK:8 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_389_gpu__2__red:
+  REG:16 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_389_gpu__2:
+  REG:96 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_389_gpu__1:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_389_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_388_gpu:
+  REG:122 STACK:304 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_384_gpu:
+  REG:68 STACK:24 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_302_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_ibm_s_ibm_setup_257_gpu:
+  REG:118 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_flux_add_2684_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_flux_add_2671_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_flux_add_2659_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_riemann_solver_2148_gpu:
+  REG:160 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_riemann_solver_1692_gpu:
+  REG:146 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_riemann_solver_1323_gpu:
+  REG:142 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_riemann_solver_845_gpu:
+  REG:176 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_riemann_solver_458_gpu:
+  REG:176 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_sigma_x_364_gpu:
+  REG:92 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_iterative_solve_337_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_iterative_solve_252_gpu__1:
+  REG:88 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:572 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_igr_iterative_solve_252_gpu:
+  REG:86 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_igr_s_initialize_igr_module_158_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_muscl_s_muscl_134_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_muscl_s_muscl_121_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_muscl_s_muscl_108_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_barycentric_weights_926_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_barycentric_weights_910_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_barycentric_weights_895_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_gradient_field_865_gpu:
+  REG:116 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:672 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_copy_particle_time_level_821_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_update_lagrange_particles_tdv_rk_758_gpu:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_update_lagrange_particles_tdv_rk_743_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_add_pressure_source_718_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_particles_el_source_670_gpu:
+  REG:144 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_particles_el_source_655_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_smear_field_contributions_615_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_smear_field_contributions_583_gpu:
+  REG:198 STACK:144 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_smear_field_contributions_568_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_particles_el_dynamics_433_gpu__red:
+  REG:12 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_particles_el_dynamics_433_gpu:
+  REG:16 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_compute_particles_el_dynamics_356_gpu:
+  REG:254 STACK:1056 SHARED:0 LOCAL:0 CONSTANT[0]:560 CONSTANT[2]:12 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_load_particles_249_gpu:
+  REG:28 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_initialize_particles_el_module_200_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_initialize_particles_el_module_195_gpu__2:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_initialize_particles_el_module_195_gpu__1:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_s_initialize_particles_el_module_195_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_trig_reduction_slowpathd:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_kernels_s_get_particle_force_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_kernels_s_interp_fluid_properties_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_kernels_s_gaussian_atomic_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_particles_el_kernels_s_compute_gaussian_contribution_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_pressure_relaxation_s_pressure_relaxation_procedure_49_gpu__red:
+  REG:20 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_pressure_relaxation_s_pressure_relaxation_procedure_49_gpu:
+  REG:114 STACK:248 SHARED:1040 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_qbmm_s_mom_inv_764_gpu:
+  REG:194 STACK:128 SHARED:0 LOCAL:0 CONSTANT[0]:816 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_qbmm_s_compute_qbmm_rhs_562_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_qbmm_s_compute_qbmm_rhs_423_gpu:
+  REG:152 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:24 CONSTANT[0]:668 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_reactive_burn_s_reactive_burn_substep_127_gpu:
+  REG:220 STACK:248 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_reactive_burn_s_compute_reactive_burn_72_gpu:
+  REG:220 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_zero_rhs_at_body_2496_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_reconstruct_cell_boundary_values_first_order_2262_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_reconstruct_cell_boundary_values_first_order_2249_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_reconstruct_cell_boundary_values_first_order_2236_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2135_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2104_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2090_gpu:
+  REG:70 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2073_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2061_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2046_gpu:
+  REG:60 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_2012_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_1997_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_1984_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_1958_gpu:
+  REG:70 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_1926_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_additional_physics_rhs_1912_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1878_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1863_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1846_gpu:
+  REG:58 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1828_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1810_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1796_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1780_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1762_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1744_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1730_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1715_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1699_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1685_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1667_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1649_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1634_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1617_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_s_add_directional_advection_source_terms_1599_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1549_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1532_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1518_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1497_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1482_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1468_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1442_gpu:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1428_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1415_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1381_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1365_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1351_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1330_gpu:
+  REG:70 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1299_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1283_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1269_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1246_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_advection_source_term_1203_gpu:
+  REG:80 STACK:40 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_reconstruct_riemann_states_1075_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_reconstruct_riemann_states_1035_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_994_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_872_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_853_gpu__1:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_853_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_830_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_766_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_766_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_663_gpu:
+  REG:66 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_rhs_s_compute_rhs_646_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_2:
+  REG:136 STACK:576 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_912_gpu_2:
+  REG:242 STACK:720 SHARED:0 LOCAL:0 CONSTANT[0]:680 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_496_gpu_2:
+  REG:215 STACK:560 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_184_gpu_2:
+  REG:228 STACK:576 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_1:
+  REG:136 STACK:576 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_912_gpu_1:
+  REG:242 STACK:672 SHARED:0 LOCAL:0 CONSTANT[0]:680 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_496_gpu_1:
+  REG:216 STACK:560 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_184_gpu_1:
+  REG:228 STACK:576 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu:
+  REG:152 STACK:528 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_912_gpu:
+  REG:255 STACK:480 SHARED:0 LOCAL:0 CONSTANT[0]:680 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_496_gpu:
+  REG:215 STACK:448 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_184_gpu:
+  REG:228 STACK:392 SHARED:0 LOCAL:0 CONSTANT[0]:628 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__8:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__7:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__5:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__4:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__3:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__2:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu__1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hllc_s_hllc_riemann_solver_170_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_finalize_nc_iface_vel_hatr_1010_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_finalize_nc_iface_vel_hatr_998_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_finalize_nc_iface_vel_hatr_986_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_finalize_nc_iface_vel_1010_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_finalize_nc_iface_vel_998_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_finalize_nc_iface_vel_986_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_226_gpu__2:
+  REG:255 STACK:1360 SHARED:0 LOCAL:0 CONSTANT[2]:28 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_226_gpu__1:
+  REG:255 STACK:1392 SHARED:0 LOCAL:0 CONSTANT[2]:28 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_226_gpu:
+  REG:255 STACK:1360 SHARED:0 LOCAL:0 CONSTANT[2]:28 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__8:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__7:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__5:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__4:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__3:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__2:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu__1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solver_hypo_hlld_s_hypo_hlld_riemann_solver_172_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solvers_s_initialize_riemann_solvers_module_166_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_solvers_s_initialize_riemann_solvers_module_120_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_hatr_1474_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_hatr_1419_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_hatr_1376_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_hatr_1362_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1502_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1488_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1474_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1460_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1446_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1433_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1419_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1404_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1390_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1376_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_finalize_riemann_solver_1362_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_f_compute_hllc_star_momentum_flux_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_compute_hypoelastic_interface_energy_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_compute_cartesian_viscous_source_flux_1044_gpu:
+  REG:248 STACK:232 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_compute_cylindrical_viscous_source_flux_829_gpu:
+  REG:255 STACK:104 SHARED:0 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:652 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_765_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_749_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_735_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_719_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_703_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_689_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_673_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_657_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_initialize_riemann_solver_643_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_populate_riemann_states_variables_buffers_586_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_populate_riemann_states_variables_buffers_544_gpu:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_populate_riemann_states_variables_buffers_495_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_populate_riemann_states_variables_buffers_449_gpu:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:616 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_populate_riemann_states_variables_buffers_398_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_populate_riemann_states_variables_buffers_350_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:624 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_compute_average_state_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_s_apply_low_mach_velocity_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_riemann_state_f_low_mach_pcorr_hllc_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_sim_helpers_s_compute_cell_state_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_sim_helpers_f_compute_filtered_dtheta_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_species_bounds_s_clean_species_194_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_species_bounds_s_clean_species_194_gpu:
+  REG:94 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_species_bounds_s_bound_face_states_107_gpu:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:648 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_species_bounds_s_bound_species_faces_49_gpu:
+  REG:124 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:648 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_start_up_s_save_data_803_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_reconstruct_cell_boundary_values_capillary_325_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_get_capillary_290_gpu:
+  REG:54 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_get_capillary_278_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_get_capillary_266_gpu:
+  REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_get_capillary_255_gpu:
+  REG:44 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_compute_capillary_source_flux_201_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_compute_capillary_source_flux_158_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_surface_tension_s_compute_capillary_source_flux_115_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thinc_s_thinc_compression_315_gpu__2:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thinc_s_thinc_compression_315_gpu__1:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thinc_s_thinc_compression_315_gpu:
+  REG:110 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:688 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thinc_s_compute_mthinc_normals_239_gpu:
+  REG:94 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_thinc_s_compute_mthinc_normals_215_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:540 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_time_step_cycling_1059_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_time_step_cycling_1047_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_time_step_cycling_1035_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_time_step_cycling_1023_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_time_step_cycling_1011_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_advance_ib_pose_940_gpu:
+  REG:156 STACK:80 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_compute_dt_757_gpu__1__red:
+  REG:22 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:632 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_compute_dt_757_gpu__1:
+  REG:128 STACK:544 SHARED:1024 LOCAL:0 CONSTANT[0]:632 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_compute_dt_757_gpu__red:
+  REG:22 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_compute_dt_757_gpu:
+  REG:106 STACK:544 SHARED:1024 LOCAL:0 CONSTANT[0]:608 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_adaptive_dt_bubble_696_gpu__red:
+  REG:18 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_adaptive_dt_bubble_696_gpu:
+  REG:37 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_657_gpu:
+  REG:30 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:532 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_595_gpu:
+  REG:156 STACK:80 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_568_gpu:
+  REG:90 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:548 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_544_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_527_gpu:
+  REG:156 STACK:80 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_510_gpu__4:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_510_gpu__3:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_510_gpu__2:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_510_gpu__1:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_time_steppers_s_tvd_rk_510_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:544 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compact_ib_viscous_gradient_1168_gpu:
+  REG:124 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:660 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compact_ib_viscous_gradients_1147_gpu:
+  REG:126 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:672 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1119_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1109_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1098_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1089_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1078_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1069_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1053_gpu:
+  REG:62 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1042_gpu:
+  REG:62 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1031_gpu:
+  REG:62 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1020_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_1008_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_fd_gradient_997_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_apply_scalar_divergence_theorem_952_gpu:
+  REG:78 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_apply_scalar_divergence_theorem_930_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_apply_scalar_divergence_theorem_908_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__11:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__10:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__9:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__8:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__7:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__5:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__4:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__3:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_710_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__11:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__10:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__9:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__8:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__7:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__5:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__4:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__3:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_704_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__11:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__10:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__9:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__8:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__7:
+  REG:45 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__6:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__5:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__4:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__3:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:556 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__2:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu__1:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_698_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_679_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_663_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_646_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_629_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_611_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_594_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_576_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_558_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_544_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_530_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_510_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_493_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_476_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_459_gpu:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_445_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_431_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_415_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_get_viscous_401_gpu:
+  REG:72 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_viscous_stress_cylindrical_boundary_306_gpu:
+  REG:90 STACK:64 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_viscous_stress_cylindrical_boundary_254_gpu:
+  REG:90 STACK:64 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_viscous_stress_cylindrical_boundary_205_gpu:
+  REG:90 STACK:64 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_viscous_stress_cylindrical_boundary_150_gpu:
+  REG:90 STACK:64 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_viscous_s_compute_viscous_stress_cylindrical_boundary_135_gpu:
+  REG:80 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:552 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_preserve_monotonicity_1529_gpu__2:
+  REG:62 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_preserve_monotonicity_1529_gpu__1:
+  REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_preserve_monotonicity_1529_gpu:
+  REG:58 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:664 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_weno_1104_gpu__2:
+  REG:198 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_weno_1104_gpu__1:
+  REG:196 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_weno_1104_gpu:
+  REG:192 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:640 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_weno_s_pack_weno_input_arr_900_gpu:
+  REG:60 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_common_s_populate_beta_bc_direction_563_gpu:
+  REG:92 STACK:32 SHARED:0 LOCAL:0 CONSTANT[2]:12 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_common_s_populate_f_igr_bc_direction_331_gpu:
+  REG:84 STACK:144 SHARED:0 LOCAL:0 CONSTANT[0]:696 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_common_s_populate_capillary_bc_direction_252_gpu:
+  REG:100 STACK:16 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_common_s_populate_bc_direction_159_gpu:
+  REG:164 STACK:688 SHARED:0 LOCAL:0 CONSTANT[0]:1232 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_beta_reflective_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_beta_periodic_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_f_igr_ghost_cell_extrapolation_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_f_igr_reflective_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_f_igr_periodic_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_color_function_ghost_cell_extrapolation_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_color_function_reflective_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_color_function_periodic_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_qbmm_extrapolation_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_dirichlet_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_no_slip_wall_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_slip_wall_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_axis_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_periodic_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_symmetry_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_s_ghost_cell_extrapolation_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_boundary_primitives_f_vel_ramp_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_chemistry_s_chemistry_reaction_substep_258_gpu:
+  REG:254 STACK:816 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_chemistry_s_chemistry_reaction_substep_212_gpu__red:
+  REG:20 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_chemistry_s_chemistry_reaction_substep_212_gpu:
+  REG:254 STACK:440 SHARED:1024 LOCAL:0 CONSTANT[0]:600 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_chemistry_s_compute_chemistry_reaction_flux_156_gpu:
+  REG:254 STACK:408 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __internal_accurate_pow:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_compute_speed_of_sound_avg_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_compute_speed_of_sound_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_compute_mixture_coefficients_dt_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_compute_mixture_coefficients_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_f_pressure_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_phase_bulk_modulus_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_phase_internal_energy_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_phase_temperature_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_phase_pressure_on_isentrope_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_s_phase_coefficients_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_eos_f_is_state_dependent_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_s_cross_product_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_s_prng_splitmix32_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_f_finite_vec_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_s_comp_n_from_cons_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_s_comp_n_from_prim_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_basic_f_is_default_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_helper_basic_f_approx_equal_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_rn_f64_full:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_model_s_instantiate_stl_models_906_gpu:
+  REG:36 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_model_s_distance_normals_2d_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_model_s_distance_normals_3d_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_model_s_check_boundary_566_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:576 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_model_f_model_is_inside_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_reduce_beta_variables_buffers_1396_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_reduce_beta_variables_buffers_1370_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_reduce_beta_variables_buffers_1344_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:592 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_reduce_beta_variables_buffers_1288_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_reduce_beta_variables_buffers_1273_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_reduce_beta_variables_buffers_1258_gpu:
+  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1157_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:620 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1141_gpu:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:620 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1121_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1100_gpu:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:580 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1083_gpu:
+  REG:52 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1067_gpu:
+  REG:50 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1048_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1028_gpu:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:572 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_1012_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_997_gpu:
+  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_978_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_958_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:572 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_901_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_885_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_871_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:568 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_856_gpu:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:572 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_839_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_823_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:612 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_810_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_796_gpu:
+  REG:43 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:572 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_780_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_765_gpu:
+  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:604 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_752_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_mpi_common_s_mpi_sendrecv_variables_buffers_738_gpu:
+  REG:42 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:564 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_patch_geometries_f_is_inside_airfoil_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_patch_geometries_f_is_inside_cuboid_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_patch_geometries_f_is_inside_cylinder_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dsqrt_rn_f64_mediumpath_v1:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_phase_change_s_infinite_relaxation_k_82_gpu:
+  REG:119 STACK:16 SHARED:1028 LOCAL:0 CONSTANT[0]:560 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_dblrcp_rn_slowpath_v3:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function __cuda_sm20_div_s64:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_variables_conversion_s_compute_energy_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_variables_conversion_s_compute_species_fraction_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_variables_conversion_s_convert_primitive_to_flux_variables_1005_gpu:
+  REG:92 STACK:96 SHARED:0 LOCAL:0 CONSTANT[0]:704 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_variables_conversion_s_convert_conservative_to_primitive_variables_436_gpu:
+  REG:108 STACK:96 SHARED:0 LOCAL:0 CONSTANT[0]:584 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function m_variables_conversion_s_convert_species_to_mixture_variables_kernel_:
+  REG:0 STACK:0 SHARED:0 LOCAL:0 TEXTURE:0 SURFACE:0 SAMPLER:0

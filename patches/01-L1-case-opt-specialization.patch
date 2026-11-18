@@ -1,0 +1,344 @@
+From 8e2222de8bc1e6f4cab3ce75754e5a44ebcf84a6 Mon Sep 17 00:00:00 2001
+From: hashtofu <ianshen1110@gmail.com>
+Date: Wed, 18 Nov 2026 05:21:56 +0800
+Subject: [PATCH] L1: Expand --case-optimization with 18 immutable
+ physics/solver switches
+
+---
+ src/common/m_global_parameters_common.fpp     | 30 ++++++++++------
+ src/simulation/m_bubbles_EL.fpp               |  6 +++-
+ src/simulation/m_global_parameters.fpp        | 25 ++++++-------
+ src/simulation/m_particles_EL.fpp             |  6 +++-
+ src/simulation/m_start_up.fpp                 | 13 ++++---
+ toolchain/mfc/case.py                         | 36 +++++++++++++++++++
+ toolchain/mfc/params/definitions.py           | 18 ++++++++++
+ .../mfc/params_tests/test_fortran_gen.py      |  8 ++++-
+ 8 files changed, 111 insertions(+), 31 deletions(-)
+
+diff --git a/src/common/m_global_parameters_common.fpp b/src/common/m_global_parameters_common.fpp
+index 79ea647..b4bff0c 100644
+--- a/src/common/m_global_parameters_common.fpp
++++ b/src/common/m_global_parameters_common.fpp
+@@ -353,11 +353,15 @@ contains
+         t_step_start = dflt_int
+ 
+         ! Simulation algorithm
+-        model_eqns = dflt_int
++        #:if not MFC_CASE_OPTIMIZATION
++            model_eqns = dflt_int
++        #:endif
+         relax = .false.
+         relax_model = dflt_int
+-        hypoelasticity = .false.
+-        cont_damage = .false.
++        #:if not MFC_CASE_OPTIMIZATION
++            hypoelasticity = .false.
++            cont_damage = .false.
++        #:endif
+         hyper_cleaning = .false.
+ 
+         ! Condensed-phase reactive burn
+@@ -390,15 +394,17 @@ contains
+ 
+         ! Bubble modeling flags and parameters
+         R0ref = dflt_real
+-        bubbles_euler = .false.
+         polydisperse = .false.
+         poly_sigma = dflt_real
+-        qbmm = .false.
+-        surface_tension = .false.
+         adv_n = .false.
+         sigma = dflt_real
+-        bubbles_lagrange = .false.
+-        particles_lagrange = .false.
++        #:if not MFC_CASE_OPTIMIZATION
++            bubbles_euler = .false.
++            qbmm = .false.
++            surface_tension = .false.
++            bubbles_lagrange = .false.
++            particles_lagrange = .false.
++        #:endif
+ 
+         ! Immersed boundaries
+         ib = .false.
+@@ -414,9 +420,11 @@ contains
+         fft_wrt = .false.
+ 
+         ! Mixture conversion and sound-speed behavior
+-        avg_state = dflt_int
+-        alt_soundspeed = .false.
+-        mixture_err = .false.
++        #:if not MFC_CASE_OPTIMIZATION
++            avg_state = dflt_int
++            alt_soundspeed = .false.
++            mixture_err = .false.
++        #:endif
+         sigR = dflt_real
+         dx_min = dflt_real
+         dy_min = dflt_real
+diff --git a/src/simulation/m_bubbles_EL.fpp b/src/simulation/m_bubbles_EL.fpp
+index ca32c36..7eb02dd 100644
+--- a/src/simulation/m_bubbles_EL.fpp
++++ b/src/simulation/m_bubbles_EL.fpp
+@@ -2,6 +2,7 @@
+ !! @file
+ !! @brief Contains module @ref m_bubbles_el "m_bubbles_EL"
+ 
++#:include 'case.fpp'
+ #:include 'macros.fpp'
+ 
+ !> Real fields of a bubble MPI slot, as (names, indices, count) in pack order. Used by both pack and unpack routines to ensure
+@@ -216,7 +217,10 @@ contains
+ 
+         call s_count_lag_entities_glb(n_el_bubs_loc, n_el_bubs_glb, lag_params%input_path)
+ 
+-        $:GPU_UPDATE(device='[bubbles_lagrange, lag_params]')
++        $:GPU_UPDATE(device='[lag_params]')
++        #:if not MFC_CASE_OPTIMIZATION
++            $:GPU_UPDATE(device='[bubbles_lagrange]')
++        #:endif
+ 
+         $:GPU_UPDATE(device='[lag_id, bub_R0, Rmax_stats, Rmin_stats, gas_mg, gas_betaT, gas_betaC, bub_dphidt, gas_p, gas_mv, &
+                      & intfc_rad, intfc_vel, mtn_pos, mtn_posPrev, mtn_vel, mtn_s, n_el_bubs_loc]')
+diff --git a/src/simulation/m_global_parameters.fpp b/src/simulation/m_global_parameters.fpp
+index 9b39807..8e2796b 100644
+--- a/src/simulation/m_global_parameters.fpp
++++ b/src/simulation/m_global_parameters.fpp
+@@ -488,14 +488,10 @@ contains
+         nv_uvm_pref_gpu = .false.
+ 
+         ! Simulation algorithm parameters (sim-specific)
+-        mpp_lim = .false.
+         time_stepper = dflt_int
+         muscl_eps = dflt_real
+         weno_eps = dflt_real
+         teno_CT = dflt_real
+-        mp_weno = .false.
+-        weno_avg = .false.
+-        weno_Re_flux = .false.
+         riemann_hypo_ADC = .false.
+         ADC_kappa = 1.0_wp
+         hll_u_interface = .false.
+@@ -503,9 +499,6 @@ contains
+         hypo_nc_mode = hypo_nc_mode_none
+         adv_src_mode = adv_src_mode_unset
+         use_nc_iface_vel = .false.
+-        low_Mach = 0
+-        wave_speeds = dflt_int
+-        null_weights = .false.
+         precision = 2
+         palpha_eps = dflt_real
+         ptgalpha_eps = dflt_real
+@@ -529,6 +522,13 @@ contains
+             igr_order = dflt_int
+             igr_pres_lim = .false.
+             igr_iter_solver = 1
++            mpp_lim = .false.
++            mp_weno = .false.
++            weno_avg = .false.
++            weno_Re_flux = .false.
++            low_Mach = 0
++            wave_speeds = dflt_int
++            null_weights = .false.
+         #:endif
+ 
+         chem_params%diffusion = .false.
+@@ -1191,9 +1191,8 @@ contains
+         $:GPU_UPDATE(device='[sys_size, buff_size, eqn_idx, adv_n, adap_dt, pi_fac, adap_dt_tol, adap_dt_max_iters]')
+         $:GPU_UPDATE(device='[cfl_target, m, n, p]')
+ 
+-        $:GPU_UPDATE(device='[alt_soundspeed, acoustic_source, num_source]')
+-        $:GPU_UPDATE(device='[dt, sys_size, buff_size, eqn_idx, mpp_lim, bubbles_euler, hypoelasticity, alt_soundspeed, &
+-                     & avg_state, model_eqns, mixture_err, grid_geometry, cyl_coord, mp_weno, weno_eps, teno_CT, low_Mach, ib]')
++        $:GPU_UPDATE(device='[acoustic_source, num_source]')
++        $:GPU_UPDATE(device='[dt, sys_size, buff_size, eqn_idx, grid_geometry, cyl_coord, weno_eps, teno_CT, ib]')
+         $:GPU_UPDATE(device='[riemann_hypo_ADC, ADC_kappa, hll_u_interface, hypo_hll_interface_rhs, hypo_nc_mode]')
+ 
+         $:GPU_UPDATE(device='[Bx0]')
+@@ -1202,7 +1201,7 @@ contains
+ 
+         $:GPU_UPDATE(device='[rburn]')
+ 
+-        $:GPU_UPDATE(device='[cont_damage, tau_star, cont_damage_s, alpha_bar]')
++        $:GPU_UPDATE(device='[tau_star, cont_damage_s, alpha_bar]')
+ 
+         $:GPU_UPDATE(device='[hyper_cleaning, hyper_cleaning_speed, hyper_cleaning_tau]')
+ 
+@@ -1212,7 +1211,9 @@ contains
+             $:GPU_UPDATE(device='[mhd, relativity]')
+             $:GPU_UPDATE(device='[muscl_order, muscl_lim]')
+             $:GPU_UPDATE(device='[igr, igr_order]')
+-            $:GPU_UPDATE(device='[num_fluids, num_dims, viscous, num_vels, nb, muscl_lim]')
++            $:GPU_UPDATE(device='[num_fluids, num_dims, viscous, num_vels, nb]')
++            $:GPU_UPDATE(device='[alt_soundspeed, mpp_lim, bubbles_euler, hypoelasticity, avg_state, model_eqns]')
++            $:GPU_UPDATE(device='[mixture_err, mp_weno, low_Mach, cont_damage]')
+         #:endif
+ 
+         $:GPU_UPDATE(device='[int_comp, ic_eps, ic_beta]')
+diff --git a/src/simulation/m_particles_EL.fpp b/src/simulation/m_particles_EL.fpp
+index 63acc5b..27bfef3 100644
+--- a/src/simulation/m_particles_EL.fpp
++++ b/src/simulation/m_particles_EL.fpp
+@@ -2,6 +2,7 @@
+ !! @file m_particles_EL.fpp
+ !! @brief Contains module m_particles_EL
+ 
++#:include 'case.fpp'
+ #:include 'macros.fpp'
+ 
+ !> Real fields of a particle MPI slot, as (names, indices, count) in pack order. Used by both pack and unpack routines to ensure
+@@ -239,7 +240,10 @@ contains
+         call s_count_lag_entities_glb(n_el_particles_loc, n_el_particles_glb, particle_params%input_path)
+         if (proc_rank == 0) print '(A,I0)', ' Lagrangian particles in the domain: ', n_el_particles_glb
+ 
+-        $:GPU_UPDATE(device='[particles_lagrange, particle_params]')
++        $:GPU_UPDATE(device='[particle_params]')
++        #:if not MFC_CASE_OPTIMIZATION
++            $:GPU_UPDATE(device='[particles_lagrange]')
++        #:endif
+ 
+         $:GPU_UPDATE(device='[' + PARTICLE_STATE_LIST + ']')
+ 
+diff --git a/src/simulation/m_start_up.fpp b/src/simulation/m_start_up.fpp
+index d816b65..7497c13 100644
+--- a/src/simulation/m_start_up.fpp
++++ b/src/simulation/m_start_up.fpp
+@@ -1151,9 +1151,9 @@ contains
+         $:GPU_UPDATE(device='[rburn]')
+ 
+         $:GPU_UPDATE(device='[R0ref, p0ref, rho0ref, ss, pv, vd, mu_l, mu_v, mu_g, gam_v, gam_g, M_v, M_g, R_v, R_g, Tw, cp_v, &
+-                     & cp_g, k_vl, k_gl, gam, gam_m, Eu, Ca, Web, Re_inv, Pe_c, phi_vg, phi_gv, omegaN, bubbles_euler, &
+-                     & polytropic, polydisperse, qbmm, ptil, bubble_model, thermal, poly_sigma, adv_n, adap_dt, adap_dt_tol, &
+-                     & adap_dt_max_iters, eqn_idx%n, pi_fac, low_Mach]')
++                     & cp_g, k_vl, k_gl, gam, gam_m, Eu, Ca, Web, Re_inv, Pe_c, phi_vg, phi_gv, omegaN, &
++                     & polytropic, polydisperse, ptil, bubble_model, thermal, poly_sigma, adv_n, adap_dt, adap_dt_tol, &
++                     & adap_dt_max_iters, eqn_idx%n, pi_fac]')
+ 
+         if (bubbles_euler) then
+             $:GPU_UPDATE(device='[weight, R0]')
+@@ -1164,10 +1164,13 @@ contains
+             end if
+         end if
+ 
+-        $:GPU_UPDATE(device='[adv_n, adap_dt, adap_dt_tol, adap_dt_max_iters, pi_fac, low_Mach, ib_flux_wall]')
++        $:GPU_UPDATE(device='[adv_n, adap_dt, adap_dt_tol, adap_dt_max_iters, pi_fac, ib_flux_wall]')
+ 
+         $:GPU_UPDATE(device='[acoustic_source, num_source]')
+-        $:GPU_UPDATE(device='[sigma, surface_tension]')
++        $:GPU_UPDATE(device='[sigma]')
++        #:if not MFC_CASE_OPTIMIZATION
++            $:GPU_UPDATE(device='[bubbles_euler, qbmm, low_Mach, surface_tension]')
++        #:endif
+ 
+         $:GPU_UPDATE(device='[dx, dy, dz, x_cb, x_cc, y_cb, y_cc, z_cb, z_cc]')
+         $:GPU_UPDATE(device='[bc_x%beg, bc_x%end, bc_y%beg, bc_y%end, bc_z%beg, bc_z%end]')
+diff --git a/toolchain/mfc/case.py b/toolchain/mfc/case.py
+index cf9f3e6..dc27c83 100644
+--- a/toolchain/mfc/case.py
++++ b/toolchain/mfc/case.py
+@@ -392,6 +392,24 @@ gbl_id = patch_ib(i)%gbl_patch_id
+             riemann_solver = int(self.params.get("riemann_solver", -1))
+             igr = 1 if self.params.get("igr", "F") == "T" else 0
+             igr_pres_lim = 1 if self.params.get("igr_pres_lim", "F") == "T" else 0
++            model_eqns = int(self.params.get("model_eqns", -100))
++            mpp_lim = 1 if self.params.get("mpp_lim", "F") == "T" else 0
++            low_Mach = int(self.params.get("low_Mach", 0))
++            wave_speeds = int(self.params.get("wave_speeds", -100))
++            alt_soundspeed = 1 if self.params.get("alt_soundspeed", "F") == "T" else 0
++            avg_state = int(self.params.get("avg_state", -100))
++            mixture_err = 1 if self.params.get("mixture_err", "F") == "T" else 0
++            bubbles_euler = 1 if self.params.get("bubbles_euler", "F") == "T" else 0
++            bubbles_lagrange = 1 if self.params.get("bubbles_lagrange", "F") == "T" else 0
++            particles_lagrange = 1 if self.params.get("particles_lagrange", "F") == "T" else 0
++            hypoelasticity = 1 if self.params.get("hypoelasticity", "F") == "T" else 0
++            cont_damage = 1 if self.params.get("cont_damage", "F") == "T" else 0
++            surface_tension = 1 if self.params.get("surface_tension", "F") == "T" else 0
++            qbmm = 1 if self.params.get("qbmm", "F") == "T" else 0
++            mp_weno = 1 if self.params.get("mp_weno", "F") == "T" else 0
++            null_weights = 1 if self.params.get("null_weights", "F") == "T" else 0
++            weno_Re_flux = 1 if self.params.get("weno_Re_flux", "F") == "T" else 0
++            weno_avg = 1 if self.params.get("weno_avg", "F") == "T" else 0
+ 
+             # Throw error if wenoz_q is required but not set
+             out = f"""\
+@@ -421,6 +439,24 @@ gbl_id = patch_ib(i)%gbl_patch_id
+ #:set igr_order             = {self.params.get("igr_order", 3)}
+ #:set viscous               = {viscous}
+ #:set riemann_solver        = {riemann_solver}
++#:set model_eqns            = {model_eqns}
++#:set mpp_lim               = {mpp_lim}
++#:set low_Mach              = {low_Mach}
++#:set wave_speeds           = {wave_speeds}
++#:set alt_soundspeed        = {alt_soundspeed}
++#:set avg_state             = {avg_state}
++#:set mixture_err           = {mixture_err}
++#:set bubbles_euler         = {bubbles_euler}
++#:set bubbles_lagrange      = {bubbles_lagrange}
++#:set particles_lagrange    = {particles_lagrange}
++#:set hypoelasticity        = {hypoelasticity}
++#:set cont_damage           = {cont_damage}
++#:set surface_tension       = {surface_tension}
++#:set qbmm                  = {qbmm}
++#:set mp_weno               = {mp_weno}
++#:set null_weights          = {null_weights}
++#:set weno_Re_flux          = {weno_Re_flux}
++#:set weno_avg              = {weno_avg}
+ """
+ 
+         else:
+diff --git a/toolchain/mfc/params/definitions.py b/toolchain/mfc/params/definitions.py
+index 507aef9..34bdf3b 100644
+--- a/toolchain/mfc/params/definitions.py
++++ b/toolchain/mfc/params/definitions.py
+@@ -62,6 +62,24 @@ CASE_OPT_PARAMS = {
+     "recon_type",
+     "muscl_order",
+     "muscl_lim",
++    "model_eqns",
++    "mpp_lim",
++    "low_Mach",
++    "wave_speeds",
++    "alt_soundspeed",
++    "avg_state",
++    "mixture_err",
++    "bubbles_euler",
++    "bubbles_lagrange",
++    "particles_lagrange",
++    "hypoelasticity",
++    "cont_damage",
++    "surface_tension",
++    "qbmm",
++    "mp_weno",
++    "null_weights",
++    "weno_Re_flux",
++    "weno_avg",
+ }
+ 
+ 
+diff --git a/toolchain/mfc/params_tests/test_fortran_gen.py b/toolchain/mfc/params_tests/test_fortran_gen.py
+index ef37e1d..6dd8ffd 100644
+--- a/toolchain/mfc/params_tests/test_fortran_gen.py
++++ b/toolchain/mfc/params_tests/test_fortran_gen.py
+@@ -121,12 +121,18 @@ def test_common_module_decls_do_not_expand_namelists():
+     from mfc.params.definitions import NAMELIST_VARS
+     from mfc.params.generators.fortran_gen import generate_decls_fpp, generate_namelist_fpp
+ 
+-    common_decls = ("avg_state", "alt_soundspeed", "mixture_err", "sigR", "riemann_solver")
++    common_decls = ("sigR", "riemann_solver")
+     for target in ("pre", "sim", "post"):
+         declarations = generate_decls_fpp(target)
+         for name in common_decls:
+             assert f":: {name}" in declarations
+ 
++    # Case-optimization params live in generated_case_opt_decls.fpp for sim,
++    # while pre/post declare them in generated_decls.fpp.
++    for opt_common in ("avg_state", "alt_soundspeed", "mixture_err"):
++        assert f":: {opt_common}" in generate_decls_fpp("pre")
++        assert f":: {opt_common}" in generate_decls_fpp("post")
++
+     # Viscous is a case-optimization parameter, so simulation declares it in
+     # generated_case_opt_decls.fpp instead of generated_decls.fpp.
+     assert ":: viscous" in generate_decls_fpp("pre")
+-- 
+2.34.1
+

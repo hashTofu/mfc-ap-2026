@@ -1,0 +1,109 @@
+=== MFC GATE 0 + STAGE 1 PROFILE ===
+JOBID=795079 NODE=25a-hgpn002 START=2026-11-18T05:02:20+08:00
+name, memory.total [MiB], driver_version, power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]
+NVIDIA H200, 143771 MiB, 580.65.06, 700.00 W, 1980 MHz, 3201 MHz
+PRE_BIN=/work/ianshen1110/mfc-ap-2026/MFC-base/build/install/gpu-acc-563ffa26ae/bin/pre_process
+SIM_BIN=/work/ianshen1110/mfc-ap-2026/MFC-base/build/install/gpu-acc-66b7f0b3b6/bin/simulation
+-rwxr-xr-x 1 ianshen1110 TRI1121941 637551000 Nov 18 04:35 /work/ianshen1110/mfc-ap-2026/MFC-base/build/install/gpu-acc-563ffa26ae/bin/pre_process
+-rwxr-xr-x 1 ianshen1110 TRI1121941 666209608 Nov 18 04:49 /work/ianshen1110/mfc-ap-2026/MFC-base/build/install/gpu-acc-66b7f0b3b6/bin/simulation
+=== PRE_PROCESS NXYZ=256 ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+total 1.1G
+-rw-r----- 1 ianshen1110 TRI1121941 1.0G Nov 18 05:02 lustre_0.dat
+-rw-r----- 1 ianshen1110 TRI1121941 2.1K Nov 18 05:02 lustre_x_cb.dat
+-rw-r----- 1 ianshen1110 TRI1121941 2.1K Nov 18 05:02 lustre_y_cb.dat
+-rw-r----- 1 ianshen1110 TRI1121941 2.1K Nov 18 05:02 lustre_z_cb.dat
+=== TIMING REPS (B0, 5 reps, same allocation) ===
+REP=1 WALL_S=14.413484
+     Ranks          s/rhs   ns/gp/eq/rhs
+         1     0.06158020     0.46422718
+47dfe69bcc53a75ff7e4d548ce126f46042b9b8f858fe8f7abe04c67d5a84864  /work/ianshen1110/mfc-ap-2026/runs/golden/B0_nxyz256_step30.dat
+REP=2 WALL_S=14.452303
+     Ranks          s/rhs   ns/gp/eq/rhs
+         1     0.06149790     0.46360676
+PARITY_VERDICT=PASS max_rel_l2=0.000e+00 max_rel_linf=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+REP=3 WALL_S=14.805827
+     Ranks          s/rhs   ns/gp/eq/rhs
+         1     0.06150390     0.46365199
+REP=4 WALL_S=13.964769
+     Ranks          s/rhs   ns/gp/eq/rhs
+         1     0.06156590     0.46411938
+REP=5 WALL_S=12.792835
+     Ranks          s/rhs   ns/gp/eq/rhs
+         1     0.06161590     0.46449631
+=== NSYS PROFILE (10 steps, no end save I/O) ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+NVIDIA Nsight Systems version 2025.5.1.121-255136380782v0
+
+NOTICE: Existing SQLite export found: /work/ianshen1110/mfc-ap-2026/runs/g0p1-795079/nsys_B0.sqlite
+        It is assumed file was previously exported from: /work/ianshen1110/mfc-ap-2026/runs/g0p1-795079/nsys_B0.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/work/ianshen1110/mfc-ap-2026/runs/g0p1-795079/nsys_B0.sqlite] with [/work/envstack/apps/nvhpc/25.9/Linux_x86_64/25.9/profilers/13.0/Nsight_Systems/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+15.9,294779969,30,9825999.0,9826922.5,9795098,9842490,11047.9,m_weno_s_weno_1104_gpu__2
+15.6,289610860,30,9653695.3,9655162.0,9617466,9676122,12199.8,m_weno_s_weno_1104_gpu__1
+15.3,283217909,30,9440597.0,9442233.5,9420089,9457945,9767.6,m_weno_s_weno_1104_gpu
+13.4,248635966,30,8287865.5,8281334.0,8262007,8318807,18316.9,m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu
+12.2,226703845,30,7556794.8,7551764.0,7528884,7590741,18036.7,m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_1
+12.2,225913564,30,7530452.1,7524948.0,7501941,7568244,17501.4,m_riemann_solver_hllc_s_hllc_riemann_solver_915_gpu_2
+4.2,78884173,30,2629472.4,2358502.5,2356103,3174440,390660.0,m_time_steppers_s_tvd_rk_544_gpu
+4.2,78451701,30,2615056.7,2614775.5,2608007,2630600,4473.3,m_variables_conversion_s_convert_conservative_to_primitive_variables_436_gpu
+2.1,38354564,30,1278485.5,1278724.0,1277059,1279524,747.2,m_rhs_s_compute_advection_source_term_1330_gpu
+2.0,37831661,30,1261055.4,1261171.5,1258019,1262915,903.2,m_rhs_s_compute_advection_source_term_1497_gpu
+1.7,30770105,30,1025670.2,1025746.5,1023555,1026947,811.6,m_rhs_s_compute_advection_source_term_1246_gpu
+0.8,14985261,30,499508.7,499169.0,498273,502721,878.4,m_rhs_s_compute_rhs_646_gpu
+0.4,6997876,180,38877.1,32192.0,26368,57696,12640.6,m_boundary_common_s_populate_bc_direction_159_gpu
+0.1,1515428,1,1515428.0,1515428.0,1515428,1515428,0.0,m_start_up_s_save_data_803_gpu
+0.0,20096,30,669.9,672.0,576,800,57.6,m_rhs_s_compute_rhs_994_gpu
+
+Processing [/work/ianshen1110/mfc-ap-2026/runs/g0p1-795079/nsys_B0.sqlite] with [/work/envstack/apps/nvhpc/25.9/Linux_x86_64/25.9/profilers/13.0/Nsight_Systems/host-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+Time (%),Total Time (ns),Count,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Operation
+59.6,391957612,8,48994701.5,43838195.5,38107173,89976237,17145736.2,[CUDA memcpy Device-to-Host]
+40.4,266037149,1902,139872.3,768.0,704,52620075,2383615.9,[CUDA memcpy Host-to-Device]
+0.0,197184,253,779.4,736.0,704,1568,118.8,[CUDA memset]
+
+Processing [/work/ianshen1110/mfc-ap-2026/runs/g0p1-795079/nsys_B0.sqlite] with [/work/envstack/apps/nvhpc/25.9/Linux_x86_64/25.9/profilers/13.0/Nsight_Systems/host-linux-x64/reports/nvtx_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Style,Range
+22.3,4494793405,1,4494793405.0,4494793405.0,4494793405,4494793405,0.0,PushPop,:SIMULATION-TIME-MARCH
+18.0,3626867216,1,3626867216.0,3626867216.0,3626867216,3626867216,0.0,PushPop,:INIT
+12.9,2602400563,1,2602400563.0,2602400563.0,2602400563,2602400563,0.0,PushPop,:SAVE-DATA
+10.3,2073794044,1,2073794044.0,2073794044.0,2073794044,2073794044,0.0,PushPop,:INIT-MPI
+9.4,1890227317,10,189022731.7,187763348.5,187577932,198846539,3486971.3,PushPop,:TIMESTEP
+9.0,1809603152,30,60320105.1,59913713.5,59808354,70216527,1892636.3,PushPop,:COMPUTE-RHS
+6.4,1286211230,1,1286211230.0,1286211230.0,1286211230,1286211230,0.0,PushPop,:INIT-MODULES
+4.3,874650271,90,9718336.3,9711435.0,9476157,11477716,245009.3,PushPop,:RHS-RECONSTRUCTION
+3.5,712057801,90,7911753.3,7649327.0,7593356,11017475,480861.1,PushPop,:RHS-RIEMANN-SOLVER
+1.5,311277699,1,311277699.0,311277699.0,311277699,311277699,0.0,PushPop,:FINALIZE-MODULES
+1.3,266838612,1,266838612.0,266838612.0,266838612,266838612,0.0,PushPop,:INIT-GPU-VARS
+0.5,108850349,90,1209448.3,1281100.5,1042994,1309131,115962.2,PushPop,:RHS-ADVECTION-SRC
+0.4,81616402,30,2720546.7,2637876.5,2628937,4227915,329219.4,PushPop,:RHS-CONVERT
+0.1,12624779,30,420826.0,345198.5,334370,2018833,320791.3,PushPop,:RHS-COMMUNICATION
+
+=== NCU PROBE (1 step on 64^3 if counters allowed) ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+==PROF== Connected to process 1966467 (/work/ianshen1110/mfc-ap-2026/MFC-base/build/install/gpu-acc-66b7f0b3b6/bin/simulation)
+ Simulating a regular 63x63x63 case on 1 rank(s) with OpenACC offloading.
+ [  0%] step 1 of 3 (t_step 0) t/step  0.00E+00s (avg  0.00E+00s) ETA 0:00:00
+ [ 34%] step 2 of 3 (t_step 1) t/step  3.43E-02s (avg  0.00E+00s) ETA 0:00:00
+ Performance:    0.000000000000000      ns/gp/eq/rhs
+==PROF== Disconnected from process 1966467
+==WARNING== No kernels were profiled.
+=== G0P1_DONE ===

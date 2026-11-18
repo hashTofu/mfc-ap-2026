@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "mode": "strict_component",
+  "tol_rel_l2": 1e-11,
+  "n_vars": 8,
+  "n_cells": 2097152,
+  "max_rel_l2": 0.0,
+  "max_rel_linf": 0.0,
+  "raw_max_rel_l2": 0.0,
+  "raw_max_rel_linf": 0.0,
+  "mom_vec_l2": 2075883.572109256,
+  "per_var": [
+    {
+      "var": "alpha_rho_1",
+      "l2_ref": 131131.82054552465,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "alpha_rho_2",
+      "l2_ref": 3894.2027173283473,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "mom_x",
+      "l2_ref": 2074374.3141227383,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "mom_y",
+      "l2_ref": 55963.42493496353,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "mom_z",
+      "l2_ref": 55963.424934963565,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "E_tot",
+      "l2_ref": 53810338507.89204,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "alpha_1",
+      "l2_ref": 131.108457061637,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    },
+    {
+      "var": "alpha_2",
+      "l2_ref": 1442.1999537537808,
+      "l2_diff": 0.0,
+      "rel_l2": 0.0,
+      "raw_rel_l2": 0.0,
+      "linf_diff": 0.0,
+      "rel_linf": 0.0,
+      "raw_rel_linf": 0.0
+    }
+  ]
+}

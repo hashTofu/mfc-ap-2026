@@ -1,0 +1,328 @@
+=== MFC FINAL 8xH200 PINNED ABLATION, SCALING & HARDWARE PROFILE ===
+JOBID=795552 NODE=25a-hgpn034 FINAL_ARM=L1234 RUN_RDMA_T=1 START=2026-11-18T06:44:04+08:00
+index, name, memory.total [MiB], power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]
+0, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+1, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+2, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+3, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+4, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+5, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+6, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+7, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+	[4mGPU0	GPU1	GPU2	GPU3	GPU4	GPU5	GPU6	GPU7	NIC0	NIC1	NIC2	NIC3	NIC4	NIC5	NIC6	NIC7	NIC8	NIC9	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	NV18	NV18	NV18	NV18	NV18	NV18	NV18	PIX	NODE	NODE	NODE	NODE	NODE	SYS	SYS	SYS	SYS	0-47	0		N/A
+GPU1	NV18	 X 	NV18	NV18	NV18	NV18	NV18	NV18	NODE	NODE	NODE	PIX	NODE	NODE	SYS	SYS	SYS	SYS	0-47	0		N/A
+GPU2	NV18	NV18	 X 	NV18	NV18	NV18	NV18	NV18	NODE	NODE	NODE	NODE	PIX	NODE	SYS	SYS	SYS	SYS	0-47	0		N/A
+GPU3	NV18	NV18	NV18	 X 	NV18	NV18	NV18	NV18	NODE	NODE	NODE	NODE	NODE	PIX	SYS	SYS	SYS	SYS	0-47	0		N/A
+GPU4	NV18	NV18	NV18	NV18	 X 	NV18	NV18	NV18	SYS	SYS	SYS	SYS	SYS	SYS	PIX	NODE	NODE	NODE	56-103	1		N/A
+GPU5	NV18	NV18	NV18	NV18	NV18	 X 	NV18	NV18	SYS	SYS	SYS	SYS	SYS	SYS	NODE	PIX	NODE	NODE	56-103	1		N/A
+GPU6	NV18	NV18	NV18	NV18	NV18	NV18	 X 	NV18	SYS	SYS	SYS	SYS	SYS	SYS	NODE	NODE	PIX	NODE	56-103	1		N/A
+GPU7	NV18	NV18	NV18	NV18	NV18	NV18	NV18	 X 	SYS	SYS	SYS	SYS	SYS	SYS	NODE	NODE	NODE	PIX	56-103	1		N/A
+NIC0	PIX	NODE	NODE	NODE	SYS	SYS	SYS	SYS	 X 	NODE	NODE	NODE	NODE	NODE	SYS	SYS	SYS	SYS				
+NIC1	NODE	NODE	NODE	NODE	SYS	SYS	SYS	SYS	NODE	 X 	PIX	NODE	NODE	NODE	SYS	SYS	SYS	SYS				
+NIC2	NODE	NODE	NODE	NODE	SYS	SYS	SYS	SYS	NODE	PIX	 X 	NODE	NODE	NODE	SYS	SYS	SYS	SYS				
+NIC3	NODE	PIX	NODE	NODE	SYS	SYS	SYS	SYS	NODE	NODE	NODE	 X 	NODE	NODE	SYS	SYS	SYS	SYS				
+NIC4	NODE	NODE	PIX	NODE	SYS	SYS	SYS	SYS	NODE	NODE	NODE	NODE	 X 	NODE	SYS	SYS	SYS	SYS				
+NIC5	NODE	NODE	NODE	PIX	SYS	SYS	SYS	SYS	NODE	NODE	NODE	NODE	NODE	 X 	SYS	SYS	SYS	SYS				
+NIC6	SYS	SYS	SYS	SYS	PIX	NODE	NODE	NODE	SYS	SYS	SYS	SYS	SYS	SYS	 X 	NODE	NODE	NODE				
+NIC7	SYS	SYS	SYS	SYS	NODE	PIX	NODE	NODE	SYS	SYS	SYS	SYS	SYS	SYS	NODE	 X 	NODE	NODE				
+NIC8	SYS	SYS	SYS	SYS	NODE	NODE	PIX	NODE	SYS	SYS	SYS	SYS	SYS	SYS	NODE	NODE	 X 	NODE				
+NIC9	SYS	SYS	SYS	SYS	NODE	NODE	NODE	PIX	SYS	SYS	SYS	SYS	SYS	SYS	NODE	NODE	NODE	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: mlx5_0
+  NIC1: mlx5_1
+  NIC2: mlx5_2
+  NIC3: mlx5_3
+  NIC4: mlx5_4
+  NIC5: mlx5_5
+  NIC6: mlx5_6
+  NIC7: mlx5_7
+  NIC8: mlx5_8
+  NIC9: mlx5_9
+
+=== PRE_PROCESS 256^3 ONCE ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+-rw-r----- 1 ianshen1110 TRI1121941 1.0G Nov 18 06:44 /tmp/ianshen1110/mfc-final-795552/ic_256/restart_data/lustre_0.dat
+=== 1. PINNED 1-GPU ABLATION (5 REPS EACH, SAME NODE/ALLOC) ===
+BENCH tag=ablate_B0 np=1 rep=1 wall_s=12.700199 s_per_rhs=0.06144900 ns_gp_eq_rhs=0.46323812
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=ablate_B0 np=1 rep=2 wall_s=12.577818 s_per_rhs=0.06144220 ns_gp_eq_rhs=0.46318686
+BENCH tag=ablate_B0 np=1 rep=3 wall_s=12.683833 s_per_rhs=0.06149300 ns_gp_eq_rhs=0.46356982
+BENCH tag=ablate_B0 np=1 rep=4 wall_s=12.635785 s_per_rhs=0.06147310 ns_gp_eq_rhs=0.46341980
+BENCH tag=ablate_B0 np=1 rep=5 wall_s=12.623018 s_per_rhs=0.06149610 ns_gp_eq_rhs=0.46359319
+BENCH tag=ablate_L1_stock np=1 rep=1 wall_s=10.682918 s_per_rhs=0.04006290 ns_gp_eq_rhs=0.30201732
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=ablate_L1_stock np=1 rep=2 wall_s=10.654107 s_per_rhs=0.04002790 ns_gp_eq_rhs=0.30175347
+BENCH tag=ablate_L1_stock np=1 rep=3 wall_s=10.654494 s_per_rhs=0.04003400 ns_gp_eq_rhs=0.30179946
+BENCH tag=ablate_L1_stock np=1 rep=4 wall_s=10.540552 s_per_rhs=0.04000800 ns_gp_eq_rhs=0.30160346
+BENCH tag=ablate_L1_stock np=1 rep=5 wall_s=10.657576 s_per_rhs=0.04002910 ns_gp_eq_rhs=0.30176252
+BENCH tag=ablate_L1 np=1 rep=1 wall_s=10.526613 s_per_rhs=0.03734710 ns_gp_eq_rhs=0.28154405
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=ablate_L1 np=1 rep=2 wall_s=10.384006 s_per_rhs=0.03735400 ns_gp_eq_rhs=0.28159607
+BENCH tag=ablate_L1 np=1 rep=3 wall_s=10.423625 s_per_rhs=0.03736190 ns_gp_eq_rhs=0.28165562
+BENCH tag=ablate_L1 np=1 rep=4 wall_s=10.425807 s_per_rhs=0.03733490 ns_gp_eq_rhs=0.28145208
+BENCH tag=ablate_L1 np=1 rep=5 wall_s=10.562688 s_per_rhs=0.03735680 ns_gp_eq_rhs=0.28161718
+BENCH tag=ablate_L12 np=1 rep=1 wall_s=10.412587 s_per_rhs=0.03596810 ns_gp_eq_rhs=0.27114835
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=ablate_L12 np=1 rep=2 wall_s=10.306789 s_per_rhs=0.03597590 ns_gp_eq_rhs=0.27120715
+BENCH tag=ablate_L12 np=1 rep=3 wall_s=10.260095 s_per_rhs=0.03597400 ns_gp_eq_rhs=0.27119283
+BENCH tag=ablate_L12 np=1 rep=4 wall_s=10.300817 s_per_rhs=0.03597620 ns_gp_eq_rhs=0.27120941
+BENCH tag=ablate_L12 np=1 rep=5 wall_s=10.289875 s_per_rhs=0.03600190 ns_gp_eq_rhs=0.27140316
+BENCH tag=ablate_L123 np=1 rep=1 wall_s=8.843048 s_per_rhs=0.01944710 ns_gp_eq_rhs=0.14660349
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=ablate_L123 np=1 rep=2 wall_s=8.716772 s_per_rhs=0.01945800 ns_gp_eq_rhs=0.14668566
+BENCH tag=ablate_L123 np=1 rep=3 wall_s=8.703038 s_per_rhs=0.01945500 ns_gp_eq_rhs=0.14666305
+BENCH tag=ablate_L123 np=1 rep=4 wall_s=8.879528 s_per_rhs=0.01943180 ns_gp_eq_rhs=0.14648815
+BENCH tag=ablate_L123 np=1 rep=5 wall_s=8.793212 s_per_rhs=0.01945520 ns_gp_eq_rhs=0.14666456
+BENCH tag=ablate_L1234 np=1 rep=1 wall_s=8.892836 s_per_rhs=0.01945490 ns_gp_eq_rhs=0.14666229
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=ablate_L1234 np=1 rep=2 wall_s=8.840540 s_per_rhs=0.01945520 ns_gp_eq_rhs=0.14666456
+BENCH tag=ablate_L1234 np=1 rep=3 wall_s=8.827360 s_per_rhs=0.01945400 ns_gp_eq_rhs=0.14665551
+BENCH tag=ablate_L1234 np=1 rep=4 wall_s=8.718095 s_per_rhs=0.01945590 ns_gp_eq_rhs=0.14666983
+BENCH tag=ablate_L1234 np=1 rep=5 wall_s=8.744620 s_per_rhs=0.01945500 ns_gp_eq_rhs=0.14666305
+=== 2. STRONG SCALING 256^3 (1, 2, 4, 8 GPUs; 4 REPS EACH) ===
+BENCH tag=scale_B0_rdmaF np=1 rep=1 wall_s=12.583052 s_per_rhs=0.06146720 ns_gp_eq_rhs=0.46337532
+BENCH tag=scale_B0_rdmaF np=1 rep=2 wall_s=12.609007 s_per_rhs=0.06137610 ns_gp_eq_rhs=0.46268856
+BENCH tag=scale_B0_rdmaF np=1 rep=3 wall_s=12.523640 s_per_rhs=0.06154800 ns_gp_eq_rhs=0.46398444
+BENCH tag=scale_B0_rdmaF np=1 rep=4 wall_s=12.520999 s_per_rhs=0.06149320 ns_gp_eq_rhs=0.46357133
+BENCH tag=scale_L1234_rdmaF np=1 rep=1 wall_s=8.759313 s_per_rhs=0.01945520 ns_gp_eq_rhs=0.14666456
+BENCH tag=scale_L1234_rdmaF np=1 rep=2 wall_s=8.728860 s_per_rhs=0.01945500 ns_gp_eq_rhs=0.14666305
+BENCH tag=scale_L1234_rdmaF np=1 rep=3 wall_s=8.748083 s_per_rhs=0.01945590 ns_gp_eq_rhs=0.14666983
+BENCH tag=scale_L1234_rdmaF np=1 rep=4 wall_s=8.686670 s_per_rhs=0.01945590 ns_gp_eq_rhs=0.14666983
+BENCH tag=scale_B0_rdmaF np=2 rep=1 wall_s=17.011239 s_per_rhs=0.03534390 ns_gp_eq_rhs=0.26644277
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=scale_B0_rdmaF np=2 rep=2 wall_s=16.956917 s_per_rhs=0.03565310 ns_gp_eq_rhs=0.26877370
+BENCH tag=scale_B0_rdmaF np=2 rep=3 wall_s=16.966814 s_per_rhs=0.03636700 ns_gp_eq_rhs=0.27415549
+BENCH tag=scale_B0_rdmaF np=2 rep=4 wall_s=16.212655 s_per_rhs=0.03651310 ns_gp_eq_rhs=0.27525688
+BENCH tag=scale_L1234_rdmaF np=2 rep=1 wall_s=14.025172 s_per_rhs=0.01390100 ns_gp_eq_rhs=0.10479378
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=scale_L1234_rdmaF np=2 rep=2 wall_s=14.058222 s_per_rhs=0.01326010 ns_gp_eq_rhs=0.09996231
+BENCH tag=scale_L1234_rdmaF np=2 rep=3 wall_s=14.111548 s_per_rhs=0.01377890 ns_gp_eq_rhs=0.10387332
+BENCH tag=scale_L1234_rdmaF np=2 rep=4 wall_s=14.209849 s_per_rhs=0.01328200 ns_gp_eq_rhs=0.10012740
+BENCH tag=scale_L1234_rdmaT np=2 rep=1 wall_s=14.741054 s_per_rhs=0.01021600 ns_gp_eq_rhs=0.07701412
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=scale_L1234_rdmaT np=2 rep=2 wall_s=14.743046 s_per_rhs=0.01023200 ns_gp_eq_rhs=0.07713474
+BENCH tag=scale_L1234_rdmaT np=2 rep=3 wall_s=14.716477 s_per_rhs=0.01022910 ns_gp_eq_rhs=0.07711288
+BENCH tag=scale_L1234_rdmaT np=2 rep=4 wall_s=14.712022 s_per_rhs=0.01023200 ns_gp_eq_rhs=0.07713474
+BENCH tag=scale_B0_rdmaF np=4 rep=1 wall_s=15.864377 s_per_rhs=0.02055200 ns_gp_eq_rhs=0.15493287
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=scale_B0_rdmaF np=4 rep=2 wall_s=15.745053 s_per_rhs=0.01990110 ns_gp_eq_rhs=0.15002601
+BENCH tag=scale_B0_rdmaF np=4 rep=3 wall_s=15.805554 s_per_rhs=0.02022010 ns_gp_eq_rhs=0.15243081
+BENCH tag=scale_B0_rdmaF np=4 rep=4 wall_s=15.948426 s_per_rhs=0.02104300 ns_gp_eq_rhs=0.15863431
+BENCH tag=scale_L1234_rdmaF np=4 rep=1 wall_s=14.936288 s_per_rhs=0.00964090 ns_gp_eq_rhs=0.07267868
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=scale_L1234_rdmaF np=4 rep=2 wall_s=14.905514 s_per_rhs=0.00877000 ns_gp_eq_rhs=0.06611333
+BENCH tag=scale_L1234_rdmaF np=4 rep=3 wall_s=14.884544 s_per_rhs=0.00993590 ns_gp_eq_rhs=0.07490256
+BENCH tag=scale_L1234_rdmaF np=4 rep=4 wall_s=14.832925 s_per_rhs=0.00979590 ns_gp_eq_rhs=0.07384716
+BENCH tag=scale_L1234_rdmaT np=4 rep=1 wall_s=14.596767 s_per_rhs=0.00545790 ns_gp_eq_rhs=0.04114481
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=scale_L1234_rdmaT np=4 rep=2 wall_s=14.655020 s_per_rhs=0.00546890 ns_gp_eq_rhs=0.04122773
+BENCH tag=scale_L1234_rdmaT np=4 rep=3 wall_s=14.817463 s_per_rhs=0.00547290 ns_gp_eq_rhs=0.04125789
+BENCH tag=scale_L1234_rdmaT np=4 rep=4 wall_s=14.557707 s_per_rhs=0.00546310 ns_gp_eq_rhs=0.04118401
+BENCH tag=scale_B0_rdmaF np=8 rep=1 wall_s=19.842624 s_per_rhs=0.01380510 ns_gp_eq_rhs=0.10407083
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+BENCH tag=scale_B0_rdmaF np=8 rep=2 wall_s=19.611641 s_per_rhs=0.01305190 ns_gp_eq_rhs=0.09839278
+BENCH tag=scale_B0_rdmaF np=8 rep=3 wall_s=19.539505 s_per_rhs=0.01337410 ns_gp_eq_rhs=0.10082171
+BENCH tag=scale_B0_rdmaF np=8 rep=4 wall_s=19.459623 s_per_rhs=0.01291900 ns_gp_eq_rhs=0.09739090
+BENCH tag=scale_L1234_rdmaF np=8 rep=1 wall_s=18.695880 s_per_rhs=0.00767180 ns_gp_eq_rhs=0.05783447
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=scale_L1234_rdmaF np=8 rep=2 wall_s=19.465379 s_per_rhs=0.00733090 ns_gp_eq_rhs=0.05526457
+BENCH tag=scale_L1234_rdmaF np=8 rep=3 wall_s=18.889513 s_per_rhs=0.00755590 ns_gp_eq_rhs=0.05696075
+BENCH tag=scale_L1234_rdmaF np=8 rep=4 wall_s=18.943594 s_per_rhs=0.00702700 ns_gp_eq_rhs=0.05297359
+BENCH tag=scale_L1234_rdmaT np=8 rep=1 wall_s=18.541344 s_per_rhs=0.00308300 ns_gp_eq_rhs=0.02324144
+PARITY_VERDICT=PASS mode=vector_mom_norm max_rel_l2=6.602e-14 raw_max_rel_l2=7.251e-02
+  alpha_rho_1  rel_l2=3.749e-15  raw_l2=3.749e-15  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.279e-15  raw_l2=1.279e-15  abs_linf=1.035e-12
+  mom_x        rel_l2=6.602e-14  raw_l2=6.602e-14  abs_linf=2.809e-08
+  mom_y        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  mom_z        rel_l2=4.479e-14  raw_l2=7.251e-02  abs_linf=3.213e-08
+  E_tot        rel_l2=3.765e-15  raw_l2=3.765e-15  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.478e-15  raw_l2=2.478e-15  abs_linf=9.090e-14
+  alpha_2      rel_l2=2.259e-16  raw_l2=2.259e-16  abs_linf=9.170e-14
+BENCH tag=scale_L1234_rdmaT np=8 rep=2 wall_s=18.319780 s_per_rhs=0.00307610 ns_gp_eq_rhs=0.02318942
+BENCH tag=scale_L1234_rdmaT np=8 rep=3 wall_s=18.716009 s_per_rhs=0.00309400 ns_gp_eq_rhs=0.02332436
+BENCH tag=scale_L1234_rdmaT np=8 rep=4 wall_s=18.547793 s_per_rhs=0.00307990 ns_gp_eq_rhs=0.02321807
+=== 3. POST-OPT NSYS PROFILING (10 STEPS, NO SAVE I/O) ===
+=== 4. NCU ROOFLINE & FLOP/DRAM COUNTERS (64^3, 4 STEPS, SKIP 60 COUNT 25) ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+=== 5. GATE 3B POST-IMPACT 8-GPU STRICT 8-COMPONENT PARITY (128^3) ===
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+PARITY_VERDICT=PASS mode=strict_component max_rel_l2=4.940e-09 raw_max_rel_l2=1.508e-07
+  alpha_rho_1  rel_l2=2.220e-10  raw_l2=2.220e-10  abs_linf=5.440e-06
+  alpha_rho_2  rel_l2=8.730e-10  raw_l2=8.730e-10  abs_linf=5.075e-07
+  mom_x        rel_l2=4.940e-09  raw_l2=4.944e-09  abs_linf=2.921e-03
+  mom_y        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  mom_z        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  E_tot        rel_l2=2.176e-10  raw_l2=2.176e-10  abs_linf=2.368e+00
+  alpha_1      rel_l2=1.951e-10  raw_l2=1.951e-10  abs_linf=4.805e-09
+  alpha_2      rel_l2=1.774e-11  raw_l2=1.774e-11  abs_linf=4.805e-09
+PARITY_VERDICT=PASS mode=strict_component max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+PARITY_VERDICT=PASS mode=strict_component max_rel_l2=4.940e-09 raw_max_rel_l2=1.508e-07
+  alpha_rho_1  rel_l2=2.220e-10  raw_l2=2.220e-10  abs_linf=5.440e-06
+  alpha_rho_2  rel_l2=8.730e-10  raw_l2=8.730e-10  abs_linf=5.075e-07
+  mom_x        rel_l2=4.940e-09  raw_l2=4.944e-09  abs_linf=2.921e-03
+  mom_y        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  mom_z        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  E_tot        rel_l2=2.176e-10  raw_l2=2.176e-10  abs_linf=2.368e+00
+  alpha_1      rel_l2=1.951e-10  raw_l2=1.951e-10  abs_linf=4.805e-09
+  alpha_2      rel_l2=1.774e-11  raw_l2=1.774e-11  abs_linf=4.805e-09
+PARITY_VERDICT=PASS mode=strict_component max_rel_l2=0.000e+00 raw_max_rel_l2=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  raw_l2=0.000e+00  abs_linf=0.000e+00
+PARITY_VERDICT=PASS mode=strict_component max_rel_l2=4.940e-09 raw_max_rel_l2=1.508e-07
+  alpha_rho_1  rel_l2=2.220e-10  raw_l2=2.220e-10  abs_linf=5.440e-06
+  alpha_rho_2  rel_l2=8.730e-10  raw_l2=8.730e-10  abs_linf=5.075e-07
+  mom_x        rel_l2=4.940e-09  raw_l2=4.944e-09  abs_linf=2.921e-03
+  mom_y        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  mom_z        rel_l2=4.067e-09  raw_l2=1.508e-07  abs_linf=2.975e-03
+  E_tot        rel_l2=2.176e-10  raw_l2=2.176e-10  abs_linf=2.368e+00
+  alpha_1      rel_l2=1.951e-10  raw_l2=1.951e-10  abs_linf=4.805e-09
+  alpha_2      rel_l2=1.774e-11  raw_l2=1.774e-11  abs_linf=4.805e-09
+=== FINAL_DONE END=2026-11-18T07:08:04+08:00 ===

@@ -1,0 +1,88 @@
+=== MFC STAGE 3B BUILD + SCREENING (L1_stock, L1, L12, L123, L1234) ===
+JOBID=795266 NODE=25a-hgpn002 START=2026-11-18T05:46:23+08:00
+index, name, memory.total [MiB], power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]
+0, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+1, NVIDIA H200, 143771 MiB, 700.00 W, 1980 MHz, 3201 MHz
+COPY_S=7
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 40/93 parameters.
+BUILD label=L1_stock slug=gpu-acc-8c08f4a97b time_s=367 size=658193928
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 37/93 parameters.
+BUILD label=L1 slug=gpu-acc-9e917531eb time_s=316 size=655514328
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 29/93 parameters.
+ Generating pre_process.inp:
+   INFO: Forwarded 76/93 parameters.
+ Generating simulation.inp:
+   INFO: Forwarded 29/93 parameters.
+BUILD label=L12 slug=gpu-acc-9e917531eb time_s=172 size=655563168
+BUILD label=L123 slug=gpu-acc-9e917531eb time_s=149 size=655642912
+BUILD label=L1234 slug=gpu-acc-9e917531eb time_s=167 size=655647392
+=== PRE_PROCESS 256^3 ONCE ===
+-rw-r----- 1 ianshen1110 TRI1121941 1.0G Nov 18 06:06 /tmp/ianshen1110/mfc-scr-795266/ic_case/restart_data/lustre_0.dat
+=== 1-GPU SCREENING (2 REPS EACH + GATE 3A PARITY) ===
+SCREEN arm=B0 np=1 rep=1 wall_s=13.537079 s_per_rhs=
+PARITY_VERDICT=PASS max_rel_l2=0.000e+00 max_rel_linf=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+SCREEN arm=B0 np=1 rep=2 wall_s=13.083255 s_per_rhs=
+SCREEN arm=L1_stock np=1 rep=1 wall_s=11.478189 s_per_rhs=
+PARITY_VERDICT=PASS max_rel_l2=0.000e+00 max_rel_linf=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+SCREEN arm=L1_stock np=1 rep=2 wall_s=11.131835 s_per_rhs=
+SCREEN arm=L1 np=1 rep=1 wall_s=11.256512 s_per_rhs=
+PARITY_VERDICT=PASS max_rel_l2=0.000e+00 max_rel_linf=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+SCREEN arm=L1 np=1 rep=2 wall_s=11.577319 s_per_rhs=
+SCREEN arm=L12 np=1 rep=1 wall_s=10.916420 s_per_rhs=
+PARITY_VERDICT=PASS max_rel_l2=0.000e+00 max_rel_linf=0.000e+00
+  alpha_rho_1  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_rho_2  rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_x        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_y        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  mom_z        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  E_tot        rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_1      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+  alpha_2      rel_l2=0.000e+00  rel_linf=0.000e+00  abs_linf=0.000e+00
+SCREEN arm=L12 np=1 rep=2 wall_s=10.524000 s_per_rhs=
+SCREEN arm=L123 np=1 rep=1 wall_s=9.283306 s_per_rhs=
+PARITY_VERDICT=FAIL_TOL max_rel_l2=7.255e-02 max_rel_linf=4.325e-02
+  alpha_rho_1  rel_l2=3.749e-15  rel_linf=1.151e-13  abs_linf=1.151e-10
+  alpha_rho_2  rel_l2=1.277e-15  rel_linf=2.679e-13  abs_linf=1.036e-12
+  mom_x        rel_l2=6.602e-14  rel_linf=1.283e-11  abs_linf=2.814e-08
+  mom_y        rel_l2=7.255e-02  rel_linf=4.325e-02  abs_linf=3.214e-08
+  mom_z        rel_l2=7.255e-02  rel_linf=4.325e-02  abs_linf=3.214e-08
+  E_tot        rel_l2=3.764e-15  rel_linf=1.163e-13  abs_linf=4.768e-05
+  alpha_1      rel_l2=2.477e-15  rel_linf=9.089e-14  abs_linf=9.089e-14
+  alpha_2      rel_l2=2.258e-16  rel_linf=9.170e-14  abs_linf=9.170e-14

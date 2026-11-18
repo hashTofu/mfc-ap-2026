@@ -1,0 +1,477 @@
+From c58026e995214cdc1774a8bc8f1ec09285b6f83b Mon Sep 17 00:00:00 2001
+From: hashtofu <ianshen1110@gmail.com>
+Date: Wed, 18 Nov 2026 05:41:48 +0800
+Subject: [PATCH] L4: Coalesced SoA MPI halo pack/unpack and active-slice PCIe
+ updates
+
+---
+ src/common/m_mpi_common.fpp | 243 +++++++++++++++++++-----------------
+ 1 file changed, 127 insertions(+), 116 deletions(-)
+
+diff --git a/src/common/m_mpi_common.fpp b/src/common/m_mpi_common.fpp
+index ffc31c6..6ccded6 100644
+--- a/src/common/m_mpi_common.fpp
++++ b/src/common/m_mpi_common.fpp
+@@ -666,7 +666,7 @@ contains
+         real(stp), optional, dimension(idwbuff(1)%beg:,idwbuff(2)%beg:,idwbuff(3)%beg:,1:,1:), intent(inout) :: pb_in, mv_in
+         integer, intent(in) :: mpi_dir, pbc_loc, nVar
+         integer :: i, j, k, l, r, q  !< Generic loop iterators
+-        integer :: buffer_counts(1:3), buffer_count
++        integer :: buffer_counts(1:3), buffer_count, slice_sizes(1:3), slice_size
+         type(int_bounds_info) :: boundary_conditions(1:3)
+         integer :: beg_end(1:2), grid_dims(1:3)
+         integer :: dst_proc, src_proc, recv_tag, send_tag
+@@ -682,11 +682,13 @@ contains
+         qbmm_comm = .false.
+         chem_T_comm = .false.
+ 
++        slice_sizes = (/buff_size*(n + 1)*(p + 1), buff_size*(m + 2*buff_size + 1)*(p + 1), &
++                       & buff_size*(m + 2*buff_size + 1)*(n + 2*buff_size + 1)/)
++        slice_size = slice_sizes(mpi_dir)
++
+         if (present(pb_in) .and. present(mv_in) .and. qbmm .and. .not. polytropic) then
+             qbmm_comm = .true.
+             v_size = nVar + 2*nb*nnode
+-            buffer_counts = (/buff_size*v_size*(n + 1)*(p + 1), buff_size*v_size*(m + 2*buff_size + 1)*(p + 1), &
+-                             & buff_size*v_size*(m + 2*buff_size + 1)*(n + 2*buff_size + 1)/)
+         else if (present(q_T_sf) .and. (heat_conduction .or. (chemistry .and. (chem_params%diffusion &
+                  & .or. exchange_all_chemistry_temperatures)))) then
+             ! Consumers that convert over ghost-inclusive bounds request temperature exchange for every chemistry run.
+@@ -694,14 +696,12 @@ contains
+             ! an unexchanged seam ghost is an uninitialized guess -> NaN T/pres/c in the output
+             chem_T_comm = .true.
+             v_size = nVar + 1
+-            buffer_counts = (/buff_size*v_size*(n + 1)*(p + 1), buff_size*v_size*(m + 2*buff_size + 1)*(p + 1), &
+-                             & buff_size*v_size*(m + 2*buff_size + 1)*(n + 2*buff_size + 1)/)
+         else
+             v_size = nVar
+-            buffer_counts = (/buff_size*v_size*(n + 1)*(p + 1), buff_size*v_size*(m + 2*buff_size + 1)*(p + 1), &
+-                             & buff_size*v_size*(m + 2*buff_size + 1)*(n + 2*buff_size + 1)/)
+         end if
+ 
++        buffer_counts = v_size*slice_sizes
++
+         $:GPU_UPDATE(device='[v_size]')
+ 
+         buffer_count = buffer_counts(mpi_dir)
+@@ -731,16 +731,16 @@ contains
+             unpack_offset = grid_dims(mpi_dir) + buff_size + 1
+         end if
+ 
+-        ! Pack Buffer to Send
++        ! Pack Buffer to Send (coalesced SoA wire layout: field-major so GPU threads along j hit unit stride)
+         #:for mpi_dir in [1, 2, 3]
+             if (mpi_dir == ${mpi_dir}$) then
+                 #:if mpi_dir == 1
+                     $:GPU_PARALLEL_LOOP(collapse=4,private='[r]')
+-                    do l = 0, p
+-                        do k = 0, n
+-                            do j = 0, buff_size - 1
+-                                do i = 1, nVar
+-                                    r = (i - 1) + v_size*(j + buff_size*(k + (n + 1)*l))
++                    do i = 1, nVar
++                        do l = 0, p
++                            do k = 0, n
++                                do j = 0, buff_size - 1
++                                    r = (j + buff_size*(k + (n + 1)*l)) + slice_size*(i - 1)
+                                     buff_send(r) = real(q_comm(i)%sf(j + pack_offset, k, l), kind=wp)
+                                 end do
+                             end do
+@@ -753,7 +753,7 @@ contains
+                         do l = 0, p
+                             do k = 0, n
+                                 do j = 0, buff_size - 1
+-                                    r = nVar + v_size*(j + buff_size*(k + (n + 1)*l))
++                                    r = (j + buff_size*(k + (n + 1)*l)) + slice_size*nVar
+                                     buff_send(r) = real(q_T_sf%sf(j + pack_offset, k, l), kind=wp)
+                                 end do
+                             end do
+@@ -762,13 +762,13 @@ contains
+                     end if
+ 
+                     if (qbmm_comm) then
+-                        $:GPU_PARALLEL_LOOP(collapse=4,private='[r]')
+-                        do l = 0, p
+-                            do k = 0, n
+-                                do j = 0, buff_size - 1
+-                                    do i = nVar + 1, nVar + nnode
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + v_size*(j + buff_size*(k + (n + 1)*l))
++                        $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = 0, n
++                                        do j = 0, buff_size - 1
++                                            r = (j + buff_size*(k + (n + 1)*l)) + slice_size*((i - 1) + (q - 1)*nnode)
+                                             buff_send(r) = real(pb_in(j + pack_offset, k, l, i - nVar, q), kind=wp)
+                                         end do
+                                     end do
+@@ -778,12 +778,13 @@ contains
+                         $:END_GPU_PARALLEL_LOOP()
+ 
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do l = 0, p
+-                            do k = 0, n
+-                                do j = 0, buff_size - 1
+-                                    do i = nVar + 1, nVar + nnode
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + nb*nnode + v_size*(j + buff_size*(k + (n + 1)*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = 0, n
++                                        do j = 0, buff_size - 1
++                                            r = (j + buff_size*(k + (n + 1)*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode + nb*nnode)
+                                             buff_send(r) = real(mv_in(j + pack_offset, k, l, i - nVar, q), kind=wp)
+                                         end do
+                                     end do
+@@ -798,7 +799,8 @@ contains
+                         do l = 0, p
+                             do k = 0, buff_size - 1
+                                 do j = -buff_size, m + buff_size
+-                                    r = (i - 1) + v_size*((j + buff_size) + (m + 2*buff_size + 1)*(k + buff_size*l))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*(k + buff_size*l)) &
++                                        & + slice_size*(i - 1)
+                                     buff_send(r) = real(q_comm(i)%sf(j, k + pack_offset, l), kind=wp)
+                                 end do
+                             end do
+@@ -811,7 +813,8 @@ contains
+                         do l = 0, p
+                             do k = 0, buff_size - 1
+                                 do j = -buff_size, m + buff_size
+-                                    r = nVar + v_size*((j + buff_size) + (m + 2*buff_size + 1)*(k + buff_size*l))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*(k + buff_size*l)) &
++                                        & + slice_size*nVar
+                                     buff_send(r) = real(q_T_sf%sf(j, k + pack_offset, l), kind=wp)
+                                 end do
+                             end do
+@@ -821,13 +824,13 @@ contains
+ 
+                     if (qbmm_comm) then
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = 0, p
+-                                do k = 0, buff_size - 1
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + v_size*((j + buff_size) + (m + 2*buff_size + 1)*(k &
+-                                                 & + buff_size*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = 0, buff_size - 1
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*(k + buff_size*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode)
+                                             buff_send(r) = real(pb_in(j, k + pack_offset, l, i - nVar, q), kind=wp)
+                                         end do
+                                     end do
+@@ -837,13 +840,13 @@ contains
+                         $:END_GPU_PARALLEL_LOOP()
+ 
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = 0, p
+-                                do k = 0, buff_size - 1
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + nb*nnode + v_size*((j + buff_size) + (m + 2*buff_size &
+-                                                 & + 1)*(k + buff_size*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = 0, buff_size - 1
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*(k + buff_size*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode + nb*nnode)
+                                             buff_send(r) = real(mv_in(j, k + pack_offset, l, i - nVar, q), kind=wp)
+                                         end do
+                                     end do
+@@ -858,8 +861,8 @@ contains
+                         do l = 0, buff_size - 1
+                             do k = -buff_size, n + buff_size
+                                 do j = -buff_size, m + buff_size
+-                                    r = (i - 1) + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) + (n &
+-                                         & + 2*buff_size + 1)*l))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                        & + (n + 2*buff_size + 1)*l)) + slice_size*(i - 1)
+                                     buff_send(r) = real(q_comm(i)%sf(j, k, l + pack_offset), kind=wp)
+                                 end do
+                             end do
+@@ -872,8 +875,8 @@ contains
+                         do l = 0, buff_size - 1
+                             do k = -buff_size, n + buff_size
+                                 do j = -buff_size, m + buff_size
+-                                    r = nVar + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) + (n &
+-                                                       & + 2*buff_size + 1)*l))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                        & + (n + 2*buff_size + 1)*l)) + slice_size*nVar
+                                     buff_send(r) = real(q_T_sf%sf(j, k, l + pack_offset), kind=wp)
+                                 end do
+                             end do
+@@ -883,13 +886,14 @@ contains
+ 
+                     if (qbmm_comm) then
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = 0, buff_size - 1
+-                                do k = -buff_size, n + buff_size
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k &
+-                                                 & + buff_size) + (n + 2*buff_size + 1)*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, buff_size - 1
++                                    do k = -buff_size, n + buff_size
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                                & + (n + 2*buff_size + 1)*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode)
+                                             buff_send(r) = real(pb_in(j, k, l + pack_offset, i - nVar, q), kind=wp)
+                                         end do
+                                     end do
+@@ -899,13 +903,14 @@ contains
+                         $:END_GPU_PARALLEL_LOOP()
+ 
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = 0, buff_size - 1
+-                                do k = -buff_size, n + buff_size
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + nb*nnode + v_size*((j + buff_size) + (m + 2*buff_size &
+-                                                 & + 1)*((k + buff_size) + (n + 2*buff_size + 1)*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, buff_size - 1
++                                    do k = -buff_size, n + buff_size
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                                & + (n + 2*buff_size + 1)*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode + nb*nnode)
+                                             buff_send(r) = real(mv_in(j, k, l + pack_offset, i - nVar, q), kind=wp)
+                                         end do
+                                     end do
+@@ -934,7 +939,7 @@ contains
+                     $:GPU_WAIT()
+                 #:else
+                     call nvtxStartRange("RHS-COMM-DEV2HOST")
+-                    $:GPU_UPDATE(host='[buff_send]')
++                    $:GPU_UPDATE(host='[buff_send(0:buffer_count - 1)]')
+                     call nvtxEndRange
+                     call nvtxStartRange("RHS-COMM-SENDRECV-NO-RMDA")
+ 
+@@ -944,23 +949,23 @@ contains
+                     call nvtxEndRange  ! RHS-MPI-SENDRECV-(NO)-RDMA
+ 
+                     call nvtxStartRange("RHS-COMM-HOST2DEV")
+-                    $:GPU_UPDATE(device='[buff_recv]')
++                    $:GPU_UPDATE(device='[buff_recv(0:buffer_count - 1)]')
+                     call nvtxEndRange
+                 #:endif
+             end if
+         #:endfor
+ 
+-        ! Unpack Received Buffer
++        ! Unpack Received Buffer (matching coalesced SoA wire layout)
+         call nvtxStartRange("RHS-COMM-UNPACKBUF")
+         #:for mpi_dir in [1, 2, 3]
+             if (mpi_dir == ${mpi_dir}$) then
+                 #:if mpi_dir == 1
+                     $:GPU_PARALLEL_LOOP(collapse=4,private='[r]')
+-                    do l = 0, p
+-                        do k = 0, n
+-                            do j = -buff_size, -1
+-                                do i = 1, nVar
+-                                    r = (i - 1) + v_size*(j + buff_size*((k + 1) + (n + 1)*l))
++                    do i = 1, nVar
++                        do l = 0, p
++                            do k = 0, n
++                                do j = -buff_size, -1
++                                    r = ((j + buff_size) + buff_size*(k + (n + 1)*l)) + slice_size*(i - 1)
+                                     q_comm(i)%sf(j + unpack_offset, k, l) = real(buff_recv(r), kind=stp)
+ #if defined(__INTEL_COMPILER)
+                                     if (ieee_is_nan(q_comm(i)%sf(j + unpack_offset, k, l))) then
+@@ -979,7 +984,7 @@ contains
+                         do l = 0, p
+                             do k = 0, n
+                                 do j = -buff_size, -1
+-                                    r = nVar + v_size*(j + buff_size*((k + 1) + (n + 1)*l))
++                                    r = ((j + buff_size) + buff_size*(k + (n + 1)*l)) + slice_size*nVar
+                                     q_T_sf%sf(j + unpack_offset, k, l) = real(buff_recv(r), kind=stp)
+ #if defined(__INTEL_COMPILER)
+                                     if (ieee_is_nan(q_T_sf%sf(j + unpack_offset, k, l))) then
+@@ -995,12 +1000,13 @@ contains
+ 
+                     if (qbmm_comm) then
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do l = 0, p
+-                            do k = 0, n
+-                                do j = -buff_size, -1
+-                                    do i = nVar + 1, nVar + nnode
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + v_size*(j + buff_size*((k + 1) + (n + 1)*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = 0, n
++                                        do j = -buff_size, -1
++                                            r = ((j + buff_size) + buff_size*(k + (n + 1)*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode)
+                                             pb_in(j + unpack_offset, k, l, i - nVar, q) = real(buff_recv(r), kind=stp)
+                                         end do
+                                     end do
+@@ -1010,12 +1016,13 @@ contains
+                         $:END_GPU_PARALLEL_LOOP()
+ 
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do l = 0, p
+-                            do k = 0, n
+-                                do j = -buff_size, -1
+-                                    do i = nVar + 1, nVar + nnode
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + nb*nnode + v_size*(j + buff_size*((k + 1) + (n + 1)*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = 0, n
++                                        do j = -buff_size, -1
++                                            r = ((j + buff_size) + buff_size*(k + (n + 1)*l)) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode + nb*nnode)
+                                             mv_in(j + unpack_offset, k, l, i - nVar, q) = real(buff_recv(r), kind=stp)
+                                         end do
+                                     end do
+@@ -1030,7 +1037,8 @@ contains
+                         do l = 0, p
+                             do k = -buff_size, -1
+                                 do j = -buff_size, m + buff_size
+-                                    r = (i - 1) + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) + buff_size*l))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                        & + buff_size*l)) + slice_size*(i - 1)
+                                     q_comm(i)%sf(j, k + unpack_offset, l) = real(buff_recv(r), kind=stp)
+ #if defined(__INTEL_COMPILER)
+                                     if (ieee_is_nan(q_comm(i)%sf(j, k + unpack_offset, l))) then
+@@ -1049,7 +1057,8 @@ contains
+                         do l = 0, p
+                             do k = -buff_size, -1
+                                 do j = -buff_size, m + buff_size
+-                                    r = nVar + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) + buff_size*l))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                        & + buff_size*l)) + slice_size*nVar
+                                     q_T_sf%sf(j, k + unpack_offset, l) = real(buff_recv(r), kind=stp)
+ #if defined(__INTEL_COMPILER)
+                                     if (ieee_is_nan(q_T_sf%sf(j, k + unpack_offset, l))) then
+@@ -1065,13 +1074,13 @@ contains
+ 
+                     if (qbmm_comm) then
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = 0, p
+-                                do k = -buff_size, -1
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k &
+-                                                 & + buff_size) + buff_size*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = -buff_size, -1
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                                & + buff_size*l)) + slice_size*((i - 1) + (q - 1)*nnode)
+                                             pb_in(j, k + unpack_offset, l, i - nVar, q) = real(buff_recv(r), kind=stp)
+                                         end do
+                                     end do
+@@ -1081,13 +1090,13 @@ contains
+                         $:END_GPU_PARALLEL_LOOP()
+ 
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = 0, p
+-                                do k = -buff_size, -1
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + nb*nnode + v_size*((j + buff_size) + (m + 2*buff_size &
+-                                                 & + 1)*((k + buff_size) + buff_size*l))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = 0, p
++                                    do k = -buff_size, -1
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                                & + buff_size*l)) + slice_size*((i - 1) + (q - 1)*nnode + nb*nnode)
+                                             mv_in(j, k + unpack_offset, l, i - nVar, q) = real(buff_recv(r), kind=stp)
+                                         end do
+                                     end do
+@@ -1102,8 +1111,8 @@ contains
+                         do l = -buff_size, -1
+                             do k = -buff_size, n + buff_size
+                                 do j = -buff_size, m + buff_size
+-                                    r = (i - 1) + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) + (n &
+-                                         & + 2*buff_size + 1)*(l + buff_size)))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                        & + (n + 2*buff_size + 1)*(l + buff_size))) + slice_size*(i - 1)
+                                     q_comm(i)%sf(j, k, l + unpack_offset) = real(buff_recv(r), kind=stp)
+ #if defined(__INTEL_COMPILER)
+                                     if (ieee_is_nan(q_comm(i)%sf(j, k, l + unpack_offset))) then
+@@ -1122,8 +1131,8 @@ contains
+                         do l = -buff_size, -1
+                             do k = -buff_size, n + buff_size
+                                 do j = -buff_size, m + buff_size
+-                                    r = nVar + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) + (n &
+-                                                       & + 2*buff_size + 1)*(l + buff_size)))
++                                    r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                        & + (n + 2*buff_size + 1)*(l + buff_size))) + slice_size*nVar
+                                     q_T_sf%sf(j, k, l + unpack_offset) = real(buff_recv(r), kind=stp)
+ #if defined(__INTEL_COMPILER)
+                                     if (ieee_is_nan(q_T_sf%sf(j, k, l + unpack_offset))) then
+@@ -1139,13 +1148,14 @@ contains
+ 
+                     if (qbmm_comm) then
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = -buff_size, -1
+-                                do k = -buff_size, n + buff_size
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + v_size*((j + buff_size) + (m + 2*buff_size + 1)*((k &
+-                                                 & + buff_size) + (n + 2*buff_size + 1)*(l + buff_size)))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = -buff_size, -1
++                                    do k = -buff_size, n + buff_size
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                                & + (n + 2*buff_size + 1)*(l + buff_size))) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode)
+                                             pb_in(j, k, l + unpack_offset, i - nVar, q) = real(buff_recv(r), kind=stp)
+                                         end do
+                                     end do
+@@ -1155,13 +1165,14 @@ contains
+                         $:END_GPU_PARALLEL_LOOP()
+ 
+                         $:GPU_PARALLEL_LOOP(collapse=5,private='[r]')
+-                        do i = nVar + 1, nVar + nnode
+-                            do l = -buff_size, -1
+-                                do k = -buff_size, n + buff_size
+-                                    do j = -buff_size, m + buff_size
+-                                        do q = 1, nb
+-                                            r = (i - 1) + (q - 1)*nnode + nb*nnode + v_size*((j + buff_size) + (m + 2*buff_size &
+-                                                 & + 1)*((k + buff_size) + (n + 2*buff_size + 1)*(l + buff_size)))
++                        do q = 1, nb
++                            do i = nVar + 1, nVar + nnode
++                                do l = -buff_size, -1
++                                    do k = -buff_size, n + buff_size
++                                        do j = -buff_size, m + buff_size
++                                            r = ((j + buff_size) + (m + 2*buff_size + 1)*((k + buff_size) &
++                                                & + (n + 2*buff_size + 1)*(l + buff_size))) &
++                                                & + slice_size*((i - 1) + (q - 1)*nnode + nb*nnode)
+                                             mv_in(j, k, l + unpack_offset, i - nVar, q) = real(buff_recv(r), kind=stp)
+                                         end do
+                                     end do
+-- 
+2.34.1
+

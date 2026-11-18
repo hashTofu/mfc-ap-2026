@@ -1,0 +1,210 @@
+From 897068468322f47ddda221ba1ef51b7eafc3a13f Mon Sep 17 00:00:00 2001
+From: hashtofu <ianshen1110@gmail.com>
+Date: Wed, 18 Nov 2026 05:23:17 +0800
+Subject: [PATCH] L2: Skip dead idwbuff copy, clip transverse WENO ghosts, and
+ precompute inv_dx/dy/dz
+
+---
+ src/simulation/m_amr_store.fpp         | 18 +++++++++++++
+ src/simulation/m_global_parameters.fpp | 15 ++++++++---
+ src/simulation/m_rhs.fpp               | 37 +++++++++++++++-----------
+ src/simulation/m_start_up.fpp          | 10 +++++++
+ 4 files changed, 60 insertions(+), 20 deletions(-)
+
+diff --git a/src/simulation/m_amr_store.fpp b/src/simulation/m_amr_store.fpp
+index 6d5d1ed..4a6da62 100644
+--- a/src/simulation/m_amr_store.fpp
++++ b/src/simulation/m_amr_store.fpp
+@@ -64,6 +64,24 @@ contains
+                 o = o + ub - lb + 1
+             end if
+         #:endfor
++        if (amr_dim(1)) then
++            lb = lbound(dx, 1); ub = ubound(dx, 1)
++            $:GPU_PARALLEL_LOOP()
++            do j = lb, ub; inv_dx(j) = 1._wp/dx(j); end do
++            $:END_GPU_PARALLEL_LOOP()
++        end if
++        if (amr_dim(2)) then
++            lb = lbound(dy, 1); ub = ubound(dy, 1)
++            $:GPU_PARALLEL_LOOP()
++            do j = lb, ub; inv_dy(j) = 1._wp/dy(j); end do
++            $:END_GPU_PARALLEL_LOOP()
++        end if
++        if (amr_dim(3)) then
++            lb = lbound(dz, 1); ub = ubound(dz, 1)
++            $:GPU_PARALLEL_LOOP()
++            do j = lb, ub; inv_dz(j) = 1._wp/dz(j); end do
++            $:END_GPU_PARALLEL_LOOP()
++        end if
+ 
+     end subroutine s_amr_sync_grid_state_to_device
+ 
+diff --git a/src/simulation/m_global_parameters.fpp b/src/simulation/m_global_parameters.fpp
+index 8e2796b..f01a2e6 100644
+--- a/src/simulation/m_global_parameters.fpp
++++ b/src/simulation/m_global_parameters.fpp
+@@ -55,9 +55,10 @@ module m_global_parameters
+     !> @name Cell-width distributions in the x-, y- and z-directions, respectively
+     !> @{
+     real(wp), target, allocatable, dimension(:) :: dx, dy, dz
++    real(wp), target, allocatable, dimension(:) :: inv_dx, inv_dy, inv_dz
+     !> @}
+ 
+-    $:GPU_DECLARE(create='[x_cb, y_cb, z_cb, x_cc, y_cc, z_cc, dx, dy, dz]')
++    $:GPU_DECLARE(create='[x_cb, y_cb, z_cb, x_cc, y_cc, z_cc, dx, dy, dz, inv_dx, inv_dy, inv_dz]')
+ 
+     ! dt, m, n, p, cfl_target: GPU-declared via generated_decls.fpp (registered params)
+     $:GPU_DECLARE(create='[glb_bounds]')
+@@ -1238,25 +1239,31 @@ contains
+         @:ALLOCATE(x_cb(-1 - buff_size:m_alloc + buff_size))
+         @:ALLOCATE(x_cc(-buff_size:m_alloc + buff_size))
+         @:ALLOCATE(dx(-buff_size:m_alloc + buff_size))
++        @:ALLOCATE(inv_dx(-buff_size:m_alloc + buff_size))
+         @:PREFER_GPU(x_cb)
+         @:PREFER_GPU(x_cc)
+         @:PREFER_GPU(dx)
++        @:PREFER_GPU(inv_dx)
+ 
+         if (n == 0) return
+         @:ALLOCATE(y_cb(-1 - buff_size:n_alloc + buff_size))
+         @:ALLOCATE(y_cc(-buff_size:n_alloc + buff_size))
+         @:ALLOCATE(dy(-buff_size:n_alloc + buff_size))
++        @:ALLOCATE(inv_dy(-buff_size:n_alloc + buff_size))
+         @:PREFER_GPU(y_cb)
+         @:PREFER_GPU(y_cc)
+         @:PREFER_GPU(dy)
++        @:PREFER_GPU(inv_dy)
+ 
+         if (p == 0) return
+         @:ALLOCATE(z_cb(-1 - buff_size:p_alloc + buff_size))
+         @:ALLOCATE(z_cc(-buff_size:p_alloc + buff_size))
+         @:ALLOCATE(dz(-buff_size:p_alloc + buff_size))
++        @:ALLOCATE(inv_dz(-buff_size:p_alloc + buff_size))
+         @:PREFER_GPU(z_cb)
+         @:PREFER_GPU(z_cc)
+         @:PREFER_GPU(dz)
++        @:PREFER_GPU(inv_dz)
+ 
+     end subroutine s_initialize_global_parameters_module
+ 
+@@ -1384,13 +1391,13 @@ contains
+         end if
+ 
+         ! Deallocating grid variables for the x-, y- and z-directions
+-        @:DEALLOCATE(x_cb, x_cc, dx)
++        @:DEALLOCATE(x_cb, x_cc, dx, inv_dx)
+ 
+         if (n == 0) return
+-        @:DEALLOCATE(y_cb, y_cc, dy)
++        @:DEALLOCATE(y_cb, y_cc, dy, inv_dy)
+ 
+         if (p == 0) return
+-        @:DEALLOCATE(z_cb, z_cc, dz)
++        @:DEALLOCATE(z_cb, z_cc, dz, inv_dz)
+ 
+     end subroutine s_finalize_global_parameters_module
+ 
+diff --git a/src/simulation/m_rhs.fpp b/src/simulation/m_rhs.fpp
+index bace900..3936328 100644
+--- a/src/simulation/m_rhs.fpp
++++ b/src/simulation/m_rhs.fpp
+@@ -641,21 +641,25 @@ contains
+         $:GPU_UPDATE(device='[cv_int]')
+ 
+         if (.not. igr) then
+-            ! Association/Population of Working Variables
+-            n_copy = size(cons_copy_idx)
+-            $:GPU_PARALLEL_LOOP(private='[i, j, k, l, q]', collapse=3)
+-            do l = idwbuff(3)%beg, idwbuff(3)%end
+-                do k = idwbuff(2)%beg, idwbuff(2)%end
+-                    do j = idwbuff(1)%beg, idwbuff(1)%end
+-                        $:GPU_LOOP(parallelism='[seq]')
+-                        do q = 1, n_copy
+-                            i = cons_copy_idx(q)
+-                            q_cons_qp%vf(i)%sf(j, k, l) = q_cons_vf(i)%sf(j, k, l)
++            ! Association/Population of Working Variables: skipped when q_cons_qp is only used via q_prim_qp aliases
++            ! (s_convert_conservative_to_primitive_variables writes interior and s_populate_variables_buffers fills ghosts)
++            if (cons_copy_all .or. amr_in_fine_advance .or. amr_cons_ghosts_valid .or. relativity &
++                & .or. (mpp_lim .and. bubbles_euler)) then
++                n_copy = size(cons_copy_idx)
++                $:GPU_PARALLEL_LOOP(private='[i, j, k, l, q]', collapse=3)
++                do l = idwbuff(3)%beg, idwbuff(3)%end
++                    do k = idwbuff(2)%beg, idwbuff(2)%end
++                        do j = idwbuff(1)%beg, idwbuff(1)%end
++                            $:GPU_LOOP(parallelism='[seq]')
++                            do q = 1, n_copy
++                                i = cons_copy_idx(q)
++                                q_cons_qp%vf(i)%sf(j, k, l) = q_cons_vf(i)%sf(j, k, l)
++                            end do
+                         end do
+                     end do
+                 end do
+-            end do
+-            $:END_GPU_PARALLEL_LOOP()
++                $:END_GPU_PARALLEL_LOOP()
++            end if
+ 
+             ! Converting Conservative to Primitive Variables
+ 
+@@ -1247,7 +1251,7 @@ contains
+                 do q_loop = 0, p
+                     do l_loop = 0, n
+                         do k_loop = 0, m
+-                            inv_ds = 1._wp/dx(k_loop)
++                            inv_ds = inv_dx(k_loop)
+                             $:GPU_LOOP(parallelism='[seq]')
+                             do j = 1, sys_size
+                                 flux_face1 = flux_rsx_vf(k_loop - 1, l_loop, q_loop, j)
+@@ -1331,7 +1335,7 @@ contains
+                 do l = 0, p
+                     do k = 0, n
+                         do q = 0, m
+-                            inv_ds = 1._wp/dy(k)
++                            inv_ds = inv_dy(k)
+                             $:GPU_LOOP(parallelism='[seq]')
+                             do j = 1, sys_size
+                                 flux_face1 = flux_rsx_vf(q, k - 1, l, j)
+@@ -1498,7 +1502,7 @@ contains
+                     do k = 0, p
+                         do q = 0, n
+                             do l = 0, m
+-                                inv_ds = 1._wp/dz(k)
++                                inv_ds = inv_dz(k)
+                                 $:GPU_LOOP(parallelism='[seq]')
+                                 do j = 1, sys_size
+                                     flux_face1 = flux_rsx_vf(l, q, k - 1, j)
+@@ -2180,7 +2184,8 @@ contains
+                     is1%end = is1%end - ${SCHEME}$_polyn
+                 end if
+ 
+-                if (amr_in_fine_advance .and. .not. viscous) then
++                if ((amr_in_fine_advance .or. ((.not. surface_tension) .and. (.not. hypoelasticity) .and. (.not. chemistry) &
++                    & .and. (.not. particles_lagrange) .and. (face_bound /= 1))) .and. (.not. viscous)) then
+                     ! A fine block (or batched slab) has ghost shells on every side whose transverse reconstructions feed nothing
+                     ! (Riemann faces and flux differences stay inside the block), so clip the window to the interior (0:m/n/p, not
+                     ! idwint, which the batched advance widens) in the transverse directions. The normal direction keeps its shell;
+diff --git a/src/simulation/m_start_up.fpp b/src/simulation/m_start_up.fpp
+index 7497c13..78553da 100644
+--- a/src/simulation/m_start_up.fpp
++++ b/src/simulation/m_start_up.fpp
+@@ -1173,6 +1173,16 @@ contains
+         #:endif
+ 
+         $:GPU_UPDATE(device='[dx, dy, dz, x_cb, x_cc, y_cb, y_cc, z_cb, z_cc]')
++        inv_dx = 1._wp/dx
++        $:GPU_UPDATE(device='[inv_dx]')
++        if (n > 0) then
++            inv_dy = 1._wp/dy
++            $:GPU_UPDATE(device='[inv_dy]')
++        end if
++        if (p > 0) then
++            inv_dz = 1._wp/dz
++            $:GPU_UPDATE(device='[inv_dz]')
++        end if
+         $:GPU_UPDATE(device='[bc_x%beg, bc_x%end, bc_y%beg, bc_y%end, bc_z%beg, bc_z%end]')
+         $:GPU_UPDATE(device='[bc_x%vb1, bc_x%vb2, bc_x%vb3, bc_x%ve1, bc_x%ve2, bc_x%ve3]')
+         $:GPU_UPDATE(device='[bc_y%vb1, bc_y%vb2, bc_y%vb3, bc_y%ve1, bc_y%ve2, bc_y%ve3]')
+-- 
+2.34.1
+
