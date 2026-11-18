@@ -238,7 +238,7 @@ vL_rs_vf_x(j, k, l, i) = vp0 + (a0*p0 + a1*p1 + a2*p2)*s_inv
 
 ## 8. 重現指南與交付套件總覽
 
-所有成果皆已整理並提交至獨立本地 Git Repository **`/home/hashtf/mfc-ap-2026`**（嚴格保留 `git remote -v` 為空、作者設定為 `hashTofu <ianshen1110@gmail.com>`，無任何外部推送）：
+所有成果皆已整理並提交至 Git Repository **`/home/hashtf/mfc-ap-2026`**，並推送至私有 GitHub 遠端 **`origin` = `git@github.com:hashTofu/mfc-ap-2026.git`**（透過 `gh` 以已認證帳號 `hashTofu <ianshen1110@gmail.com>` 建立，`master` 追蹤 `origin/master`）：
 
 ```bash
 # 1. 驗證補丁順序套用性（對應上游 b4afa636）
